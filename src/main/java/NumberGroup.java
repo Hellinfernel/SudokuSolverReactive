@@ -3,9 +3,7 @@ import java.util.EventListener;
 import java.util.function.Function;
 
 public class NumberGroup {
-     private final NumberField[] _numberFields;
-
-
+    private final NumberField[] _numberFields;
 
     NumberGroup(NumberField[] matrix) throws ArrayIndexOutOfBoundsException {
         if (matrix.length != 9){
@@ -33,8 +31,6 @@ public class NumberGroup {
                                 .stream()
                                 .findFirst()
                                 .orElse(0))));
-
-
     }
 
     int[] getGroupAsArray(){

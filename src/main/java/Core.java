@@ -1,3 +1,8 @@
+import alternative.Coordinate;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class Core {
 
     /** The first dimension goes right left,
@@ -6,7 +11,8 @@ public class Core {
      */
 
     private final NumberField[][] sudokuMatrix = new NumberField[9][9];
-
+    //private final Map<Coordinate, NumberField> alternativeMatrix = new HashMap<>();
+    //private final Map<Coordinate, NumberGroup> allGroups = new HashMap<>();
 
 
 

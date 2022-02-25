@@ -1,4 +1,5 @@
 
+import alternative.Coordinate;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class SudokuTest {
         assertThat(numberGroupColumn).isNotNull();
 
     }
+
     @Test
     void sudokuTest(){
         int[][] intMatrix= {
@@ -53,6 +55,7 @@ public class SudokuTest {
                 {0,2,0,0,0,0,0,6,0},
                 {8,0,1,2,0,9,7,0,4}
         };
+
         Core core = new Core(intMatrix);
         NumberGroup testRow1 = core.getRow(1);
         NumberGroup testRow2 = core.getRow(2);
