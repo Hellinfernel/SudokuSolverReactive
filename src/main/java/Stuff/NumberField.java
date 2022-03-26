@@ -1,5 +1,8 @@
+package Stuff;
+
+import Stuff.EventManager;
+
 import java.util.*;
-import java.util.function.Consumer;
 
 public class NumberField {
 
@@ -63,7 +66,7 @@ public class NumberField {
     }
 
     public int toIntOrZero() {
-        if (possibleNumbers().stream().count() == 1){
+        if (possibleNumbers().size() == 1){
             Optional<Integer> optionalNumberField =possibleNumbers().stream().findFirst();
             if (optionalNumberField.isPresent()){
                 return optionalNumberField.get();
@@ -81,7 +84,7 @@ public class NumberField {
 
     @Override
     public String toString() {
-        return "NumberField{" +
+        return "Stuff.NumberField{" +
                 "possible number" + possibleNumbers().stream().findFirst().orElse(0).toString() +
                 '}';
     }

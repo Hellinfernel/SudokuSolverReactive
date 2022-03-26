@@ -1,3 +1,5 @@
+package Stuff;
+
 import java.util.ArrayList;
 import java.util.EventListener;
 import java.util.List;
@@ -12,7 +14,7 @@ public class EventManager  {
     void addFunction (Consumer function){
         functions.add(function);
     }
-    void trigger(){
+    public void trigger(){
         functions.forEach(function -> function.accept(null));
     }
 }
