@@ -1,4 +1,4 @@
-package Stuff;
+package Old;
 
 import Stuff.EventManager;
 
@@ -50,18 +50,10 @@ public class NumberField {
             if(isThisNumberPossible[x-1] == true){
 
                 isThisNumberPossible[x-1] = false;
-                changeInPossibleNumbersEvent.trigger();
+              //  changeInPossibleNumbersEvent.trigger();
             }
 
         }
-
-
-
-
-
-
-
-
 
     }
 
@@ -84,7 +76,7 @@ public class NumberField {
 
     @Override
     public String toString() {
-        return "Stuff.NumberField{" +
+        return "Old.NumberField{" +
                 "possible number" + possibleNumbers().stream().findFirst().orElse(0).toString() +
                 '}';
     }

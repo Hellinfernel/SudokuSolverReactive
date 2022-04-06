@@ -30,9 +30,19 @@ public class StaticField extends Field {
         return _number;
     }
 
+    @Override
+    public void setNumber(int number) {
+
+    }
+
+    @Override
+    public void setRandomAvalibleNumber() {
+
+    }
+
     public StaticField(int number) {
         _number = number;
+        _trueNumberFoundEvent = new EventManager();
         _changeInPossibleNumbersEvent = new EventManager();
-
     }
 }

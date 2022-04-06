@@ -1,6 +1,8 @@
 
+import Exeptions.DoubleNumberExeption;
 import Stuff.Core;
-import Stuff.NumberField;
+import Old.NumberField;
+import Exeptions.NotAllNumbersArePossibleExeption;
 import Stuff.NumberGroup;
 import alternative.Field;
 import alternative.StaticField;
@@ -14,6 +16,7 @@ import java.util.Arrays;
 import static org.assertj.core.api.Assertions.*;
 
 public class  SudokuTest {
+
     @Test
     void numberFieldInitTest(){
         NumberField numberField = new NumberField(3);
@@ -81,15 +84,15 @@ public class  SudokuTest {
         NumberGroup testColumn7 = core.getColumn(7);
         NumberGroup testColumn8 = core.getColumn(8);
         NumberGroup testColumn9 = core.getColumn(9);
-        NumberGroup testBlock1  = core.getBlock(2,2);
-        NumberGroup testBlock2  = core.getBlock(2,5);
-        NumberGroup testBlock3  = core.getBlock(2,8);
-        NumberGroup testBlock4  = core.getBlock(5,2);
-        NumberGroup testBlock5  = core.getBlock(5,5);
-        NumberGroup testBlock6  = core.getBlock(5,8);
-        NumberGroup testBlock7  = core.getBlock(8,2);
-        NumberGroup testBlock8  = core.getBlock(8,5);
-        NumberGroup testBlock9  = core.getBlock(8,8);
+        NumberGroup testBlock1  = core.getBlock(1);
+        NumberGroup testBlock2  = core.getBlock(2);
+        NumberGroup testBlock3  = core.getBlock(3);
+        NumberGroup testBlock4  = core.getBlock(4);
+        NumberGroup testBlock5  = core.getBlock(5);
+        NumberGroup testBlock6  = core.getBlock(6);
+        NumberGroup testBlock7  = core.getBlock(7);
+        NumberGroup testBlock8  = core.getBlock(8);
+        NumberGroup testBlock9  = core.getBlock(9);
 
 
 
@@ -196,15 +199,15 @@ public class  SudokuTest {
         NumberGroup testColumn7 = core.getColumn(7);
         NumberGroup testColumn8 = core.getColumn(8);
         NumberGroup testColumn9 = core.getColumn(9);
-        NumberGroup testBlock1  = core.getBlock(2,2);
-        NumberGroup testBlock2  = core.getBlock(2,5);
-        NumberGroup testBlock3  = core.getBlock(2,8);
-        NumberGroup testBlock4  = core.getBlock(5,2);
-        NumberGroup testBlock5  = core.getBlock(5,5);
-        NumberGroup testBlock6  = core.getBlock(5,8);
-        NumberGroup testBlock7  = core.getBlock(8,2);
-        NumberGroup testBlock8  = core.getBlock(8,5);
-        NumberGroup testBlock9  = core.getBlock(8,8);
+        NumberGroup testBlock1  = core.getBlock(1);
+        NumberGroup testBlock2  = core.getBlock(2);
+        NumberGroup testBlock3  = core.getBlock(3);
+        NumberGroup testBlock4  = core.getBlock(4);
+        NumberGroup testBlock5  = core.getBlock(5);
+        NumberGroup testBlock6  = core.getBlock(6);
+        NumberGroup testBlock7  = core.getBlock(7);
+        NumberGroup testBlock8  = core.getBlock(8);
+        NumberGroup testBlock9  = core.getBlock(9);
 
 
 
@@ -267,7 +270,6 @@ public class  SudokuTest {
 
 
     }
-   // @RepeatedTest(100)
     void analyseSudokuTestParallel(){
         int[][] intMatrix= {
                 {2,0,5,3,0,8,4,0,9},
@@ -300,15 +302,15 @@ public class  SudokuTest {
         NumberGroup testColumn7 = core.getColumn(7);
         NumberGroup testColumn8 = core.getColumn(8);
         NumberGroup testColumn9 = core.getColumn(9);
-        NumberGroup testBlock1  = core.getBlock(2,2);
-        NumberGroup testBlock2  = core.getBlock(2,5);
-        NumberGroup testBlock3  = core.getBlock(2,8);
-        NumberGroup testBlock4  = core.getBlock(5,2);
-        NumberGroup testBlock5  = core.getBlock(5,5);
-        NumberGroup testBlock6  = core.getBlock(5,8);
-        NumberGroup testBlock7  = core.getBlock(8,2);
-        NumberGroup testBlock8  = core.getBlock(8,5);
-        NumberGroup testBlock9  = core.getBlock(8,8);
+        NumberGroup testBlock1  = core.getBlock(1);
+        NumberGroup testBlock2  = core.getBlock(2);
+        NumberGroup testBlock3  = core.getBlock(3);
+        NumberGroup testBlock4  = core.getBlock(4);
+        NumberGroup testBlock5  = core.getBlock(5);
+        NumberGroup testBlock6  = core.getBlock(6);
+        NumberGroup testBlock7  = core.getBlock(7);
+        NumberGroup testBlock8  = core.getBlock(8);
+        NumberGroup testBlock9  = core.getBlock(9);
 
 
 
@@ -370,6 +372,38 @@ public class  SudokuTest {
 
 
 
+    }
+    @RepeatedTest(100)
+    void coherenceTest(){
+        NumberGroup numberGroup = new NumberGroup(new int[]{1, 1, 3, 4, 5, 6, 7, 8, 9});
+        System.out.println(Arrays.toString(numberGroup.getGroupAsArray()));
+        assertThatThrownBy(numberGroup::searchForDoubleSetNumbers).isInstanceOf(DoubleNumberExeption.class);
+        assertThatThrownBy(numberGroup::testCoherence).isInstanceOf(DoubleNumberExeption.class);
+        NumberGroup numberGroup1 = new NumberGroup(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9});
+        assertThatCode(numberGroup1::searchForDoubleSetNumbers).doesNotThrowAnyException();
+        assertThatCode(numberGroup1::testIfAllNumbersArePossible).doesNotThrowAnyException();
+        assertThatCode(numberGroup1::testCoherence).doesNotThrowAnyException();
+        NumberGroup numberGroup2 = new NumberGroup(new int[]{1, 0, 3, 4, 5, 6, 7, 8, 9});
+        numberGroup2.get_numberFields()[1].exclude(2);
+        assertThatCode(numberGroup2::searchForDoubleSetNumbers).doesNotThrowAnyException();
+        assertThatThrownBy(numberGroup2::testIfAllNumbersArePossible).isInstanceOf(NotAllNumbersArePossibleExeption.class);
+        assertThatThrownBy(numberGroup2::testCoherence).isInstanceOf(NotAllNumbersArePossibleExeption.class);
+
+    }
+    @RepeatedTest(100)
+    void createSudokuTest(){
+        Core core = Core.randomCreate();
+        System.out.println(
+                Arrays.toString(core.getRow(1).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(2).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(3).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(4).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(5).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(6).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(7).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(8).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(9).getGroupAsArray()) + "\n");
+        assertThatCode(core::testCoherence).doesNotThrowAnyException();
     }
 
 

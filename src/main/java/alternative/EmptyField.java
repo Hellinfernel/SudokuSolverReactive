@@ -1,10 +1,10 @@
 package alternative;
 
+import Stuff.Constants;
 import Stuff.EventManager;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class EmptyField extends Field {
     // private final Coordinate _coordinate;
@@ -12,18 +12,30 @@ public class EmptyField extends Field {
 
     public EmptyField(/* final Coordinate coordinate */) {
         // _coordinate = coordinate;
-        _changeInPossibleNumbersEvent = new EventManager();
-        _possibleNumbers = new HashSet<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
+        _changeInPossibleNumbersEvent = new EventManager<>();
+        _trueNumberFoundEvent = new EventManager<>();
+        _possibleNumbers = ConcurrentHashMap.newKeySet();
+        _possibleNumbers.addAll(Constants.ALL_NUMBERS);
     }
 
     public EmptyField(int number) {
-        _changeInPossibleNumbersEvent = new EventManager();
-        _possibleNumbers = new HashSet<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
+        _changeInPossibleNumbersEvent = new EventManager<>();
+        _trueNumberFoundEvent = new EventManager<>();
+        _possibleNumbers = ConcurrentHashMap.newKeySet();
+        _possibleNumbers.addAll(Constants.ALL_NUMBERS);
         if (number > 9 || number < 0) {
             throw new IndexOutOfBoundsException();
         } else {
             _possibleNumbers.remove(number);
         }
+
+    }
+
+    public EmptyField(Set<Integer> possibleNumbers) {
+        _changeInPossibleNumbersEvent = new EventManager<>();
+        _trueNumberFoundEvent = new EventManager<>();
+        _possibleNumbers = possibleNumbers;
+
     }
 
     @Override
@@ -40,7 +52,10 @@ public class EmptyField extends Field {
             return;
         }
         _possibleNumbers.remove(number);
-        _changeInPossibleNumbersEvent.trigger();
+
+        if (isFixed()) {
+            _trueNumberFoundEvent.trigger(toIntOrZero());
+        }
 
     }
 
@@ -55,5 +70,30 @@ public class EmptyField extends Field {
             return possibleNumbers().stream().findFirst().get();
         }
         return 0;
+    }
+
+    @Override
+    public void setNumber(int number) {
+
+        _possibleNumbers
+                .stream()
+                .filter(pNumber -> pNumber != number)
+                .forEach(this::exclude);
+
+    }
+
+    @Override
+    public void setRandomAvalibleNumber() {
+        if (isFixed() == false){
+            if (toIntOrZero() == 0){
+                Random random = new Random();
+                List<Integer> possibleNumbers = new ArrayList<>(_possibleNumbers);
+                int number = possibleNumbers.get(random.nextInt(possibleNumbers.size()));
+                setNumber(number);
+
+            }
+
+        }
+
     }
 }

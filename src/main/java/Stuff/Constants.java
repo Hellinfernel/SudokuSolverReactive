@@ -1,8 +1,10 @@
 package Stuff;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Constants {
-    public static final int[] ALL_NUMBERS = {1,2,3,4,5,6,7,8,9};
+    public static final Set<Integer> ALL_NUMBERS = new LinkedHashSet<>(Collections.unmodifiableCollection(Arrays.asList(1,2,3,4,5,6,7,8,9)));
+
+
 }
