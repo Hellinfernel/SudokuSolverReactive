@@ -1,12 +1,13 @@
 package Stuff;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import Exeptions.DoubleNumberExeption;
 import Exeptions.NotAllNumbersArePossibleExeption;
+import alternative.EmptyField;
 import alternative.Field;
 import alternative.StaticField;
-import alternative.EmptyField;
-
-import java.util.*;
 
 public class Core {
 
@@ -37,11 +38,7 @@ public class Core {
     public Core (Core core) {
         for (int x = 0; x < 9; x++){
             for (int y = 0; y < 9; y++){
-                if (core.sudokuMatrix[x][y].isFixed())
-                sudokuMatrix[x][y] = new StaticField(core.sudokuMatrix[x][y].toIntOrZero());
-                else {
-                    sudokuMatrix[x][y] = new EmptyField(core.sudokuMatrix[x][y].possibleNumbers());
-                }
+                sudokuMatrix[x][y] = core.sudokuMatrix[x][y].copy();
             }
         }
         generateGroups();

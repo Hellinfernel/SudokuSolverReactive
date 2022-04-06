@@ -1,10 +1,14 @@
 package alternative;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+
 import Stuff.Constants;
 import Stuff.EventManager;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class EmptyField extends Field {
     // private final Coordinate _coordinate;
@@ -61,7 +65,7 @@ public class EmptyField extends Field {
 
     @Override
     public Set<Integer> possibleNumbers() {
-        return _possibleNumbers;
+        return new HashSet<>(_possibleNumbers);
     }
 
     @Override
