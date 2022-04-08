@@ -23,10 +23,15 @@ public abstract class Field {
     public abstract void setRandomAvalibleNumber();
 
     public Field copy() {
-        if ( isFixed() ) {
+        if ( isFixed() == true ) {
             return new StaticField(toIntOrZero());
         } else {
             return new EmptyField(possibleNumbers());
         }
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(toIntOrZero());
     }
 }

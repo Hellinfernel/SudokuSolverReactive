@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -403,7 +405,30 @@ public class  SudokuTest {
                         Arrays.toString(core.getRow(7).getGroupAsArray()) + "\n"+
                         Arrays.toString(core.getRow(8).getGroupAsArray()) + "\n"+
                         Arrays.toString(core.getRow(9).getGroupAsArray()) + "\n");
+        System.out.println(core.getSudokuMatrix()[0][0].possibleNumbers());
         assertThatCode(core::testCoherence).doesNotThrowAnyException();
+    }
+    @Test
+    void CopyTest(){
+        Field field = new EmptyField(5);
+        Field field1 = field.copy();
+        assertThat(field.possibleNumbers()).isEqualTo(field1.possibleNumbers());
+        System.out.println(field.possibleNumbers() + "\n" +
+                field1.possibleNumbers());
+        Field field2 = new StaticField(5);
+        Field field3 = field2.copy();
+        assertThat(field2.possibleNumbers()).isEqualTo(field3.possibleNumbers());
+        System.out.println(field2.possibleNumbers() + "\n" +
+                field3.possibleNumbers());
+        HashSet<Integer> set = new HashSet();
+        set.add(5);
+        Field field4 = new EmptyField(set);
+        Field field5 = field4.copy();
+        assertThat(field4.possibleNumbers()).isEqualTo(field5.possibleNumbers());
+        System.out.println(field4.possibleNumbers() + "\n" +
+                field5.possibleNumbers());
+        assertThat(field5).isInstanceOf(StaticField.class);
+
     }
 
 

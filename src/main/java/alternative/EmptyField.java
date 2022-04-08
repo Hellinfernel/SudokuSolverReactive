@@ -38,8 +38,9 @@ public class EmptyField extends Field {
     public EmptyField(Set<Integer> possibleNumbers) {
         _changeInPossibleNumbersEvent = new EventManager<>();
         _trueNumberFoundEvent = new EventManager<>();
-        _possibleNumbers = possibleNumbers;
 
+        _possibleNumbers = ConcurrentHashMap.newKeySet();
+        _possibleNumbers.addAll(possibleNumbers);
     }
 
     @Override

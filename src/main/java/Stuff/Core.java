@@ -1,5 +1,6 @@
 package Stuff;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -80,31 +81,43 @@ public class Core {
     public static Core randomCreate() {
         Core core = new Core();
         int setNumbers = 0;
-        for (Field[] array : core.sudokuMatrix) {
+        Field[][] matrix = core.sudokuMatrix;
+        for (int i = 0; i < 9; i++) {
+
 
             boolean coherence = false;
             while (!coherence) {
-                Core safeCore =  new Core(core);
+                Core safeCore = new Core(core);
+              /*  safeCore.start();
+                System.out.println(safeCore.doesContainOnlyZero());
+                System.out.println(core.doesContainOnlyZero()); */
 
 
-            try {
-                setNumbers = setNumberOfRowRandom(safeCore, setNumbers, array);
-                coherence = true;
-                core = safeCore;
+                try {
+                    safeCore = setNumberOfRowRandom(safeCore, setNumbers, safeCore.sudokuMatrix[i]);
+                    coherence = true;
+                 /*   System.out.println(safeCore.doesContainOnlyZero());
+                    System.out.println(core.doesContainOnlyZero()); */
 
-            } catch (NotAllNumbersArePossibleExeption notAllNumbersArePossibleExeption) {
+                    core = safeCore;
+                 /*   core.start();
 
-            } catch (DoubleNumberExeption exeption) {
+                    System.out.println(safeCore.doesContainOnlyZero());
+                    System.out.println(core.doesContainOnlyZero()); */
+                } catch (NotAllNumbersArePossibleExeption notAllNumbersArePossibleExeption) {
 
+                } catch (DoubleNumberExeption exeption) {
+
+                }
             }
-        }
 
 
         }
         return core;
     }
 
-    private static int setNumberOfRowRandom(Core core, int setNumbers, Field[] array) throws NotAllNumbersArePossibleExeption, DoubleNumberExeption {
+    private static Core setNumberOfRowRandom(Core _core, int setNumbers, Field[] array) throws NotAllNumbersArePossibleExeption, DoubleNumberExeption {
+        Core core = _core;
         for (Field field : array) {
             setNumbers++;
             if (field.isFixed() == false) {
@@ -128,7 +141,7 @@ public class Core {
                            ); */
             }
         }
-        return setNumbers;
+        return core;
     }
 
 
@@ -214,6 +227,20 @@ public class Core {
         }
 
 
+    }
+
+    /**
+     * @return true if every field.possibleNumbers contains all possible numbers
+     */
+    public boolean doesContainOnlyZero(){
+        for (Field[] array : sudokuMatrix) {
+            for (Field field : array) {
+                if (!field.possibleNumbers().containsAll(Constants.ALL_NUMBERS)) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 }
