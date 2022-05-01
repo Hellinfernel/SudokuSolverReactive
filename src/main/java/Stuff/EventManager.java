@@ -11,7 +11,7 @@ public class EventManager<T>  {
 
     List<Consumer<T>> functions = new ArrayList<>();
 
-    void addFunction (Consumer<T> function){
+    public void addFunction (Consumer<T> function){
         functions.add(function);
     }
     public void trigger(T t){

@@ -1,32 +1,33 @@
-package alternative;
+package newAlternative.field;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Consumer;
-
+import Experimental.TaskSchedular;
 import Stuff.Constants;
 import Stuff.EventManager;
+import newAlternative.Task;
+import newAlternative.field.Field;
+
+
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Consumer;
 
 public class EmptyField extends Field {
     // private final Coordinate _coordinate;
     private final Set<Integer> _possibleNumbers;
+    private TaskSchedular<Field> _taskSchedular = new TaskSchedular<>(this);
 
     public EmptyField(/* final Coordinate coordinate */) {
         // _coordinate = coordinate;
         _changeInPossibleNumbersEvent = new EventManager<>();
         _trueNumberFoundEvent = new EventManager<>();
-        _possibleNumbers = ConcurrentHashMap.newKeySet();
+        _possibleNumbers = Collections.synchronizedSet(new HashSet<>());
         _possibleNumbers.addAll(Constants.ALL_NUMBERS);
     }
 
     public EmptyField(int number) {
         _changeInPossibleNumbersEvent = new EventManager<>();
         _trueNumberFoundEvent = new EventManager<>();
-        _possibleNumbers = ConcurrentHashMap.newKeySet();
+        _possibleNumbers = Collections.synchronizedSet(new HashSet<>());
         _possibleNumbers.addAll(Constants.ALL_NUMBERS);
         if (number > 9 || number < 0) {
             throw new IndexOutOfBoundsException();
@@ -100,6 +101,14 @@ public class EmptyField extends Field {
             }
 
         }
+
+    }
+
+
+
+    @Override
+    public void giveTask(Task<Field> task) {
+        _taskSchedular.offer(task);
 
     }
 

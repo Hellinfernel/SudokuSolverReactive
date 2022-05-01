@@ -1,27 +1,31 @@
-package alternative;
+package newAlternative.field;
+
+import Stuff.EventManager;
+import newAlternative.Task;
+
 
 import java.util.Set;
 import java.util.function.Consumer;
-
-import Stuff.EventManager;
 
 
 public abstract class Field {
 
     public abstract boolean isFixed();
 
-    public abstract void exclude( int number );
+    public abstract void exclude(int number);
 
     public abstract Set<Integer> possibleNumbers();
 
     public abstract int toIntOrZero();
 
-    public abstract void setNumber( int number );
+    public abstract void setNumber(int number);
 
     public EventManager<Integer> _trueNumberFoundEvent;
     public EventManager<Integer> _changeInPossibleNumbersEvent;
 
-    public abstract void setRandomAvalibleNumber();
+    protected abstract void setRandomAvalibleNumber();
+
+    public abstract void giveTask(Task<Field> task);
 
 
     public Field copy() {
