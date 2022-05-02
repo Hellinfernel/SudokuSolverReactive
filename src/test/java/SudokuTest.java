@@ -430,6 +430,35 @@ public class  SudokuTest {
         assertThat(field5).isInstanceOf(StaticField.class);
 
     }
+    @RepeatedTest(100)
+    void hardSudokuTest(){
+        int[][] intMatrix= {
+                {0,0,0,3,0,7,4,0,0},
+                {2,5,0,0,0,0,0,0,0},
+                {1,0,0,0,0,0,0,0,0},
+                {0,0,3,0,0,0,7,0,0},
+                {0,0,0,0,2,6,0,0,0},
+                {0,0,0,0,5,0,0,0,0},
+                {5,1,0,0,0,0,0,2,0},
+                {6,0,0,4,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,8}
+        };
+        Core core = new Core(intMatrix);
+        core.start();
+        System.out.println(
+                Arrays.toString(core.getRow(1).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(2).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(3).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(4).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(5).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(6).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(7).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(8).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(9).getGroupAsArray()) + "\n");
+        assertThat(core.isSolvedCompleatly()).isTrue();
+
+    }
+
 
 
 }

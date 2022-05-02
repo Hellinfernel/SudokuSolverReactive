@@ -1,14 +1,15 @@
-package Stuff;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+package ForkJoinAlternative;
 
 import Exeptions.DoubleNumberExeption;
 import Exeptions.NotAllNumbersArePossibleExeption;
-import alternative.EmptyField;
-import alternative.Field;
-import alternative.StaticField;
+import Stuff.Constants;
+
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.TimeUnit;
 
 public class Core {
 
@@ -21,6 +22,7 @@ public class Core {
     private final List<NumberGroup> sudokuRows = new LinkedList<>();
     private final List<NumberGroup> sudokuColumns = new LinkedList<>();
     private final List<NumberGroup> sudokuBlocks =new LinkedList<>();
+    private final ExecutorService executorService = ForkJoinPool.commonPool();
 
     //private final Map<Coordinate, Old.NumberField> alternativeMatrix = new HashMap<>();
     //private final Map<Coordinate, Stuff.NumberGroup> allGroups = new HashMap<>();
@@ -36,7 +38,7 @@ public class Core {
         generateGroups();
     }
 
-    public Core (Core core) {
+    public Core(Core core) {
         for (int x = 0; x < 9; x++){
             for (int y = 0; y < 9; y++){
                 sudokuMatrix[x][y] = core.sudokuMatrix[x][y].copy();
@@ -57,6 +59,7 @@ public class Core {
              sudokuBlocks.add(generateBlock(height,length));
             }
         }
+
         
 
     }
@@ -143,16 +146,13 @@ public class Core {
         }
         return core;
     }
-    public Core speculativeSolvingCore(){
-
-    }
 
 
     public Field[][] getSudokuMatrix() {
         return sudokuMatrix;
     }
     private NumberGroup generateRow(int rowNumber){
-        NumberGroup row = new NumberGroup(sudokuMatrix[rowNumber - 1]);
+        NumberGroup row = new NumberGroup(sudokuMatrix[rowNumber - 1], executorService);
         return row;
     }
     public NumberGroup getRow(int number){
@@ -179,7 +179,7 @@ public class Core {
         for (int i = 0; i < 9; i++){
             columnArray[i] = sudokuMatrix[i][columnNumber -1];
         }
-        return new NumberGroup(columnArray);
+        return new NumberGroup(columnArray,executorService);
     }
     private NumberGroup generateBlock(int height, int lenght)throws ArrayIndexOutOfBoundsException{
         Field[] blockArray = new Field[9];
@@ -193,7 +193,7 @@ public class Core {
 
 
 
-        return new NumberGroup(blockArray);
+        return new NumberGroup(blockArray, executorService);
 
     }
     public void start(){
@@ -203,6 +203,11 @@ public class Core {
                     field._trueNumberFoundEvent.trigger(field.toIntOrZero());
                 }
             }
+        }
+        try {
+            executorService.awaitTermination(1, TimeUnit.SECONDS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
         /*Arrays.stream(sudokuMatrix)
                 .sequential()
@@ -239,16 +244,6 @@ public class Core {
         for (Field[] array : sudokuMatrix) {
             for (Field field : array) {
                 if (!field.possibleNumbers().containsAll(Constants.ALL_NUMBERS)) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-    public boolean isSolvedCompleatly(){
-        for (Field[] array : sudokuMatrix) {
-            for (Field field : array) {
-                if (!field.isFixed()) {
                     return false;
                 }
             }
