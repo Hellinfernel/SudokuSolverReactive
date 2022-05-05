@@ -6,16 +6,16 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Consumer;
 
 import Stuff.Constants;
 import Stuff.EventManager;
 
 public class EmptyField extends Field {
-    // private final Coordinate _coordinate;
+    private final Coordinate _coordinate;
     private final Set<Integer> _possibleNumbers;
 
-    public EmptyField(/* final Coordinate coordinate */) {
+    public EmptyField(/* final Coordinate coordinate */Coordinate coordinate) {
+        _coordinate = coordinate;
         // _coordinate = coordinate;
         _changeInPossibleNumbersEvent = new EventManager<>();
         _trueNumberFoundEvent = new EventManager<>();
@@ -23,7 +23,8 @@ public class EmptyField extends Field {
         _possibleNumbers.addAll(Constants.ALL_NUMBERS);
     }
 
-    public EmptyField(int number) {
+    public EmptyField(int number, Coordinate coordinate) {
+        _coordinate = coordinate;
         _changeInPossibleNumbersEvent = new EventManager<>();
         _trueNumberFoundEvent = new EventManager<>();
         _possibleNumbers = ConcurrentHashMap.newKeySet();
@@ -36,7 +37,8 @@ public class EmptyField extends Field {
 
     }
 
-    public EmptyField(Set<Integer> possibleNumbers) {
+    public EmptyField(Set<Integer> possibleNumbers, Coordinate coordinate) {
+        _coordinate = coordinate;
         _changeInPossibleNumbersEvent = new EventManager<>();
         _trueNumberFoundEvent = new EventManager<>();
 
@@ -86,6 +88,11 @@ public class EmptyField extends Field {
                 .filter(pNumber -> pNumber != number)
                 .forEach(this::exclude);
 
+    }
+
+    @Override
+    public Coordinate getCoordinate() {
+        return _coordinate;
     }
 
     @Override

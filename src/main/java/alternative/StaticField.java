@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class StaticField extends Field {
     private final int _number;
+    private final Coordinate _coordinate;
 
     @Override
     public boolean isFixed() {
@@ -36,12 +37,18 @@ public class StaticField extends Field {
     }
 
     @Override
+    public Coordinate getCoordinate() {
+        return _coordinate;
+    }
+
+    @Override
     public void setRandomAvalibleNumber() {
 
     }
 
-    public StaticField(int number) {
+    public StaticField(int number, Coordinate coordinate) {
         _number = number;
+        _coordinate = coordinate;
         _trueNumberFoundEvent = new EventManager();
         _changeInPossibleNumbersEvent = new EventManager();
     }

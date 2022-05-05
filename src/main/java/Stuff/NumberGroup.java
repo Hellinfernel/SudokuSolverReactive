@@ -2,11 +2,13 @@ package Stuff;
 
 import Exeptions.DoubleNumberExeption;
 import Exeptions.NotAllNumbersArePossibleExeption;
+import alternative.Coordinate;
 import alternative.EmptyField;
 import alternative.Field;
 import alternative.StaticField;
 
 import java.util.*;
+import java.util.concurrent.SynchronousQueue;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -25,7 +27,8 @@ public class NumberGroup {
         if (matrix.length != 9){
             throw new ArrayIndexOutOfBoundsException();
         }
-        _numberFields = new LinkedHashSet<>(Arrays.asList(matrix));
+        _numberFields = Collections.checkedSortedSet(new TreeSet<>(Comparator.comparing(Field::getCoordinate)), Field.class);
+                _numberFields.addAll(Arrays.stream(matrix).collect(Collectors.toSet()));
         _numberFields.forEach(field -> field._changeInPossibleNumbersEvent.addFunction(this::searchSetableNumber));
         _numberFields.forEach(field -> field._trueNumberFoundEvent.addFunction(this::excludeNumber));
 
@@ -33,28 +36,57 @@ public class NumberGroup {
 
 
     }
+    public NumberGroup(Collection<Field> collection) throws ArrayIndexOutOfBoundsException {
+        _leftNumbers = Collections.synchronizedSet(new HashSet<>(Constants.ALL_NUMBERS));
+
+
+
+        if (collection.size() != 9){
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        _numberFields = Collections.checkedSortedSet(new TreeSet<Field>(Comparator.comparing(Field::getCoordinate)), Field.class);
+        _numberFields.addAll(collection);
+        _numberFields.forEach(field -> field._changeInPossibleNumbersEvent.addFunction(this::searchSetableNumber));
+        _numberFields.forEach(field -> field._trueNumberFoundEvent.addFunction(this::excludeNumber));
+
+
+
+
+    }
+    // DO NOT USE
     public NumberGroup(int[] matrix)throws ArrayIndexOutOfBoundsException{
         _leftNumbers = Collections.synchronizedSet(new HashSet<>(Constants.ALL_NUMBERS));
+        List<Coordinate> coordinates = new LinkedList<>();
+        Constants.ALL_NUMBERS.forEach(number -> coordinates.add(new Coordinate(number,1)));
 
         if (matrix.length != 9){
             throw new ArrayIndexOutOfBoundsException();
         }
-        _numberFields = Arrays.stream(matrix)
-                .boxed()
-                .map(this::generateField)
-                .collect(Collectors.toCollection(LinkedHashSet::new));
+        TreeSet<Field> fields = new TreeSet<>(Comparator.comparing(Field::getCoordinate));
+        for (int i : matrix) {
+            Integer number = i;
+            Field generateField = generateField(number, coordinates.get(i-1));
+            fields.add(generateField);
+        }
+        _numberFields = fields;
         _numberFields.stream().forEach(field -> field._changeInPossibleNumbersEvent.addFunction(this::searchSetableNumber));
         _numberFields.stream().forEach(field -> field._trueNumberFoundEvent.addFunction(this::excludeNumber));
 
     }
-    private Field generateField(int number){
+
+    /**
+     * only used for test poporses
+     * @param number
+     * @return
+     */
+    private Field generateField(int number, Coordinate coordinate){
         Field field;
 
             if (number == 0){
-                field = new EmptyField();
+                field = new EmptyField(new Coordinate(1,1));
             }
             else {
-                field = new StaticField(number);
+                field = new StaticField(number, new Coordinate(1,1));
             }
             return field;
         }

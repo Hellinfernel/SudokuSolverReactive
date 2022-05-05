@@ -1,7 +1,6 @@
 package alternative;
 
 import java.util.Set;
-import java.util.function.Consumer;
 
 import Stuff.EventManager;
 
@@ -18,6 +17,8 @@ public abstract class Field {
 
     public abstract void setNumber( int number );
 
+    public abstract Coordinate getCoordinate();
+
     public EventManager<Integer> _trueNumberFoundEvent;
     public EventManager<Integer> _changeInPossibleNumbersEvent;
 
@@ -26,9 +27,9 @@ public abstract class Field {
 
     public Field copy() {
         if ( isFixed() == true ) {
-            return new StaticField(toIntOrZero());
+            return new StaticField(toIntOrZero(), getCoordinate());
         } else {
-            return new EmptyField(possibleNumbers());
+            return new EmptyField(possibleNumbers(), getCoordinate());
         }
     }
 

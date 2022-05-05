@@ -1,9 +1,8 @@
 
-import Exeptions.DoubleNumberExeption;
 import Stuff.Core;
 import Old.NumberField;
-import Exeptions.NotAllNumbersArePossibleExeption;
 import Stuff.NumberGroup;
+import alternative.Coordinate;
 import alternative.Field;
 import alternative.StaticField;
 import alternative.EmptyField;
@@ -12,7 +11,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 
 import static org.assertj.core.api.Assertions.*;
@@ -28,16 +26,16 @@ public class  SudokuTest {
 
 
     }
-    @Test
-    void coreTest(){
-        Core core = new Core();
-        Field[][] numberFields = core.getSudokuMatrix();
 
-        for (int x = 0; x < 9; x++){
-            for (int y = 0; y < 9; y++)
-            assertThat(numberFields[x][y].possibleNumbers()).containsOnly(1,2,3,4,5,6,7,8,9);
-        }
-    }
+   /* void coreTest(){
+        Core core = new Core();
+        Collection<Field> numberFields = core.get_sudokuMatrix();
+
+
+
+            assertThat(numberFields).extracting(Field::possibleNumbers).containsExactly(Constants.ALL_NUMBERS);
+
+    }*/
     @Test
     void exceptionTest(){
         NumberField numberField = new NumberField();
@@ -136,15 +134,15 @@ public class  SudokuTest {
     @Test
     void analysisTest(){
         Field[] array = new Field[9];
-        array[0] = new StaticField(1);
-        array[1] = new EmptyField();
-        array[2] = new EmptyField();
-        array[3] = new EmptyField();
-        array[4] = new EmptyField();
-        array[5] = new EmptyField();
-        array[6] = new EmptyField();
-        array[7] = new EmptyField();
-        array[8] = new EmptyField();
+        array[0] = new StaticField(1,new Coordinate(1,1));
+        array[1] = new EmptyField(new Coordinate(1,2));
+        array[2] = new EmptyField(new Coordinate(1,3));
+        array[3] = new EmptyField(new Coordinate(1,4));
+        array[4] = new EmptyField(new Coordinate(1,5));
+        array[5] = new EmptyField(new Coordinate(1,6));
+        array[6] = new EmptyField(new Coordinate(1,7));
+        array[7] = new EmptyField(new Coordinate(1,8));
+        array[8] = new EmptyField(new Coordinate(1,9));
         NumberGroup numberGroup = new NumberGroup(array);
         numberGroup.analyse();
 
@@ -241,7 +239,7 @@ public class  SudokuTest {
         assertThat(testBlock8.getGroupAsArray()).containsExactly(0,0,0,0,0,0,2,0,9);
         assertThat(testBlock9.getGroupAsArray()).containsExactly(8,0,1,0,6,0,7,0,4);
 
-        core.start();
+        core.kickStartEventTrigger();
         System.out.println(
                 Arrays.toString(core.getRow(1).getGroupAsArray()) + "\n"+
                 Arrays.toString(core.getRow(2).getGroupAsArray()) + "\n"+
@@ -375,8 +373,8 @@ public class  SudokuTest {
 
 
     }
-    @RepeatedTest(100)
-    void coherenceTest(){
+
+   /* void coherenceTest(){
         NumberGroup numberGroup = new NumberGroup(new int[]{1, 1, 3, 4, 5, 6, 7, 8, 9});
         System.out.println(Arrays.toString(numberGroup.getGroupAsArray()));
         assertThatThrownBy(numberGroup::searchForDoubleSetNumbers).isInstanceOf(DoubleNumberExeption.class);
@@ -391,7 +389,7 @@ public class  SudokuTest {
         assertThatThrownBy(numberGroup2::testIfAllNumbersArePossible).isInstanceOf(NotAllNumbersArePossibleExeption.class);
         assertThatThrownBy(numberGroup2::testCoherence).isInstanceOf(NotAllNumbersArePossibleExeption.class);
 
-    }
+    }*/
     @RepeatedTest(100)
     void createSudokuTest(){
         Core core = Core.randomCreate();
@@ -405,24 +403,24 @@ public class  SudokuTest {
                         Arrays.toString(core.getRow(7).getGroupAsArray()) + "\n"+
                         Arrays.toString(core.getRow(8).getGroupAsArray()) + "\n"+
                         Arrays.toString(core.getRow(9).getGroupAsArray()) + "\n");
-        System.out.println(core.getSudokuMatrix()[0][0].possibleNumbers());
+
         assertThatCode(core::testCoherence).doesNotThrowAnyException();
     }
     @Test
     void CopyTest(){
-        Field field = new EmptyField(5);
+        Field field = new EmptyField(5,new Coordinate(1,1));
         Field field1 = field.copy();
         assertThat(field.possibleNumbers()).isEqualTo(field1.possibleNumbers());
         System.out.println(field.possibleNumbers() + "\n" +
                 field1.possibleNumbers());
-        Field field2 = new StaticField(5);
+        Field field2 = new StaticField(5,new Coordinate(1,1));
         Field field3 = field2.copy();
         assertThat(field2.possibleNumbers()).isEqualTo(field3.possibleNumbers());
         System.out.println(field2.possibleNumbers() + "\n" +
                 field3.possibleNumbers());
         HashSet<Integer> set = new HashSet();
         set.add(5);
-        Field field4 = new EmptyField(set);
+        Field field4 = new EmptyField(set,new Coordinate(1,1));
         Field field5 = field4.copy();
         assertThat(field4.possibleNumbers()).isEqualTo(field5.possibleNumbers());
         System.out.println(field4.possibleNumbers() + "\n" +
@@ -444,7 +442,7 @@ public class  SudokuTest {
                 {0,0,0,0,0,0,0,0,8}
         };
         Core core = new Core(intMatrix);
-        core.start();
+        core.kickStartEventTrigger();
         System.out.println(
                 Arrays.toString(core.getRow(1).getGroupAsArray()) + "\n"+
                         Arrays.toString(core.getRow(2).getGroupAsArray()) + "\n"+
