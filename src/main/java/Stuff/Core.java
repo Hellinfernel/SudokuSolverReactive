@@ -2,7 +2,10 @@ package Stuff;
 
 import java.util.*;
 import java.util.concurrent.Callable;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
+import java.util.function.Supplier;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -12,6 +15,8 @@ import alternative.Coordinate;
 import alternative.EmptyField;
 import alternative.Field;
 import alternative.StaticField;
+
+import static java.util.concurrent.CompletableFuture.anyOf;
 
 public class Core {
 
@@ -181,43 +186,9 @@ public class Core {
         return core;
     }
 
-    /**
-     * Tries to solve a Core by adding a number to a field where it isnt save that it can contain this number
-     * @param coordinate
-     * @param speculatedNumber
-     * @return
-     */
-    private Callable<Core> speculativeSolvingTry(Coordinate coordinate, int speculatedNumber){
-        Core saveCore = new Core(this);
-        Field targetField = saveCore.getFieldByCoordinate(coordinate);
-        Callable<Core> callable = new Callable() {
-            @Override
-            public Object call() throws Exception {
-                targetField.setNumber(speculatedNumber);
-                try {
-                    saveCore.testCoherence();
-                } catch (DoubleNumberExeption | NotAllNumbersArePossibleExeption exeption) {
-                    exeption.printStackTrace();
-                }
-                if (!saveCore.isSolvedCompleatly()){
-                    saveCore.completeSolving();
-                }
-                return saveCore;
-
-            }
-        };
-        return callable;
-
-        //return core;
-    }
-    private Field searchCanidateForSpeculativeTry(){
-        return _sudokuMatrix.stream()
-                .filter(field -> !field.isFixed())
-                .min(Comparator.comparing((Field field) -> field.possibleNumbers().size()))
-                .orElseThrow();
 
 
-    }
+
 
 
 
@@ -280,26 +251,7 @@ public class Core {
                         .sequential()
                         .forEach(field -> field._changeInPossibleNumbersEvent.trigger())); */
     }
-    public void completeSolving(){
-        kickStartEventTrigger();
-        while (!isSolvedCompleatly()){
-            Field triedField = searchCanidateForSpeculativeTry();
-            List<Future<Core>> possibleCores;
-            try {
-                possibleCores =Constants.forkJoinPool.invokeAll(triedField.possibleNumbers()
-                        .stream()
-                        .map(integer ->  speculativeSolvingTry(triedField.getCoordinate(),integer))
-                .collect(Collectors.toSet()));
 
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            if (possibleCores.stream().forEach(coreFuture -> coreFuture.);){
-
-            }
-
-        }
-    }
 
     public void testCoherence() throws DoubleNumberExeption, NotAllNumbersArePossibleExeption {
         for (NumberGroup sudokuRow : sudokuRows) {
@@ -330,6 +282,7 @@ public class Core {
         return true; */
     }
     public boolean isSolvedCompleatly(){
+
         return _sudokuMatrix.stream().allMatch(Field::isFixed);
         /* for (Field[] array : _sudokuMatrix) {
             for (Field field : array) {

@@ -1,7 +1,6 @@
 
-import Stuff.Core;
+import Stuff.*;
 import Old.NumberField;
-import Stuff.NumberGroup;
 import alternative.Coordinate;
 import alternative.Field;
 import alternative.StaticField;
@@ -11,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashSet;
 
 import static org.assertj.core.api.Assertions.*;
@@ -270,7 +270,7 @@ public class  SudokuTest {
 
 
     }
-    void analyseSudokuTestParallel(){
+   /* void analyseSudokuTestParallel(){
         int[][] intMatrix= {
                 {2,0,5,3,0,8,4,0,9},
                 {0,7,0,0,0,0,0,5,0},
@@ -443,17 +443,63 @@ public class  SudokuTest {
         };
         Core core = new Core(intMatrix);
         core.kickStartEventTrigger();
+        Core finishedCore = null;
+        try {
+            finishedCore = new SpeculativeSolvingSequential().completeSolving(core);
+        } catch (CoreNotCoherentExeption exeption) {
+            exeption.printStackTrace();
+        }
         System.out.println(
-                Arrays.toString(core.getRow(1).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(2).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(3).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(4).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(5).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(6).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(7).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(8).getGroupAsArray()) + "\n"+
-                        Arrays.toString(core.getRow(9).getGroupAsArray()) + "\n");
-        assertThat(core.isSolvedCompleatly()).isTrue();
+                Arrays.toString(finishedCore.getRow(1).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(2).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(3).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(4).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(5).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(6).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(7).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(8).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(9).getGroupAsArray()) + "\n");
+        assertThat(finishedCore.isSolvedCompleatly()).isTrue();
+        assertThatCode(finishedCore::testCoherence).doesNotThrowAnyException();
+
+    }
+    @Test
+    void hardSudokuDeepAnalysis(){
+        int[][] intMatrix= {
+                {0,0,0,3,0,7,4,0,0},
+                {2,5,0,0,0,0,0,0,0},
+                {1,0,0,0,0,0,0,0,0},
+                {0,0,3,0,0,0,7,0,0},
+                {0,0,0,0,2,6,0,0,0},
+                {0,0,0,0,5,0,0,0,0},
+                {5,1,0,0,0,0,0,2,0},
+                {6,0,0,4,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,8}
+        };
+        Core core = new Core(intMatrix);
+        core.kickStartEventTrigger();
+        Collection<Core> allCores = null;
+        try {
+            allCores = new SpeculativeSolvingSequential().completeAnalysis(core);
+        } catch (CoreNotCoherentExeption exeption) {
+            exeption.printStackTrace();
+        }
+        allCores.forEach(finishedCore -> {
+            System.out.println(
+                    Arrays.toString(finishedCore.getRow(1).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(2).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(3).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(4).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(5).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(6).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(7).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(8).getGroupAsArray()) + "\n"+
+                            Arrays.toString(finishedCore.getRow(9).getGroupAsArray()) + "\n");
+            assertThat(finishedCore.isSolvedCompleatly()).isTrue();
+            assertThatCode(finishedCore::testCoherence).doesNotThrowAnyException();
+
+        });
+
 
     }
 
