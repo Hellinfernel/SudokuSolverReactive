@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classalternative_1_1_field" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>alternative::Field</compoundname>
+    <derivedcompoundref refid="classalternative_1_1_empty_field" prot="public" virt="non-virtual">alternative.EmptyField</derivedcompoundref>
+    <derivedcompoundref refid="classalternative_1_1_static_field" prot="public" virt="non-virtual">alternative.StaticField</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classalternative_1_1_field_1acf5585ca4f82b2b21127d0e006fca547" prot="public" static="no" mutable="no">
+        <type><ref refid="class_stuff_1_1_event_manager" kindref="compound">EventManager</ref>&lt; Integer &gt;</type>
+        <definition>EventManager&lt;Integer&gt; alternative.Field._trueNumberFoundEvent</definition>
+        <argsstring></argsstring>
+        <name>_trueNumberFoundEvent</name>
+        <qualifiedname>alternative.Field._trueNumberFoundEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="22" column="25" bodyfile="src/main/java/alternative/Field.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classalternative_1_1_field_1a8cd7923bd9044ff2ccd564af26338d12" prot="public" static="no" mutable="no">
+        <type><ref refid="class_stuff_1_1_event_manager" kindref="compound">EventManager</ref>&lt; Integer &gt;</type>
+        <definition>EventManager&lt;Integer&gt; alternative.Field._changeInPossibleNumbersEvent</definition>
+        <argsstring></argsstring>
+        <name>_changeInPossibleNumbersEvent</name>
+        <qualifiedname>alternative.Field._changeInPossibleNumbersEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="23" column="25" bodyfile="src/main/java/alternative/Field.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classalternative_1_1_field_1a2ce0d9a1369a9685f4789c1e2257fe2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract boolean</type>
+        <definition>abstract boolean alternative.Field.isFixed</definition>
+        <argsstring>()</argsstring>
+        <name>isFixed</name>
+        <qualifiedname>alternative.Field.isFixed</qualifiedname>
+        <reimplementedby refid="classalternative_1_1_empty_field_1a0d7015341d4b4101b3beae54d41477b1">isFixed</reimplementedby>
+        <reimplementedby refid="classalternative_1_1_static_field_1ae81a22e971f17adbd851ee4a85fce938">isFixed</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="10" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1af4d8e238d7c3511e467b3c3e6d382e0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void alternative.Field.exclude</definition>
+        <argsstring>(int number)</argsstring>
+        <name>exclude</name>
+        <qualifiedname>alternative.Field.exclude</qualifiedname>
+        <reimplementedby refid="classalternative_1_1_empty_field_1af756c0b0add8f4fec9ea63cd0b18ce99">exclude</reimplementedby>
+        <reimplementedby refid="classalternative_1_1_static_field_1a7c5e537e74a2046243439ad2039e66f0">exclude</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="12" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1ab40e6c931aa1d79b89a5de3f0b7dbc61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract Set&lt; Integer &gt;</type>
+        <definition>abstract Set&lt; Integer &gt; alternative.Field.possibleNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>possibleNumbers</name>
+        <qualifiedname>alternative.Field.possibleNumbers</qualifiedname>
+        <reimplementedby refid="classalternative_1_1_empty_field_1ad4abda1944f28d9297b622a017c780e6">possibleNumbers</reimplementedby>
+        <reimplementedby refid="classalternative_1_1_static_field_1ab3626bcd5df199945272d7f2c7d79b30">possibleNumbers</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="14" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1aaa1993acc91f9d1109165229e4e8f104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract int</type>
+        <definition>abstract int alternative.Field.toIntOrZero</definition>
+        <argsstring>()</argsstring>
+        <name>toIntOrZero</name>
+        <qualifiedname>alternative.Field.toIntOrZero</qualifiedname>
+        <reimplementedby refid="classalternative_1_1_empty_field_1adbdae3f033c51f63784129a7d2297051">toIntOrZero</reimplementedby>
+        <reimplementedby refid="classalternative_1_1_static_field_1a2b84342d5a8c9f5788d99754d2f253b8">toIntOrZero</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="16" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1a261ca28820cea5fef3b494c65ee05300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void alternative.Field.setNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumber</name>
+        <qualifiedname>alternative.Field.setNumber</qualifiedname>
+        <reimplementedby refid="classalternative_1_1_empty_field_1a11d795b4a721476204ee17d5ad592811">setNumber</reimplementedby>
+        <reimplementedby refid="classalternative_1_1_static_field_1aa49b7c035e0a1007fca81acdbcdf6231">setNumber</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="18" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1a6dc289d8a14c9b112c89a343099d526e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract <ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+        <definition>abstract Coordinate alternative.Field.getCoordinate</definition>
+        <argsstring>()</argsstring>
+        <name>getCoordinate</name>
+        <qualifiedname>alternative.Field.getCoordinate</qualifiedname>
+        <reimplementedby refid="classalternative_1_1_empty_field_1a76b17e190e12822f939f333f4eb2fe8d">getCoordinate</reimplementedby>
+        <reimplementedby refid="classalternative_1_1_static_field_1a4be22f49efa5f38b9304242f84e59cbe">getCoordinate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="20" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1a214ef9e083b6089b8dda3b988ab3a913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void alternative.Field.setRandomAvalibleNumber</definition>
+        <argsstring>()</argsstring>
+        <name>setRandomAvalibleNumber</name>
+        <qualifiedname>alternative.Field.setRandomAvalibleNumber</qualifiedname>
+        <reimplementedby refid="classalternative_1_1_empty_field_1a2260f816a4f2535f87644fea443ae64a">setRandomAvalibleNumber</reimplementedby>
+        <reimplementedby refid="classalternative_1_1_static_field_1a5ac626e53cc9ee5b36b377b81a36e189">setRandomAvalibleNumber</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="25" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1a98d9aacc846f615a044718ac04679a6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref></type>
+        <definition>Field alternative.Field.copy</definition>
+        <argsstring>()</argsstring>
+        <name>copy</name>
+        <qualifiedname>alternative.Field.copy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="28" column="18" bodyfile="src/main/java/alternative/Field.java" bodystart="28" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_field_1ab9ab8216e5a3abd31180a16bc9107bf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String alternative.Field.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>alternative.Field.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Field.java" line="37" column="19" bodyfile="src/main/java/alternative/Field.java" bodystart="37" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>alternative.Field</label>
+        <link refid="classalternative_1_1_field"/>
+      </node>
+      <node id="2">
+        <label>alternative.EmptyField</label>
+        <link refid="classalternative_1_1_empty_field"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>alternative.StaticField</label>
+        <link refid="classalternative_1_1_static_field"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Stuff.EventManager&lt; Integer &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+      </node>
+      <node id="1">
+        <label>alternative.Field</label>
+        <link refid="classalternative_1_1_field"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_changeInPossibleNumbersEvent</edgelabel>
+          <edgelabel>_trueNumberFoundEvent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/alternative/Field.java" line="8" column="17" bodyfile="src/main/java/alternative/Field.java" bodystart="8" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classalternative_1_1_field_1a8cd7923bd9044ff2ccd564af26338d12" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>_changeInPossibleNumbersEvent</name></member>
+      <member refid="classalternative_1_1_field_1acf5585ca4f82b2b21127d0e006fca547" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>_trueNumberFoundEvent</name></member>
+      <member refid="classalternative_1_1_field_1a98d9aacc846f615a044718ac04679a6a" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>copy</name></member>
+      <member refid="classalternative_1_1_field_1af4d8e238d7c3511e467b3c3e6d382e0c" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>exclude</name></member>
+      <member refid="classalternative_1_1_field_1a6dc289d8a14c9b112c89a343099d526e" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>getCoordinate</name></member>
+      <member refid="classalternative_1_1_field_1a2ce0d9a1369a9685f4789c1e2257fe2b" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>isFixed</name></member>
+      <member refid="classalternative_1_1_field_1ab40e6c931aa1d79b89a5de3f0b7dbc61" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>possibleNumbers</name></member>
+      <member refid="classalternative_1_1_field_1a261ca28820cea5fef3b494c65ee05300" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>setNumber</name></member>
+      <member refid="classalternative_1_1_field_1a214ef9e083b6089b8dda3b988ab3a913" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>setRandomAvalibleNumber</name></member>
+      <member refid="classalternative_1_1_field_1aaa1993acc91f9d1109165229e4e8f104" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>toIntOrZero</name></member>
+      <member refid="classalternative_1_1_field_1ab9ab8216e5a3abd31180a16bc9107bf8" prot="public" virt="non-virtual"><scope>alternative::Field</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

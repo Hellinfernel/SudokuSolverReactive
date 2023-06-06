@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classnew_alternative_1_1_number_group" kind="class" language="Java" prot="public">
+    <compoundname>newAlternative::NumberGroup</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnew_alternative_1_1_number_group_1ac1428adf5bacca62c6d10350cbca2a16" prot="private" static="no" mutable="no">
+        <type>final Set&lt; <ref refid="classnew_alternative_1_1field_1_1_field" kindref="compound">Field</ref> &gt;</type>
+        <definition>final Set&lt;Field&gt; newAlternative.NumberGroup._numberFields</definition>
+        <argsstring></argsstring>
+        <name>_numberFields</name>
+        <qualifiedname>newAlternative.NumberGroup._numberFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="17" column="23" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnew_alternative_1_1_number_group_1a6c8e4f6e8af6dc6e6a2181e8a1e67185" prot="private" static="no" mutable="no">
+        <type>final Set&lt; Integer &gt;</type>
+        <definition>final Set&lt;Integer&gt; newAlternative.NumberGroup._leftNumbers</definition>
+        <argsstring></argsstring>
+        <name>_leftNumbers</name>
+        <qualifiedname>newAlternative.NumberGroup._leftNumbers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="18" column="23" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnew_alternative_1_1_number_group_1a3edd4c2dbb0c423c68801443c93fd262" prot="private" static="no" mutable="no">
+        <type>final <ref refid="class_experimental_1_1_task_schedular" kindref="compound">TaskSchedular</ref>&lt; <ref refid="classnew_alternative_1_1_number_group" kindref="compound">NumberGroup</ref> &gt;</type>
+        <definition>final TaskSchedular&lt;NumberGroup&gt; newAlternative.NumberGroup._taskSchedular</definition>
+        <argsstring></argsstring>
+        <name>_taskSchedular</name>
+        <qualifiedname>newAlternative.NumberGroup._taskSchedular</qualifiedname>
+        <initializer>= new <ref refid="class_experimental_1_1_task_schedular" kindref="compound">TaskSchedular</ref>&lt;&gt;(this)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="19" column="33" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1a8416e312d08632e26dae921335dc1a2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>newAlternative.NumberGroup.NumberGroup</definition>
+        <argsstring>(Field[] matrix)</argsstring>
+        <name>NumberGroup</name>
+        <qualifiedname>newAlternative.NumberGroup.NumberGroup</qualifiedname>
+        <param>
+          <type><ref refid="classnew_alternative_1_1field_1_1_field" kindref="compound">Field</ref>[]</type>
+          <declname>matrix</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="22" column="12" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="22" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1a4db3a21f83edebb6688995e486d2c08e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>newAlternative.NumberGroup.NumberGroup</definition>
+        <argsstring>(int[] matrix)</argsstring>
+        <name>NumberGroup</name>
+        <qualifiedname>newAlternative.NumberGroup.NumberGroup</qualifiedname>
+        <param>
+          <type>int[]</type>
+          <declname>matrix</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="38" column="12" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1af8a29a8cdfd0e5a63416bfbc4755bb08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.NumberGroup.searchSetableNumber</definition>
+        <argsstring>()</argsstring>
+        <name>searchSetableNumber</name>
+        <qualifiedname>newAlternative.NumberGroup.searchSetableNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Searches a number who can be set in this group </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="71" column="17" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="71" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1a24867ffd346656e2cd36babe532afc14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.NumberGroup.searchSetableNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>searchSetableNumber</name>
+        <qualifiedname>newAlternative.NumberGroup.searchSetableNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>searches for a field where this number fits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="92" column="17" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="92" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1a99ee88ce9d8a1a7ee3c771a6336515df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.NumberGroup.analyse</definition>
+        <argsstring>()</argsstring>
+        <name>analyse</name>
+        <qualifiedname>newAlternative.NumberGroup.analyse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mainly a test method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="132" column="17" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="132" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1a73049dd9643683cbc04d2ca983748545" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int[] newAlternative.NumberGroup.getGroupAsArray</definition>
+        <argsstring>()</argsstring>
+        <name>getGroupAsArray</name>
+        <qualifiedname>newAlternative.NumberGroup.getGroupAsArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="140" column="16" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1a1fe76a7ac0e9e967965f857e9c6a956d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnew_alternative_1_1field_1_1_field" kindref="compound">Field</ref>[]</type>
+        <definition>Field[] newAlternative.NumberGroup.get_numberFields</definition>
+        <argsstring>()</argsstring>
+        <name>get_numberFields</name>
+        <qualifiedname>newAlternative.NumberGroup.get_numberFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="145" column="18" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1aab1441aa7e0092d950d04f5674f03e63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.NumberGroup.testCoherence</definition>
+        <argsstring>()</argsstring>
+        <name>testCoherence</name>
+        <qualifiedname>newAlternative.NumberGroup.testCoherence</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>, <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="149" column="17" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="149" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1ab9fa7b44a85650dfdebfd3ee26d0ee7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.NumberGroup.testIfAllNumbersArePossible</definition>
+        <argsstring>()</argsstring>
+        <name>testIfAllNumbersArePossible</name>
+        <qualifiedname>newAlternative.NumberGroup.testIfAllNumbersArePossible</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if all numbers are possible </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="165" column="17" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="165" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1a68b59edd4d65aec7357228308f1ef730" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean newAlternative.NumberGroup.isThisNumberPossible</definition>
+        <argsstring>(int number)</argsstring>
+        <name>isThisNumberPossible</name>
+        <qualifiedname>newAlternative.NumberGroup.isThisNumberPossible</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number who is tested. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a true if there is a field where this number can placed. false should only ocure if the sudoku has mistakes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="185" column="20" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="185" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1ad4b58687efa7c9bfdde4b4303c856e7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.NumberGroup.searchForDoubleSetNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>searchForDoubleSetNumbers</name>
+        <qualifiedname>newAlternative.NumberGroup.searchForDoubleSetNumbers</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>DoubleNumberExeption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is a number 2 times in the same group </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="204" column="17" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="204" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1aa6be225cff30925de66733df441d4ea6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnew_alternative_1_1field_1_1_field" kindref="compound">Field</ref></type>
+        <definition>Field newAlternative.NumberGroup.generateField</definition>
+        <argsstring>(int number)</argsstring>
+        <name>generateField</name>
+        <qualifiedname>newAlternative.NumberGroup.generateField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="52" column="19" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="52" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_number_group_1aaf93e9efcece126b1a2f46d852830c76" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.NumberGroup.excludeNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>excludeNumber</name>
+        <qualifiedname>newAlternative.NumberGroup.excludeNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>analyses the group and uses excludeNumber() from NumberFields in _numberFields if there are fields with a guarantied number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/NumberGroup.java" line="113" column="18" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="113" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/newAlternative/NumberGroup.java" line="16" column="7" bodyfile="src/main/java/newAlternative/NumberGroup.java" bodystart="16" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classnew_alternative_1_1_number_group_1a6c8e4f6e8af6dc6e6a2181e8a1e67185" prot="private" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>_leftNumbers</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1ac1428adf5bacca62c6d10350cbca2a16" prot="private" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>_numberFields</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a3edd4c2dbb0c423c68801443c93fd262" prot="private" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>_taskSchedular</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a99ee88ce9d8a1a7ee3c771a6336515df" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>analyse</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1aaf93e9efcece126b1a2f46d852830c76" prot="private" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>excludeNumber</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1aa6be225cff30925de66733df441d4ea6" prot="private" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>generateField</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a1fe76a7ac0e9e967965f857e9c6a956d" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>get_numberFields</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a73049dd9643683cbc04d2ca983748545" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>getGroupAsArray</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a68b59edd4d65aec7357228308f1ef730" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>isThisNumberPossible</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a8416e312d08632e26dae921335dc1a2b" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>NumberGroup</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a4db3a21f83edebb6688995e486d2c08e" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>NumberGroup</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1ad4b58687efa7c9bfdde4b4303c856e7a" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>searchForDoubleSetNumbers</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1af8a29a8cdfd0e5a63416bfbc4755bb08" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>searchSetableNumber</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1a24867ffd346656e2cd36babe532afc14" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>searchSetableNumber</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1aab1441aa7e0092d950d04f5674f03e63" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>testCoherence</name></member>
+      <member refid="classnew_alternative_1_1_number_group_1ab9fa7b44a85650dfdebfd3ee26d0ee7a" prot="public" virt="non-virtual"><scope>newAlternative::NumberGroup</scope><name>testIfAllNumbersArePossible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

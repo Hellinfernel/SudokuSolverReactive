@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_experimental_1_1_task_schedular" kind="class" language="Java" prot="public">
+    <compoundname>Experimental::TaskSchedular</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">java::util::PriorityQueue&lt; Task&lt; T &gt; &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_experimental_1_1_task_schedular_1a4d9298d5012aa1e5f4753fba0749ea95" prot="package" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Experimental.TaskSchedular&lt; T &gt;.t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>Experimental.TaskSchedular.t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Experimental/TaskSchedular.java" line="9" column="7" bodyfile="src/main/java/Experimental/TaskSchedular.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_experimental_1_1_task_schedular_1a067eebbed3d0b715a7a8a6b94fcbc1ef" prot="package" static="no" mutable="no">
+        <type>Thread</type>
+        <definition>Thread Experimental.TaskSchedular&lt; T &gt;.thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <qualifiedname>Experimental.TaskSchedular.thread</qualifiedname>
+        <initializer>= new Thread(){
+        @Override
+        public void run() {
+            <ref refid="classnew_alternative_1_1_task" kindref="compound">Task</ref>&lt;T&gt; task = TaskSchedular.this.poll();
+            if (task == null){
+                try {
+                    wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            else {
+                task.accept(t);
+            }
+        }
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Experimental/TaskSchedular.java" line="15" column="12" bodyfile="src/main/java/Experimental/TaskSchedular.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_experimental_1_1_task_schedular_1a9d28f0948f0f7a40362d15c7e403e115" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Experimental.TaskSchedular&lt; T &gt;.TaskSchedular</definition>
+        <argsstring>(T t)</argsstring>
+        <name>TaskSchedular</name>
+        <qualifiedname>Experimental.TaskSchedular.TaskSchedular</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Experimental/TaskSchedular.java" line="11" column="12" bodyfile="src/main/java/Experimental/TaskSchedular.java" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_experimental_1_1_task_schedular_1af7753137f26ca617e21b894bc026e586" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Experimental.TaskSchedular&lt; T &gt;.offer</definition>
+        <argsstring>(Task&lt; T &gt; tTask)</argsstring>
+        <name>offer</name>
+        <qualifiedname>Experimental.TaskSchedular.offer</qualifiedname>
+        <param>
+          <type><ref refid="classnew_alternative_1_1_task" kindref="compound">Task</ref>&lt; T &gt;</type>
+          <declname>tTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Experimental/TaskSchedular.java" line="33" column="20" bodyfile="src/main/java/Experimental/TaskSchedular.java" bodystart="33" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Experimental.TaskSchedular&lt; T &gt;</label>
+        <link refid="class_experimental_1_1_task_schedular"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PriorityQueue&lt; Task&lt; T &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Experimental.TaskSchedular&lt; T &gt;</label>
+        <link refid="class_experimental_1_1_task_schedular"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PriorityQueue&lt; Task&lt; T &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/Experimental/TaskSchedular.java" line="8" column="7" bodyfile="src/main/java/Experimental/TaskSchedular.java" bodystart="8" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_experimental_1_1_task_schedular_1af7753137f26ca617e21b894bc026e586" prot="public" virt="non-virtual"><scope>Experimental::TaskSchedular</scope><name>offer</name></member>
+      <member refid="class_experimental_1_1_task_schedular_1a4d9298d5012aa1e5f4753fba0749ea95" prot="package" virt="non-virtual"><scope>Experimental::TaskSchedular</scope><name>t</name></member>
+      <member refid="class_experimental_1_1_task_schedular_1a9d28f0948f0f7a40362d15c7e403e115" prot="public" virt="non-virtual"><scope>Experimental::TaskSchedular</scope><name>TaskSchedular</name></member>
+      <member refid="class_experimental_1_1_task_schedular_1a067eebbed3d0b715a7a8a6b94fcbc1ef" prot="package" virt="non-virtual"><scope>Experimental::TaskSchedular</scope><name>thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

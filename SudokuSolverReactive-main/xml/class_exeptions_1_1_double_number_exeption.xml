@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_exeptions_1_1_double_number_exeption" kind="class" language="Java" prot="public">
+    <compoundname>Exeptions::DoubleNumberExeption</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_exeptions_1_1_double_number_exeption_1ae525c7126d3b6ea2e9f2d2a78070206c" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Exeptions.DoubleNumberExeption.doubleFoundNumber</definition>
+        <argsstring></argsstring>
+        <name>doubleFoundNumber</name>
+        <qualifiedname>Exeptions.DoubleNumberExeption.doubleFoundNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Exeptions/DoubleNumberExeption.java" line="4" column="9" bodyfile="src/main/java/Exeptions/DoubleNumberExeption.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_exeptions_1_1_double_number_exeption_1a50e56ded38c0d5da3e69d07e9406bed6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Exeptions.DoubleNumberExeption.DoubleNumberExeption</definition>
+        <argsstring>(int number)</argsstring>
+        <name>DoubleNumberExeption</name>
+        <qualifiedname>Exeptions.DoubleNumberExeption.DoubleNumberExeption</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Exeptions/DoubleNumberExeption.java" line="5" column="12" bodyfile="src/main/java/Exeptions/DoubleNumberExeption.java" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_exeptions_1_1_double_number_exeption_1a039ffa0310dcb4349d04fd1da9561084" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String Exeptions.DoubleNumberExeption.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>Exeptions.DoubleNumberExeption.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Exeptions/DoubleNumberExeption.java" line="11" column="19" bodyfile="src/main/java/Exeptions/DoubleNumberExeption.java" bodystart="11" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>Exeptions.DoubleNumberExeption</label>
+        <link refid="class_exeptions_1_1_double_number_exeption"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>Exeptions.DoubleNumberExeption</label>
+        <link refid="class_exeptions_1_1_double_number_exeption"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/Exeptions/DoubleNumberExeption.java" line="3" column="7" bodyfile="src/main/java/Exeptions/DoubleNumberExeption.java" bodystart="3" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_exeptions_1_1_double_number_exeption_1ae525c7126d3b6ea2e9f2d2a78070206c" prot="package" virt="non-virtual"><scope>Exeptions::DoubleNumberExeption</scope><name>doubleFoundNumber</name></member>
+      <member refid="class_exeptions_1_1_double_number_exeption_1a50e56ded38c0d5da3e69d07e9406bed6" prot="public" virt="non-virtual"><scope>Exeptions::DoubleNumberExeption</scope><name>DoubleNumberExeption</name></member>
+      <member refid="class_exeptions_1_1_double_number_exeption_1a039ffa0310dcb4349d04fd1da9561084" prot="public" virt="non-virtual"><scope>Exeptions::DoubleNumberExeption</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

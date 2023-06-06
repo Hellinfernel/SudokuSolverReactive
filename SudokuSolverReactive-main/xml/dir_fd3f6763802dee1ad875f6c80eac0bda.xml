@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_fd3f6763802dee1ad875f6c80eac0bda" kind="dir">
+    <compoundname>src/main/java</compoundname>
+    <innerdir refid="dir_eee9e8091d7932847591790e111268ce">src/main/java/alternative</innerdir>
+    <innerdir refid="dir_c9d973b8c812743ec6a867cfdeef94d4">src/main/java/Exeptions</innerdir>
+    <innerdir refid="dir_cc1b1cf3e4b25441ae0445a10bfbe1b7">src/main/java/Experimental</innerdir>
+    <innerdir refid="dir_3b010198052071d883bcb6b67a594350">src/main/java/ForkJoinAlternative</innerdir>
+    <innerdir refid="dir_7cdbff14b0292c422c7f4e0f494c10f5">src/main/java/newAlternative</innerdir>
+    <innerdir refid="dir_55020acc04fce045e3eccf793d69641d">src/main/java/Old</innerdir>
+    <innerdir refid="dir_adec60c4ec334b09b9c29787cc9d3d0b">src/main/java/Stuff</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/"/>
+  </compounddef>
+</doxygen>

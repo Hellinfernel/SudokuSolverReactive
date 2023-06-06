@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_old_1_1_number_field" kind="class" language="Java" prot="public">
+    <compoundname>Old::NumberField</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_old_1_1_number_field_1a7a3a9d08710e90d0a4df90223d4b6e97" prot="public" static="no" mutable="no">
+        <type>final boolean[]</type>
+        <definition>final boolean [] Old.NumberField.isThisNumberPossible</definition>
+        <argsstring></argsstring>
+        <name>isThisNumberPossible</name>
+        <qualifiedname>Old.NumberField.isThisNumberPossible</qualifiedname>
+        <initializer>= new boolean[9]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="11" column="26" bodyfile="src/main/java/Old/NumberField.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_old_1_1_number_field_1adf681eba311226217a1ef75626263e36" prot="public" static="no" mutable="no">
+        <type><ref refid="class_stuff_1_1_event_manager" kindref="compound">EventManager</ref></type>
+        <definition>EventManager Old.NumberField.changeInPossibleNumbersEvent</definition>
+        <argsstring></argsstring>
+        <name>changeInPossibleNumbersEvent</name>
+        <qualifiedname>Old.NumberField.changeInPossibleNumbersEvent</qualifiedname>
+        <initializer>= new <ref refid="class_stuff_1_1_event_manager" kindref="compound">EventManager</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="12" column="25" bodyfile="src/main/java/Old/NumberField.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_old_1_1_number_field_1ae9b33dc54681423c021be38b4cb33fa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Old.NumberField.NumberField</definition>
+        <argsstring>(int number)</argsstring>
+        <name>NumberField</name>
+        <qualifiedname>Old.NumberField.NumberField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="14" column="12" bodyfile="src/main/java/Old/NumberField.java" bodystart="14" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_old_1_1_number_field_1a752024e8b64c70f57507d16afe66310c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Old.NumberField.NumberField</definition>
+        <argsstring>()</argsstring>
+        <name>NumberField</name>
+        <qualifiedname>Old.NumberField.NumberField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="34" column="12" bodyfile="src/main/java/Old/NumberField.java" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_old_1_1_number_field_1aa681a9690f56a117261259340c212084" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; Integer &gt;</type>
+        <definition>ArrayList&lt; Integer &gt; Old.NumberField.possibleNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>possibleNumbers</name>
+        <qualifiedname>Old.NumberField.possibleNumbers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="39" column="22" bodyfile="src/main/java/Old/NumberField.java" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_old_1_1_number_field_1af1a8a8bc11f68217b3faf9d268738148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Old.NumberField.excludeNumber</definition>
+        <argsstring>(int x)</argsstring>
+        <name>excludeNumber</name>
+        <qualifiedname>Old.NumberField.excludeNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="48" column="17" bodyfile="src/main/java/Old/NumberField.java" bodystart="48" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_old_1_1_number_field_1a120d894fd55301a001c256584fda9d41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Old.NumberField.toIntOrZero</definition>
+        <argsstring>()</argsstring>
+        <name>toIntOrZero</name>
+        <qualifiedname>Old.NumberField.toIntOrZero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="60" column="16" bodyfile="src/main/java/Old/NumberField.java" bodystart="60" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_old_1_1_number_field_1a58a23665a73d17b25dd47c50a2896f5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String Old.NumberField.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>Old.NumberField.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Old/NumberField.java" line="78" column="19" bodyfile="src/main/java/Old/NumberField.java" bodystart="78" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>List&lt; Consumer&lt; T &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>Old.NumberField</label>
+        <link refid="class_old_1_1_number_field"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>changeInPossibleNumbersEvent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stuff.EventManager&lt; T &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>functions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/Old/NumberField.java" line="7" column="7" bodyfile="src/main/java/Old/NumberField.java" bodystart="7" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_old_1_1_number_field_1adf681eba311226217a1ef75626263e36" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>changeInPossibleNumbersEvent</name></member>
+      <member refid="class_old_1_1_number_field_1af1a8a8bc11f68217b3faf9d268738148" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>excludeNumber</name></member>
+      <member refid="class_old_1_1_number_field_1a7a3a9d08710e90d0a4df90223d4b6e97" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>isThisNumberPossible</name></member>
+      <member refid="class_old_1_1_number_field_1ae9b33dc54681423c021be38b4cb33fa3" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>NumberField</name></member>
+      <member refid="class_old_1_1_number_field_1a752024e8b64c70f57507d16afe66310c" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>NumberField</name></member>
+      <member refid="class_old_1_1_number_field_1aa681a9690f56a117261259340c212084" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>possibleNumbers</name></member>
+      <member refid="class_old_1_1_number_field_1a120d894fd55301a001c256584fda9d41" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>toIntOrZero</name></member>
+      <member refid="class_old_1_1_number_field_1a58a23665a73d17b25dd47c50a2896f5e" prot="public" virt="non-virtual"><scope>Old::NumberField</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

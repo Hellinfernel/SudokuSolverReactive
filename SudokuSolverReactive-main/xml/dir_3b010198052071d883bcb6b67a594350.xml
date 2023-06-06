@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_3b010198052071d883bcb6b67a594350" kind="dir">
+    <compoundname>src/main/java/ForkJoinAlternative</compoundname>
+    <innerfile refid="_fork_join_alternative_2_core_8java">Core.java</innerfile>
+    <innerfile refid="_fork_join_alternative_2_empty_field_8java">EmptyField.java</innerfile>
+    <innerfile refid="_fork_join_alternative_2_field_8java">Field.java</innerfile>
+    <innerfile refid="_fork_join_alternative_2_number_group_8java">NumberGroup.java</innerfile>
+    <innerfile refid="_fork_join_alternative_2_static_field_8java">StaticField.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/ForkJoinAlternative/"/>
+  </compounddef>
+</doxygen>

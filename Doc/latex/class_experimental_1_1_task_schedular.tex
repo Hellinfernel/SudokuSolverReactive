@@ -1,0 +1,94 @@
+\doxysection{Experimental.\+Task\+Schedular\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_experimental_1_1_task_schedular}{}\label{class_experimental_1_1_task_schedular}\index{Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}}
+
+
+Inheritance diagram for Experimental.\+Task\+Schedular\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{class_experimental_1_1_task_schedular__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Experimental.\+Task\+Schedular\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{class_experimental_1_1_task_schedular__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_experimental_1_1_task_schedular_a9d28f0948f0f7a40362d15c7e403e115}{Task\+Schedular}} (T \mbox{\hyperlink{class_experimental_1_1_task_schedular_a4d9298d5012aa1e5f4753fba0749ea95}{t}})
+\item 
+boolean \mbox{\hyperlink{class_experimental_1_1_task_schedular_af7753137f26ca617e21b894bc026e586}{offer}} (\mbox{\hyperlink{classnew_alternative_1_1_task}{Task}}$<$ T $>$ t\+Task)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_experimental_1_1_task_schedular_a4d9298d5012aa1e5f4753fba0749ea95}{t}}
+\item 
+Thread \mbox{\hyperlink{class_experimental_1_1_task_schedular_a067eebbed3d0b715a7a8a6b94fcbc1ef}{thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_experimental_1_1_task_schedular_a9d28f0948f0f7a40362d15c7e403e115}\label{class_experimental_1_1_task_schedular_a9d28f0948f0f7a40362d15c7e403e115} 
+\index{Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}!TaskSchedular@{TaskSchedular}}
+\index{TaskSchedular@{TaskSchedular}!Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TaskSchedular()}{TaskSchedular()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Experimental.\+Task\+Schedular}}$<$ T $>$.\mbox{\hyperlink{class_experimental_1_1_task_schedular}{Task\+Schedular}} (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_experimental_1_1_task_schedular_af7753137f26ca617e21b894bc026e586}\label{class_experimental_1_1_task_schedular_af7753137f26ca617e21b894bc026e586} 
+\index{Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}!offer@{offer}}
+\index{offer@{offer}!Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{offer()}{offer()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Experimental.\+Task\+Schedular}}$<$ T $>$.offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnew_alternative_1_1_task}{Task}}$<$ T $>$}]{t\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_experimental_1_1_task_schedular_a4d9298d5012aa1e5f4753fba0749ea95}\label{class_experimental_1_1_task_schedular_a4d9298d5012aa1e5f4753fba0749ea95} 
+\index{Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}!t@{t}}
+\index{t@{t}!Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Experimental.\+Task\+Schedular}}$<$ T $>$.t\hspace{0.3cm}{\ttfamily [package]}}
+
+\Hypertarget{class_experimental_1_1_task_schedular_a067eebbed3d0b715a7a8a6b94fcbc1ef}\label{class_experimental_1_1_task_schedular_a067eebbed3d0b715a7a8a6b94fcbc1ef} 
+\index{Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}!thread@{thread}}
+\index{thread@{thread}!Experimental.TaskSchedular$<$ T $>$@{Experimental.TaskSchedular$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily Thread \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Experimental.\+Task\+Schedular}}$<$ T $>$.thread\hspace{0.3cm}{\ttfamily [package]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ Thread()\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ @Override}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ run()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Task<T>\ task\ =\ \mbox{\hyperlink{class_experimental_1_1_task_schedular_a9d28f0948f0f7a40362d15c7e403e115}{TaskSchedular}}.this.poll();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (task\ ==\ \textcolor{keyword}{null})\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ wait();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (InterruptedException\ e)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ e.printStackTrace();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ task.accept(\mbox{\hyperlink{class_experimental_1_1_task_schedular_a4d9298d5012aa1e5f4753fba0749ea95}{t}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/itpraktikant/\+Downloads/\+Sudoku\+Solver\+Reactive-\/main/\+Sudoku\+Solver\+Reactive-\/main/src/main/java/\+Experimental/\mbox{\hyperlink{_task_schedular_8java}{Task\+Schedular.\+java}}\end{DoxyCompactItemize}

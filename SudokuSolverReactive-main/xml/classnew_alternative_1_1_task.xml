@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classnew_alternative_1_1_task" kind="class" language="Java" prot="public">
+    <compoundname>newAlternative::Task</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">java::util::function::Consumer&lt; T &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Comparable&lt; Task &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classnew_alternative_1_1_task_1abb0a537746731d3b32e72902344210bf" prot="package" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte newAlternative.Task&lt; T &gt;._priority</definition>
+        <argsstring></argsstring>
+        <name>_priority</name>
+        <qualifiedname>newAlternative.Task._priority</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/Task.java" line="6" column="10" bodyfile="src/main/java/newAlternative/Task.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnew_alternative_1_1_task_1a8379ce45aea039e2bb47886f21904742" prot="package" static="no" mutable="no">
+        <type>Consumer&lt; T &gt;</type>
+        <definition>Consumer&lt;T&gt; newAlternative.Task&lt; T &gt;._consumer</definition>
+        <argsstring></argsstring>
+        <name>_consumer</name>
+        <qualifiedname>newAlternative.Task._consumer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/Task.java" line="7" column="14" bodyfile="src/main/java/newAlternative/Task.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnew_alternative_1_1_task_1ad12761ba75fc837881598c04c9a7e673" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>newAlternative.Task&lt; T &gt;.Task</definition>
+        <argsstring>(Consumer&lt; T &gt; consumer, byte priority)</argsstring>
+        <name>Task</name>
+        <qualifiedname>newAlternative.Task.Task</qualifiedname>
+        <param>
+          <type>Consumer&lt; T &gt;</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/Task.java" line="9" column="12" bodyfile="src/main/java/newAlternative/Task.java" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_task_1a0051838d6b447cdd1ac95116147c41aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.Task&lt; T &gt;.accept</definition>
+        <argsstring>(T t)</argsstring>
+        <name>accept</name>
+        <qualifiedname>newAlternative.Task.accept</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/Task.java" line="15" column="17" bodyfile="src/main/java/newAlternative/Task.java" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1_task_1abdb01e09ef5b33f7bf7d68577fcd2b20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int newAlternative.Task&lt; T &gt;.compareTo</definition>
+        <argsstring>(Task otherTask)</argsstring>
+        <name>compareTo</name>
+        <qualifiedname>newAlternative.Task.compareTo</qualifiedname>
+        <param>
+          <type><ref refid="classnew_alternative_1_1_task" kindref="compound">Task</ref></type>
+          <declname>otherTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/Task.java" line="21" column="16" bodyfile="src/main/java/newAlternative/Task.java" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Comparable&lt; Task &gt;</label>
+      </node>
+      <node id="2">
+        <label>Consumer&lt; T &gt;</label>
+      </node>
+      <node id="1">
+        <label>newAlternative.Task&lt; T &gt;</label>
+        <link refid="classnew_alternative_1_1_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Comparable&lt; Task &gt;</label>
+      </node>
+      <node id="4">
+        <label>Consumer&lt; T &gt;</label>
+      </node>
+      <node id="2">
+        <label>Consumer&lt; T &gt;</label>
+      </node>
+      <node id="1">
+        <label>newAlternative.Task&lt; T &gt;</label>
+        <link refid="classnew_alternative_1_1_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_consumer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/newAlternative/Task.java" line="5" column="7" bodyfile="src/main/java/newAlternative/Task.java" bodystart="5" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classnew_alternative_1_1_task_1a8379ce45aea039e2bb47886f21904742" prot="package" virt="non-virtual"><scope>newAlternative::Task</scope><name>_consumer</name></member>
+      <member refid="classnew_alternative_1_1_task_1abb0a537746731d3b32e72902344210bf" prot="package" virt="non-virtual"><scope>newAlternative::Task</scope><name>_priority</name></member>
+      <member refid="classnew_alternative_1_1_task_1a0051838d6b447cdd1ac95116147c41aa" prot="public" virt="non-virtual"><scope>newAlternative::Task</scope><name>accept</name></member>
+      <member refid="classnew_alternative_1_1_task_1abdb01e09ef5b33f7bf7d68577fcd2b20" prot="public" virt="non-virtual"><scope>newAlternative::Task</scope><name>compareTo</name></member>
+      <member refid="classnew_alternative_1_1_task_1ad12761ba75fc837881598c04c9a7e673" prot="public" virt="non-virtual"><scope>newAlternative::Task</scope><name>Task</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

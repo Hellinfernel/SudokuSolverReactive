@@ -1,0 +1,8 @@
+@startuml
+class Core {
++Collection<Field> _sudokuMatrix
++List<NumberGroup> sudokuRows
++List<NumberGroup> sudokuColumns
++List<NumberGroup> sudokuBlocks
+}
+@enduml

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_stuff" kind="namespace" language="Java">
+    <compoundname>Stuff</compoundname>
+    <innerclass refid="class_stuff_1_1_constants" prot="public">Stuff::Constants</innerclass>
+    <innerclass refid="class_stuff_1_1_core" prot="public">Stuff::Core</innerclass>
+    <innerclass refid="class_stuff_1_1_core_not_coherent_exeption" prot="public">Stuff::CoreNotCoherentExeption</innerclass>
+    <innerclass refid="class_stuff_1_1_error_message" prot="public">Stuff::ErrorMessage</innerclass>
+    <innerclass refid="class_stuff_1_1_event_manager" prot="public">Stuff::EventManager</innerclass>
+    <innerclass refid="class_stuff_1_1_number_group" prot="public">Stuff::NumberGroup</innerclass>
+    <innerclass refid="class_stuff_1_1_speculative_solving" prot="public">Stuff::SpeculativeSolving</innerclass>
+    <innerclass refid="interface_stuff_1_1_speculative_solving_interface" prot="public">Stuff::SpeculativeSolvingInterface</innerclass>
+    <innerclass refid="class_stuff_1_1_speculative_solving_sequential" prot="public">Stuff::SpeculativeSolvingSequential</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/Stuff/Constants.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

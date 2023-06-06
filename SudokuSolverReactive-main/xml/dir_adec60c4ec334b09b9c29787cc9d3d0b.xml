@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_adec60c4ec334b09b9c29787cc9d3d0b" kind="dir">
+    <compoundname>src/main/java/Stuff</compoundname>
+    <innerfile refid="_constants_8java">Constants.java</innerfile>
+    <innerfile refid="_stuff_2_core_8java">Core.java</innerfile>
+    <innerfile refid="_core_not_coherent_exeption_8java">CoreNotCoherentExeption.java</innerfile>
+    <innerfile refid="_error_message_8java">ErrorMessage.java</innerfile>
+    <innerfile refid="_event_manager_8java">EventManager.java</innerfile>
+    <innerfile refid="_stuff_2_number_group_8java">NumberGroup.java</innerfile>
+    <innerfile refid="_speculative_solving_8java">SpeculativeSolving.java</innerfile>
+    <innerfile refid="_speculative_solving_interface_8java">SpeculativeSolvingInterface.java</innerfile>
+    <innerfile refid="_speculative_solving_sequential_8java">SpeculativeSolvingSequential.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/Stuff/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_sudoku_test" kind="class" language="Java" prot="public">
+    <compoundname>SudokuTest</compoundname>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_sudoku_test_1af08179ce9c612977e6bfd517aedff24d" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.numberFieldInitTest</definition>
+        <argsstring>()</argsstring>
+        <name>numberFieldInitTest</name>
+        <qualifiedname>SudokuTest.numberFieldInitTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="21" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="21" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1a9471227d5c18678676a02a3922661dde" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.exceptionTest</definition>
+        <argsstring>()</argsstring>
+        <name>exceptionTest</name>
+        <qualifiedname>SudokuTest.exceptionTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="40" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1ab09246e7afdc2ef36597e370e22e1cf0" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.numberGroupTest</definition>
+        <argsstring>()</argsstring>
+        <name>numberGroupTest</name>
+        <qualifiedname>SudokuTest.numberGroupTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="45" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="45" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1a314bb636a2aa24e416508438a5a11d39" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.sudokuTest</definition>
+        <argsstring>()</argsstring>
+        <name>sudokuTest</name>
+        <qualifiedname>SudokuTest.sudokuTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="55" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="55" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1a85e937dafb54515805102fc40a66daa9" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.analysisTest</definition>
+        <argsstring>()</argsstring>
+        <name>analysisTest</name>
+        <qualifiedname>SudokuTest.analysisTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="135" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="135" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1a558e40fd1b3775131bd5c0d96da6668c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.analyseSudokuTest</definition>
+        <argsstring>()</argsstring>
+        <name>analyseSudokuTest</name>
+        <qualifiedname>SudokuTest.analyseSudokuTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="170" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="170" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1ac377e7e63b46ecb519e3713fed2e454f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.createSudokuTest</definition>
+        <argsstring>()</argsstring>
+        <name>createSudokuTest</name>
+        <qualifiedname>SudokuTest.createSudokuTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="394" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="394" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1a0f813525b82fd0139da7d12e0d9b41b4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.CopyTest</definition>
+        <argsstring>()</argsstring>
+        <name>CopyTest</name>
+        <qualifiedname>SudokuTest.CopyTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="410" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="410" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1a2123b5cfdb5447e47cbf20e0c02992eb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.hardSudokuTest</definition>
+        <argsstring>()</argsstring>
+        <name>hardSudokuTest</name>
+        <qualifiedname>SudokuTest.hardSudokuTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="432" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="432" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sudoku_test_1af1b48be3d243f794de648f4a0dbbfddb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SudokuTest.hardSudokuDeepAnalysis</definition>
+        <argsstring>()</argsstring>
+        <name>hardSudokuDeepAnalysis</name>
+        <qualifiedname>SudokuTest.hardSudokuDeepAnalysis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/SudokuTest.java" line="467" column="10" bodyfile="src/test/java/SudokuTest.java" bodystart="467" bodyend="504"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/test/java/SudokuTest.java" line="18" column="7" bodyfile="src/test/java/SudokuTest.java" bodystart="18" bodyend="508"/>
+    <listofallmembers>
+      <member refid="class_sudoku_test_1a558e40fd1b3775131bd5c0d96da6668c" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>analyseSudokuTest</name></member>
+      <member refid="class_sudoku_test_1a85e937dafb54515805102fc40a66daa9" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>analysisTest</name></member>
+      <member refid="class_sudoku_test_1a0f813525b82fd0139da7d12e0d9b41b4" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>CopyTest</name></member>
+      <member refid="class_sudoku_test_1ac377e7e63b46ecb519e3713fed2e454f" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>createSudokuTest</name></member>
+      <member refid="class_sudoku_test_1a9471227d5c18678676a02a3922661dde" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>exceptionTest</name></member>
+      <member refid="class_sudoku_test_1af1b48be3d243f794de648f4a0dbbfddb" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>hardSudokuDeepAnalysis</name></member>
+      <member refid="class_sudoku_test_1a2123b5cfdb5447e47cbf20e0c02992eb" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>hardSudokuTest</name></member>
+      <member refid="class_sudoku_test_1af08179ce9c612977e6bfd517aedff24d" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>numberFieldInitTest</name></member>
+      <member refid="class_sudoku_test_1ab09246e7afdc2ef36597e370e22e1cf0" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>numberGroupTest</name></member>
+      <member refid="class_sudoku_test_1a314bb636a2aa24e416508438a5a11d39" prot="package" virt="non-virtual"><scope>SudokuTest</scope><name>sudokuTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

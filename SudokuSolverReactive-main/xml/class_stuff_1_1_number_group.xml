@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_stuff_1_1_number_group" kind="class" language="Java" prot="public">
+    <compoundname>Stuff::NumberGroup</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stuff_1_1_number_group_1ae77f480cef9304c8723f03c7d1886c96" prot="private" static="no" mutable="no">
+        <type>final Set&lt; <ref refid="classalternative_1_1_field" kindref="compound">Field</ref> &gt;</type>
+        <definition>final Set&lt;Field&gt; Stuff.NumberGroup._numberFields</definition>
+        <argsstring></argsstring>
+        <name>_numberFields</name>
+        <qualifiedname>Stuff.NumberGroup._numberFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="18" column="23" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stuff_1_1_number_group_1a2e4083e53817ad98e1cdf6778b541f4a" prot="private" static="no" mutable="no">
+        <type>final Set&lt; Integer &gt;</type>
+        <definition>final Set&lt;Integer&gt; Stuff.NumberGroup._leftNumbers</definition>
+        <argsstring></argsstring>
+        <name>_leftNumbers</name>
+        <qualifiedname>Stuff.NumberGroup._leftNumbers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="19" column="23" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a56e6e15c5f5ded64a8c2f5c79b7c6023" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stuff.NumberGroup.NumberGroup</definition>
+        <argsstring>(Field[] matrix)</argsstring>
+        <name>NumberGroup</name>
+        <qualifiedname>Stuff.NumberGroup.NumberGroup</qualifiedname>
+        <param>
+          <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref>[]</type>
+          <declname>matrix</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="22" column="12" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="22" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1aede083bc889e2f3440b109b4968ee033" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stuff.NumberGroup.NumberGroup</definition>
+        <argsstring>(Collection&lt; Field &gt; collection)</argsstring>
+        <name>NumberGroup</name>
+        <qualifiedname>Stuff.NumberGroup.NumberGroup</qualifiedname>
+        <param>
+          <type>Collection&lt; <ref refid="classalternative_1_1_field" kindref="compound">Field</ref> &gt;</type>
+          <declname>collection</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="39" column="12" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="39" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a3967bc7d829c5dd4fc80d09cee07edf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stuff.NumberGroup.NumberGroup</definition>
+        <argsstring>(int[] matrix)</argsstring>
+        <name>NumberGroup</name>
+        <qualifiedname>Stuff.NumberGroup.NumberGroup</qualifiedname>
+        <param>
+          <type>int[]</type>
+          <declname>matrix</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="57" column="12" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="57" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a42f6680ddcb2116af66239edf9b85d5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.NumberGroup.searchSetableNumber</definition>
+        <argsstring>()</argsstring>
+        <name>searchSetableNumber</name>
+        <qualifiedname>Stuff.NumberGroup.searchSetableNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Searches a number who can be set in this group </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="101" column="17" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="101" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a11842014b48aa5ab285f785d6d2f2e2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.NumberGroup.searchSetableNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>searchSetableNumber</name>
+        <qualifiedname>Stuff.NumberGroup.searchSetableNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>searches for a field where this number fits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="122" column="17" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="122" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a223fdae0a7ade75f2415f0a5cc4bedaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.NumberGroup.analyse</definition>
+        <argsstring>()</argsstring>
+        <name>analyse</name>
+        <qualifiedname>Stuff.NumberGroup.analyse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mainly a test method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="162" column="17" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="162" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a2f0da0323b2ca2fffca5e7fbd12480f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int[] Stuff.NumberGroup.getGroupAsArray</definition>
+        <argsstring>()</argsstring>
+        <name>getGroupAsArray</name>
+        <qualifiedname>Stuff.NumberGroup.getGroupAsArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="170" column="16" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1accf2b3b8c385c9d6012a1f3ad58718a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref>[]</type>
+        <definition>Field[] Stuff.NumberGroup.get_numberFields</definition>
+        <argsstring>()</argsstring>
+        <name>get_numberFields</name>
+        <qualifiedname>Stuff.NumberGroup.get_numberFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="175" column="18" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a421ca26326996ff80cb95ff26b96486c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.NumberGroup.testCoherence</definition>
+        <argsstring>()</argsstring>
+        <name>testCoherence</name>
+        <qualifiedname>Stuff.NumberGroup.testCoherence</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>, <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="179" column="17" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="179" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1ae4fd555a835d929c883b442bde352b62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.NumberGroup.testIfAllNumbersArePossible</definition>
+        <argsstring>()</argsstring>
+        <name>testIfAllNumbersArePossible</name>
+        <qualifiedname>Stuff.NumberGroup.testIfAllNumbersArePossible</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if all numbers are possible </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="195" column="17" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="195" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a9336f494a61db1ae7560b3e94da4e2fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Stuff.NumberGroup.isThisNumberPossible</definition>
+        <argsstring>(int number)</argsstring>
+        <name>isThisNumberPossible</name>
+        <qualifiedname>Stuff.NumberGroup.isThisNumberPossible</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number who is tested. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a true if there is a field where this number can placed. false should only ocure if the sudoku has mistakes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="215" column="20" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="215" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1aa5216b6ded5ba82414f6afc5bf86f0cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.NumberGroup.searchForDoubleSetNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>searchForDoubleSetNumbers</name>
+        <qualifiedname>Stuff.NumberGroup.searchForDoubleSetNumbers</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>DoubleNumberExeption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is a number 2 times in the same group </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="234" column="17" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="234" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a93565f233cb486d3521273e107f343be" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref></type>
+        <definition>Field Stuff.NumberGroup.generateField</definition>
+        <argsstring>(int number, Coordinate coordinate)</argsstring>
+        <name>generateField</name>
+        <qualifiedname>Stuff.NumberGroup.generateField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type><ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+          <declname>coordinate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>only used for test poporses <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="82" column="19" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_number_group_1a07b55f429dcf9054bd62501bfac737b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.NumberGroup.excludeNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>excludeNumber</name>
+        <qualifiedname>Stuff.NumberGroup.excludeNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>analyses the group and uses excludeNumber() from NumberFields in _numberFields if there are fields with a guarantied number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/NumberGroup.java" line="143" column="18" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="143" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/Stuff/NumberGroup.java" line="17" column="7" bodyfile="src/main/java/Stuff/NumberGroup.java" bodystart="17" bodyend="249"/>
+    <listofallmembers>
+      <member refid="class_stuff_1_1_number_group_1a2e4083e53817ad98e1cdf6778b541f4a" prot="private" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>_leftNumbers</name></member>
+      <member refid="class_stuff_1_1_number_group_1ae77f480cef9304c8723f03c7d1886c96" prot="private" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>_numberFields</name></member>
+      <member refid="class_stuff_1_1_number_group_1a223fdae0a7ade75f2415f0a5cc4bedaa" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>analyse</name></member>
+      <member refid="class_stuff_1_1_number_group_1a07b55f429dcf9054bd62501bfac737b5" prot="private" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>excludeNumber</name></member>
+      <member refid="class_stuff_1_1_number_group_1a93565f233cb486d3521273e107f343be" prot="private" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>generateField</name></member>
+      <member refid="class_stuff_1_1_number_group_1accf2b3b8c385c9d6012a1f3ad58718a1" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>get_numberFields</name></member>
+      <member refid="class_stuff_1_1_number_group_1a2f0da0323b2ca2fffca5e7fbd12480f5" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>getGroupAsArray</name></member>
+      <member refid="class_stuff_1_1_number_group_1a9336f494a61db1ae7560b3e94da4e2fc" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>isThisNumberPossible</name></member>
+      <member refid="class_stuff_1_1_number_group_1a56e6e15c5f5ded64a8c2f5c79b7c6023" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>NumberGroup</name></member>
+      <member refid="class_stuff_1_1_number_group_1aede083bc889e2f3440b109b4968ee033" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>NumberGroup</name></member>
+      <member refid="class_stuff_1_1_number_group_1a3967bc7d829c5dd4fc80d09cee07edf8" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>NumberGroup</name></member>
+      <member refid="class_stuff_1_1_number_group_1aa5216b6ded5ba82414f6afc5bf86f0cb" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>searchForDoubleSetNumbers</name></member>
+      <member refid="class_stuff_1_1_number_group_1a42f6680ddcb2116af66239edf9b85d5a" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>searchSetableNumber</name></member>
+      <member refid="class_stuff_1_1_number_group_1a11842014b48aa5ab285f785d6d2f2e2d" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>searchSetableNumber</name></member>
+      <member refid="class_stuff_1_1_number_group_1a421ca26326996ff80cb95ff26b96486c" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>testCoherence</name></member>
+      <member refid="class_stuff_1_1_number_group_1ae4fd555a835d929c883b442bde352b62" prot="public" virt="non-virtual"><scope>Stuff::NumberGroup</scope><name>testIfAllNumbersArePossible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacenew_alternative_1_1field" kind="namespace" language="Java">
+    <compoundname>newAlternative::field</compoundname>
+    <innerclass refid="classnew_alternative_1_1field_1_1_empty_field" prot="public">newAlternative::field::EmptyField</innerclass>
+    <innerclass refid="classnew_alternative_1_1field_1_1_field" prot="public">newAlternative::field::Field</innerclass>
+    <innerclass refid="enumnew_alternative_1_1field_1_1_field_task" prot="public">newAlternative::field::FieldTask</innerclass>
+    <innerclass refid="classnew_alternative_1_1field_1_1_static_field" prot="public">newAlternative::field::StaticField</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/newAlternative/field/EmptyField.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

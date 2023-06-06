@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_stuff_1_1_error_message" kind="class" language="Java" prot="public">
+    <compoundname>Stuff::ErrorMessage</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stuff_1_1_error_message_1a4344111bd788f792c8eed1f50760c29f" prot="private" static="no" mutable="no">
+        <type>final String</type>
+        <definition>final String Stuff.ErrorMessage._message</definition>
+        <argsstring></argsstring>
+        <name>_message</name>
+        <qualifiedname>Stuff.ErrorMessage._message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/ErrorMessage.java" line="4" column="26" bodyfile="src/main/java/Stuff/ErrorMessage.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stuff_1_1_error_message_1afe299ee96b52541f6ff1146306b190d9" prot="private" static="no" mutable="no">
+        <type>final boolean</type>
+        <definition>final boolean Stuff.ErrorMessage._success</definition>
+        <argsstring></argsstring>
+        <name>_success</name>
+        <qualifiedname>Stuff.ErrorMessage._success</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/ErrorMessage.java" line="5" column="27" bodyfile="src/main/java/Stuff/ErrorMessage.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stuff_1_1_error_message_1af6aa290285adcf3ddf41f54b86accceb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stuff.ErrorMessage.ErrorMessage</definition>
+        <argsstring>(String message, boolean success)</argsstring>
+        <name>ErrorMessage</name>
+        <qualifiedname>Stuff.ErrorMessage.ErrorMessage</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/ErrorMessage.java" line="7" column="12" bodyfile="src/main/java/Stuff/ErrorMessage.java" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_error_message_1a5f00ccd47067dceeb781cbb24423a057" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String Stuff.ErrorMessage.get_message</definition>
+        <argsstring>()</argsstring>
+        <name>get_message</name>
+        <qualifiedname>Stuff.ErrorMessage.get_message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/ErrorMessage.java" line="13" column="19" bodyfile="src/main/java/Stuff/ErrorMessage.java" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_error_message_1a15646955e9dea0400eb0b823a7c9af29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Stuff.ErrorMessage.is_success</definition>
+        <argsstring>()</argsstring>
+        <name>is_success</name>
+        <qualifiedname>Stuff.ErrorMessage.is_success</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/ErrorMessage.java" line="18" column="20" bodyfile="src/main/java/Stuff/ErrorMessage.java" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/Stuff/ErrorMessage.java" line="3" column="7" bodyfile="src/main/java/Stuff/ErrorMessage.java" bodystart="3" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_stuff_1_1_error_message_1a4344111bd788f792c8eed1f50760c29f" prot="private" virt="non-virtual"><scope>Stuff::ErrorMessage</scope><name>_message</name></member>
+      <member refid="class_stuff_1_1_error_message_1afe299ee96b52541f6ff1146306b190d9" prot="private" virt="non-virtual"><scope>Stuff::ErrorMessage</scope><name>_success</name></member>
+      <member refid="class_stuff_1_1_error_message_1af6aa290285adcf3ddf41f54b86accceb" prot="public" virt="non-virtual"><scope>Stuff::ErrorMessage</scope><name>ErrorMessage</name></member>
+      <member refid="class_stuff_1_1_error_message_1a5f00ccd47067dceeb781cbb24423a057" prot="public" virt="non-virtual"><scope>Stuff::ErrorMessage</scope><name>get_message</name></member>
+      <member refid="class_stuff_1_1_error_message_1a15646955e9dea0400eb0b823a7c9af29" prot="public" virt="non-virtual"><scope>Stuff::ErrorMessage</scope><name>is_success</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

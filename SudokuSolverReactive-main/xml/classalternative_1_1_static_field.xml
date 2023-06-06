@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classalternative_1_1_static_field" kind="class" language="Java" prot="public">
+    <compoundname>alternative::StaticField</compoundname>
+    <basecompoundref refid="classalternative_1_1_field" prot="public" virt="non-virtual">alternative.Field</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classalternative_1_1_static_field_1a706ebb48470ebc06ebd80067850fc1f2" prot="private" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int alternative.StaticField._number</definition>
+        <argsstring></argsstring>
+        <name>_number</name>
+        <qualifiedname>alternative.StaticField._number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="9" column="23" bodyfile="src/main/java/alternative/StaticField.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classalternative_1_1_static_field_1a367beca80511dd3fa515f320e8635fa0" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+        <definition>final Coordinate alternative.StaticField._coordinate</definition>
+        <argsstring></argsstring>
+        <name>_coordinate</name>
+        <qualifiedname>alternative.StaticField._coordinate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="10" column="30" bodyfile="src/main/java/alternative/StaticField.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classalternative_1_1_static_field_1ae81a22e971f17adbd851ee4a85fce938" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean alternative.StaticField.isFixed</definition>
+        <argsstring>()</argsstring>
+        <name>isFixed</name>
+        <qualifiedname>alternative.StaticField.isFixed</qualifiedname>
+        <reimplements refid="classalternative_1_1_field_1a2ce0d9a1369a9685f4789c1e2257fe2b">isFixed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="13" column="20" bodyfile="src/main/java/alternative/StaticField.java" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_static_field_1a7c5e537e74a2046243439ad2039e66f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void alternative.StaticField.exclude</definition>
+        <argsstring>(int number)</argsstring>
+        <name>exclude</name>
+        <qualifiedname>alternative.StaticField.exclude</qualifiedname>
+        <reimplements refid="classalternative_1_1_field_1af4d8e238d7c3511e467b3c3e6d382e0c">exclude</reimplements>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="18" column="17" bodyfile="src/main/java/alternative/StaticField.java" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_static_field_1ab3626bcd5df199945272d7f2c7d79b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; Integer &gt;</type>
+        <definition>Set&lt; Integer &gt; alternative.StaticField.possibleNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>possibleNumbers</name>
+        <qualifiedname>alternative.StaticField.possibleNumbers</qualifiedname>
+        <reimplements refid="classalternative_1_1_field_1ab40e6c931aa1d79b89a5de3f0b7dbc61">possibleNumbers</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="23" column="16" bodyfile="src/main/java/alternative/StaticField.java" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_static_field_1a2b84342d5a8c9f5788d99754d2f253b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int alternative.StaticField.toIntOrZero</definition>
+        <argsstring>()</argsstring>
+        <name>toIntOrZero</name>
+        <qualifiedname>alternative.StaticField.toIntOrZero</qualifiedname>
+        <reimplements refid="classalternative_1_1_field_1aaa1993acc91f9d1109165229e4e8f104">toIntOrZero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="30" column="16" bodyfile="src/main/java/alternative/StaticField.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_static_field_1aa49b7c035e0a1007fca81acdbcdf6231" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void alternative.StaticField.setNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumber</name>
+        <qualifiedname>alternative.StaticField.setNumber</qualifiedname>
+        <reimplements refid="classalternative_1_1_field_1a261ca28820cea5fef3b494c65ee05300">setNumber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="35" column="17" bodyfile="src/main/java/alternative/StaticField.java" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_static_field_1a4be22f49efa5f38b9304242f84e59cbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+        <definition>Coordinate alternative.StaticField.getCoordinate</definition>
+        <argsstring>()</argsstring>
+        <name>getCoordinate</name>
+        <qualifiedname>alternative.StaticField.getCoordinate</qualifiedname>
+        <reimplements refid="classalternative_1_1_field_1a6dc289d8a14c9b112c89a343099d526e">getCoordinate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="40" column="23" bodyfile="src/main/java/alternative/StaticField.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_static_field_1a5ac626e53cc9ee5b36b377b81a36e189" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void alternative.StaticField.setRandomAvalibleNumber</definition>
+        <argsstring>()</argsstring>
+        <name>setRandomAvalibleNumber</name>
+        <qualifiedname>alternative.StaticField.setRandomAvalibleNumber</qualifiedname>
+        <reimplements refid="classalternative_1_1_field_1a214ef9e083b6089b8dda3b988ab3a913">setRandomAvalibleNumber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="45" column="17" bodyfile="src/main/java/alternative/StaticField.java" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_static_field_1a3467318f6b6b7c4e6528d59f56cd6eae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>alternative.StaticField.StaticField</definition>
+        <argsstring>(int number, Coordinate coordinate)</argsstring>
+        <name>StaticField</name>
+        <qualifiedname>alternative.StaticField.StaticField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type><ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+          <declname>coordinate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/StaticField.java" line="49" column="12" bodyfile="src/main/java/alternative/StaticField.java" bodystart="49" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>alternative.StaticField</label>
+        <link refid="classalternative_1_1_static_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alternative.Field</label>
+        <link refid="classalternative_1_1_field"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Stuff.EventManager&lt; Integer &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+      </node>
+      <node id="1">
+        <label>alternative.StaticField</label>
+        <link refid="classalternative_1_1_static_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alternative.Field</label>
+        <link refid="classalternative_1_1_field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_changeInPossibleNumbersEvent</edgelabel>
+          <edgelabel>_trueNumberFoundEvent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/alternative/StaticField.java" line="8" column="7" bodyfile="src/main/java/alternative/StaticField.java" bodystart="8" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classalternative_1_1_field_1a8cd7923bd9044ff2ccd564af26338d12" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>_changeInPossibleNumbersEvent</name></member>
+      <member refid="classalternative_1_1_static_field_1a367beca80511dd3fa515f320e8635fa0" prot="private" virt="non-virtual"><scope>alternative::StaticField</scope><name>_coordinate</name></member>
+      <member refid="classalternative_1_1_static_field_1a706ebb48470ebc06ebd80067850fc1f2" prot="private" virt="non-virtual"><scope>alternative::StaticField</scope><name>_number</name></member>
+      <member refid="classalternative_1_1_field_1acf5585ca4f82b2b21127d0e006fca547" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>_trueNumberFoundEvent</name></member>
+      <member refid="classalternative_1_1_field_1a98d9aacc846f615a044718ac04679a6a" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>copy</name></member>
+      <member refid="classalternative_1_1_static_field_1a7c5e537e74a2046243439ad2039e66f0" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>exclude</name></member>
+      <member refid="classalternative_1_1_static_field_1a4be22f49efa5f38b9304242f84e59cbe" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>getCoordinate</name></member>
+      <member refid="classalternative_1_1_static_field_1ae81a22e971f17adbd851ee4a85fce938" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>isFixed</name></member>
+      <member refid="classalternative_1_1_static_field_1ab3626bcd5df199945272d7f2c7d79b30" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>possibleNumbers</name></member>
+      <member refid="classalternative_1_1_static_field_1aa49b7c035e0a1007fca81acdbcdf6231" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>setNumber</name></member>
+      <member refid="classalternative_1_1_static_field_1a5ac626e53cc9ee5b36b377b81a36e189" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>setRandomAvalibleNumber</name></member>
+      <member refid="classalternative_1_1_static_field_1a3467318f6b6b7c4e6528d59f56cd6eae" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>StaticField</name></member>
+      <member refid="classalternative_1_1_static_field_1a2b84342d5a8c9f5788d99754d2f253b8" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>toIntOrZero</name></member>
+      <member refid="classalternative_1_1_field_1ab9ab8216e5a3abd31180a16bc9107bf8" prot="public" virt="non-virtual"><scope>alternative::StaticField</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
