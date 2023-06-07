@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_speculative_solving_8java" kind="file" language="Java">
+    <compoundname>SpeculativeSolving.java</compoundname>
+    <innerclass refid="class_stuff_1_1_speculative_solving" prot="public">Stuff::SpeculativeSolving</innerclass>
+    <innernamespace refid="namespace_stuff">Stuff</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">Stuff;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespace_exeptions" kindref="compound">Exeptions</ref>.<ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespace_exeptions" kindref="compound">Exeptions</ref>.<ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacealternative" kindref="compound">alternative</ref>.<ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacealternative" kindref="compound">alternative</ref>.<ref refid="classalternative_1_1_field" kindref="compound">Field</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Comparator;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.concurrent.CompletableFuture;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_stuff_1_1_speculative_solving" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stuff_1_1_speculative_solving" kindref="compound">SpeculativeSolving</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interface_stuff_1_1_speculative_solving_interface" kindref="compound">SpeculativeSolvingInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="class_stuff_1_1_speculative_solving_1ad86b16baf3a1c629b0d7f8cd12d03cf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref><sp/><ref refid="class_stuff_1_1_speculative_solving_1ad86b16baf3a1c629b0d7f8cd12d03cf6" kindref="member">completeSolving</ref>(<ref refid="class_stuff_1_1_core" kindref="compound">Core</ref><sp/>core)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>core.<ref refid="class_stuff_1_1_core_1a476917194b076af223d9cdc99a7cb7ed" kindref="member">kickStartEventTrigger</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classalternative_1_1_field" kindref="compound">Field</ref><sp/>triedField<sp/>=<sp/><ref refid="interface_stuff_1_1_speculative_solving_interface" kindref="compound">SpeculativeSolvingInterface</ref>.<ref refid="interface_stuff_1_1_speculative_solving_interface_1a74df78df3de7eed6d865c6678c6ee97e" kindref="member">searchCanidateForSpeculativeTry</ref>(core);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;CompletableFuture&lt;Core&gt;&gt;<sp/>completableFutures<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;&gt;();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>triedField.<ref refid="classalternative_1_1_field_1ab40e6c931aa1d79b89a5de3f0b7dbc61" kindref="member">possibleNumbers</ref>().forEach(integer<sp/>-&gt;<sp/>completableFutures.add(speculativeSolvingTry(core,<sp/>triedField.<ref refid="classalternative_1_1_field_1a6dc289d8a14c9b112c89a343099d526e" kindref="member">getCoordinate</ref>(),<sp/>integer)));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CompletableFuture&lt;Core&gt;<sp/>finishedCore<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>CompletableFuture&lt;&gt;();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(CompletableFuture&lt;Core&gt;<sp/>coreCompletableFuture<sp/>:<sp/>completableFutures)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finishedCore<sp/>=<sp/>finishedCore.applyToEitherAsync(coreCompletableFuture,<sp/>thatCore<sp/>-&gt;<sp/>thatCore);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>finishedCore.join();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>CompletableFuture&lt;Core&gt;<sp/>speculativeSolvingTry(<ref refid="class_stuff_1_1_core" kindref="compound">Core</ref><sp/>core,<ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref><sp/>coordinate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>speculatedNumber){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref><sp/>saveCore<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref>(core);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classalternative_1_1_field" kindref="compound">Field</ref><sp/>targetField<sp/>=<sp/>saveCore.<ref refid="class_stuff_1_1_core_1ac18dcbfdd0272d18e2e4e23790ea35c4" kindref="member">getFieldByCoordinate</ref>(coordinate);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CompletableFuture&lt;Core&gt;<sp/>completableFuture<sp/>=<sp/>CompletableFuture.supplyAsync(()<sp/>-&gt;<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetField.<ref refid="classalternative_1_1_field_1a261ca28820cea5fef3b494c65ee05300" kindref="member">setNumber</ref>(speculatedNumber);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>saveCore.<ref refid="class_stuff_1_1_core_1a46a4371010073f3b2697fff93e411e87" kindref="member">testCoherence</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!saveCore.<ref refid="class_stuff_1_1_core_1a1a3dc6ec35fe2f4234dfe0a3bc4e7523" kindref="member">isSolvedCompleatly</ref>()){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>completeSolving(saveCore);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(DoubleNumberExeption<sp/>|<sp/>NotAllNumbersArePossibleExeption<sp/>exeption)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exeption.printStackTrace();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>saveCore;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}).exceptionally(throwable<sp/>-&gt;<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Core());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>completableFuture;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>core;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/Stuff/SpeculativeSolving.java"/>
+  </compounddef>
+</doxygen>

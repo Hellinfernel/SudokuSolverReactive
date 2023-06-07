@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_eee9e8091d7932847591790e111268ce" kind="dir">
+    <compoundname>src/main/java/alternative</compoundname>
+    <innerfile refid="_coordinate_8java">Coordinate.java</innerfile>
+    <innerfile refid="alternative_2_empty_field_8java">EmptyField.java</innerfile>
+    <innerfile refid="alternative_2_field_8java">Field.java</innerfile>
+    <innerfile refid="alternative_2_static_field_8java">StaticField.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/alternative/"/>
+  </compounddef>
+</doxygen>

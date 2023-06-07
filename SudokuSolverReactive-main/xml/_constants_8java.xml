@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_constants_8java" kind="file" language="Java">
+    <compoundname>Constants.java</compoundname>
+    <innerclass refid="class_stuff_1_1_constants" prot="public">Stuff::Constants</innerclass>
+    <innernamespace refid="namespace_stuff">Stuff</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_stuff" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">Stuff;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.lang.reflect.Array;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.*;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.concurrent.ExecutorService;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.concurrent.ForkJoinPool;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_stuff_1_1_constants" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stuff_1_1_constants" kindref="compound">Constants</ref><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="class_stuff_1_1_constants_1ada224cf180808a404f901b45d699b370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>Set&lt;Integer&gt;<sp/><ref refid="class_stuff_1_1_constants_1ada224cf180808a404f901b45d699b370" kindref="member">ALL_NUMBERS</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>LinkedHashSet&lt;&gt;(Collections.unmodifiableCollection(Arrays.asList(1,2,3,4,5,6,7,8,9)));</highlight></codeline>
+<codeline lineno="10" refid="class_stuff_1_1_constants_1a8c30a69546b7439aa977678a7d4153ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>ExecutorService<sp/><ref refid="class_stuff_1_1_constants_1a8c30a69546b7439aa977678a7d4153ad" kindref="member">forkJoinPool</ref><sp/>=<sp/>ForkJoinPool.commonPool();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/Stuff/Constants.java"/>
+  </compounddef>
+</doxygen>

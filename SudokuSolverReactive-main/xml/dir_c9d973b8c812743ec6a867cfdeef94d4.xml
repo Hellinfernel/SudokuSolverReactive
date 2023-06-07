@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_c9d973b8c812743ec6a867cfdeef94d4" kind="dir">
+    <compoundname>src/main/java/Exeptions</compoundname>
+    <innerfile refid="_double_number_exeption_8java">DoubleNumberExeption.java</innerfile>
+    <innerfile refid="_not_all_numbers_are_possible_exeption_8java">NotAllNumbersArePossibleExeption.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/Exeptions/"/>
+  </compounddef>
+</doxygen>

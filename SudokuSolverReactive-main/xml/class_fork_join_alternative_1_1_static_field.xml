@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_fork_join_alternative_1_1_static_field" kind="class" language="Java" prot="public">
+    <compoundname>ForkJoinAlternative::StaticField</compoundname>
+    <basecompoundref refid="class_fork_join_alternative_1_1_field" prot="public" virt="non-virtual">ForkJoinAlternative.Field</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_static_field_1aceaf0ac774c131d1a10267cc6a4c3847" prot="private" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int ForkJoinAlternative.StaticField._number</definition>
+        <argsstring></argsstring>
+        <name>_number</name>
+        <qualifiedname>ForkJoinAlternative.StaticField._number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="10" column="23" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_static_field_1a4ecfda7f9ebc7c0b3cdd1f60c2091746" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ForkJoinAlternative.StaticField.isFixed</definition>
+        <argsstring>()</argsstring>
+        <name>isFixed</name>
+        <qualifiedname>ForkJoinAlternative.StaticField.isFixed</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1a4a60f8dfa4447735488fa974b3dc35d3">isFixed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="13" column="20" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_static_field_1a92926bf0e7203039fadacf9e1536dc8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.StaticField.exclude</definition>
+        <argsstring>(int number)</argsstring>
+        <name>exclude</name>
+        <qualifiedname>ForkJoinAlternative.StaticField.exclude</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1a83335f69c29ff39d12c583feb4dd3ed4">exclude</reimplements>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="18" column="17" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_static_field_1a76b4a2a0fdbf99204b966c1c641c9a49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; Integer &gt;</type>
+        <definition>Set&lt; Integer &gt; ForkJoinAlternative.StaticField.possibleNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>possibleNumbers</name>
+        <qualifiedname>ForkJoinAlternative.StaticField.possibleNumbers</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1af53f66e598771da71b4549724cc6ed2f">possibleNumbers</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="23" column="16" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_static_field_1a3bcf5a8c345d1d1779ae999c2664f9c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ForkJoinAlternative.StaticField.toIntOrZero</definition>
+        <argsstring>()</argsstring>
+        <name>toIntOrZero</name>
+        <qualifiedname>ForkJoinAlternative.StaticField.toIntOrZero</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1a606ef381b364d4e66b8b0458fc2b6d6d">toIntOrZero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="30" column="16" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_static_field_1aa82686a5e078679aea6cd183fdcb694c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.StaticField.setNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumber</name>
+        <qualifiedname>ForkJoinAlternative.StaticField.setNumber</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1ace6d25a5c3b950980a48edc19a173ea5">setNumber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="35" column="17" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_static_field_1a4e664455ced7fef69ca606b192b364a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.StaticField.setRandomAvalibleNumber</definition>
+        <argsstring>()</argsstring>
+        <name>setRandomAvalibleNumber</name>
+        <qualifiedname>ForkJoinAlternative.StaticField.setRandomAvalibleNumber</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1ac5aed6cb161ecd1aa9ec6d0fd0a7fbc0">setRandomAvalibleNumber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="40" column="17" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_static_field_1a79659a88d72b8b600c1d1e05e56a43df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.StaticField.StaticField</definition>
+        <argsstring>(int number)</argsstring>
+        <name>StaticField</name>
+        <qualifiedname>ForkJoinAlternative.StaticField.StaticField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="44" column="12" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="44" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ForkJoinAlternative.StaticField</label>
+        <link refid="class_fork_join_alternative_1_1_static_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ForkJoinAlternative.Field</label>
+        <link refid="class_fork_join_alternative_1_1_field"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Stuff.EventManager&lt; Integer &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+      </node>
+      <node id="1">
+        <label>ForkJoinAlternative.StaticField</label>
+        <link refid="class_fork_join_alternative_1_1_static_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ForkJoinAlternative.Field</label>
+        <link refid="class_fork_join_alternative_1_1_field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_changeInPossibleNumbersEvent</edgelabel>
+          <edgelabel>_trueNumberFoundEvent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/ForkJoinAlternative/StaticField.java" line="9" column="7" bodyfile="src/main/java/ForkJoinAlternative/StaticField.java" bodystart="9" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_fork_join_alternative_1_1_field_1a7c6c85d03cacf51f9efd678667d7b94c" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>_changeInPossibleNumbersEvent</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1aceaf0ac774c131d1a10267cc6a4c3847" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>_number</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1afddbf154985608df57656b3e98011fd2" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>_trueNumberFoundEvent</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1a1108f49a9f742f97edb46b82346c3cc5" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>copy</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1a92926bf0e7203039fadacf9e1536dc8a" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>exclude</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1a4ecfda7f9ebc7c0b3cdd1f60c2091746" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>isFixed</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1a76b4a2a0fdbf99204b966c1c641c9a49" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>possibleNumbers</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1aa82686a5e078679aea6cd183fdcb694c" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>setNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1a4e664455ced7fef69ca606b192b364a6" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>setRandomAvalibleNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1a79659a88d72b8b600c1d1e05e56a43df" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>StaticField</name></member>
+      <member refid="class_fork_join_alternative_1_1_static_field_1a3bcf5a8c345d1d1779ae999c2664f9c4" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>toIntOrZero</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1aceff80f172b8872d377c2774d914806f" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::StaticField</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

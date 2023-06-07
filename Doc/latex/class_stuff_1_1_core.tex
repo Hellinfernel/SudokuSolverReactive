@@ -1,0 +1,244 @@
+\doxysection{Stuff.\+Core Class Reference}
+\hypertarget{class_stuff_1_1_core}{}\label{class_stuff_1_1_core}\index{Stuff.Core@{Stuff.Core}}
+
+
+Collaboration diagram for Stuff.\+Core\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_stuff_1_1_core__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stuff_1_1_core_ad93991b2a2cdcebbb3eb0be5025c88c9}{Core}} ()
+\item 
+\mbox{\hyperlink{class_stuff_1_1_core_ad6fe449e188a1ac5cc02faaa829ab6bd}{Core}} (\mbox{\hyperlink{class_stuff_1_1_core}{Core}} core)
+\item 
+\mbox{\hyperlink{class_stuff_1_1_core_a519285b929b459447f0130b3fb1b24b5}{Core}} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} input\+Matrix)
+\item 
+Collection$<$ \mbox{\hyperlink{classalternative_1_1_field}{Field}} $>$ \mbox{\hyperlink{class_stuff_1_1_core_afde879c31994e7c5fcbce0d4f3f02adb}{get\+\_\+sudoku\+Matrix}} ()
+\item 
+\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_stuff_1_1_core_abc73cd6eb6a190d194b074b922db5ff0}{get\+Row}} (int number)
+\item 
+\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_stuff_1_1_core_a736b97b03e27596cd3329d1f61c5b51b}{get\+Column}} (int number)
+\item 
+\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_stuff_1_1_core_a6824007f2d83f696e4ab5ea2beee91a2}{get\+Block}} (int number)
+\item 
+void \mbox{\hyperlink{class_stuff_1_1_core_a476917194b076af223d9cdc99a7cb7ed}{kick\+Start\+Event\+Trigger}} ()
+\item 
+void \mbox{\hyperlink{class_stuff_1_1_core_a46a4371010073f3b2697fff93e411e87}{test\+Coherence}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}} 
+\item 
+boolean \mbox{\hyperlink{class_stuff_1_1_core_a52f452b05bd6b4531b56f4329ed72f9e}{does\+Contain\+Only\+Zero}} ()
+\item 
+boolean \mbox{\hyperlink{class_stuff_1_1_core_a1a3dc6ec35fe2f4234dfe0a3bc4e7523}{is\+Solved\+Compleatly}} ()
+\item 
+\mbox{\hyperlink{classalternative_1_1_field}{Field}} \mbox{\hyperlink{class_stuff_1_1_core_ac18dcbfdd0272d18e2e4e23790ea35c4}{get\+Field\+By\+Coordinate}} (int x, int y)
+\item 
+\mbox{\hyperlink{classalternative_1_1_field}{Field}} \mbox{\hyperlink{class_stuff_1_1_core_a331ff6c2071c20be4e32a4fd40aea426}{get\+Field\+By\+Coordinate}} (\mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}} coordinate)
+\item 
+String \mbox{\hyperlink{class_stuff_1_1_core_a744d57ad23efa65765a37857fd44aa82}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_stuff_1_1_core}{Core}} \mbox{\hyperlink{class_stuff_1_1_core_a17cfe7db1e3854f67dfa7776561eded6}{random\+Create}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_stuff_1_1_core_a81d9b312155816472d8cd732a1130841}{generate\+Groups}} ()
+\item 
+\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_stuff_1_1_core_a22f752a2232aba23d777fa764d512914}{generate\+Row}} (int row\+Number)
+\item 
+\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_stuff_1_1_core_a13f031be0ef81ce03100e56a2ac1177e}{generate\+Column}} (int column\+Number)
+\item 
+\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_stuff_1_1_core_a4578be9fb28135ae69de3dad050327e9}{generate\+Block}} (int height, int lenght)  throws Array\+Index\+Out\+Of\+Bounds\+Exception
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_stuff_1_1_core}{Core}} \mbox{\hyperlink{class_stuff_1_1_core_a5c31a8e46000eca54deec58a61a6ef16}{set\+Number\+Of\+Row\+Random}} (\mbox{\hyperlink{class_stuff_1_1_core}{Core}} \+\_\+core, int set\+Numbers, \mbox{\hyperlink{classalternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} array)  throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}} 
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Collection$<$ \mbox{\hyperlink{classalternative_1_1_field}{Field}} $>$ \mbox{\hyperlink{class_stuff_1_1_core_ae9b54c4bf796e69d3285a2d617ff082d}{\+\_\+sudoku\+Matrix}} = new Hash\+Set$<$$>$()
+\item 
+final List$<$ \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} $>$ \mbox{\hyperlink{class_stuff_1_1_core_afdb9f1eeb9be800e854af443c90c33ca}{sudoku\+Rows}} = new Linked\+List$<$$>$()
+\item 
+final List$<$ \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} $>$ \mbox{\hyperlink{class_stuff_1_1_core_afa65bdd7c5519b18689447a017d9b9e4}{sudoku\+Columns}} = new Linked\+List$<$$>$()
+\item 
+final List$<$ \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} $>$ \mbox{\hyperlink{class_stuff_1_1_core_a463185f748b1f1aaec9a502cf9ab9b24}{sudoku\+Blocks}} = new Linked\+List$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_stuff_1_1_core_ad93991b2a2cdcebbb3eb0be5025c88c9}\label{class_stuff_1_1_core_ad93991b2a2cdcebbb3eb0be5025c88c9} 
+\index{Stuff.Core@{Stuff.Core}!Core@{Core}}
+\index{Core@{Core}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Stuff.\+Core.\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is the Standard Constructor of this class. It allows you to generate a \Hypertarget{class_stuff_1_1_core_ad6fe449e188a1ac5cc02faaa829ab6bd}\label{class_stuff_1_1_core_ad6fe449e188a1ac5cc02faaa829ab6bd} 
+\index{Stuff.Core@{Stuff.Core}!Core@{Core}}
+\index{Core@{Core}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Stuff.\+Core.\+Core (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stuff_1_1_core}{Core}}}]{core }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_a519285b929b459447f0130b3fb1b24b5}\label{class_stuff_1_1_core_a519285b929b459447f0130b3fb1b24b5} 
+\index{Stuff.Core@{Stuff.Core}!Core@{Core}}
+\index{Core@{Core}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Stuff.\+Core.\+Core (\begin{DoxyParamCaption}\item[{int}]{input\+Matrix\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_stuff_1_1_core_a52f452b05bd6b4531b56f4329ed72f9e}\label{class_stuff_1_1_core_a52f452b05bd6b4531b56f4329ed72f9e} 
+\index{Stuff.Core@{Stuff.Core}!doesContainOnlyZero@{doesContainOnlyZero}}
+\index{doesContainOnlyZero@{doesContainOnlyZero}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{doesContainOnlyZero()}{doesContainOnlyZero()}}
+{\footnotesize\ttfamily boolean Stuff.\+Core.\+does\+Contain\+Only\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+true if every field.\+possible\+Numbers contains all possible numbers 
+\end{DoxyReturn}
+\Hypertarget{class_stuff_1_1_core_a4578be9fb28135ae69de3dad050327e9}\label{class_stuff_1_1_core_a4578be9fb28135ae69de3dad050327e9} 
+\index{Stuff.Core@{Stuff.Core}!generateBlock@{generateBlock}}
+\index{generateBlock@{generateBlock}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{generateBlock()}{generateBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} Stuff.\+Core.\+generate\+Block (\begin{DoxyParamCaption}\item[{int}]{height,  }\item[{int}]{lenght }\end{DoxyParamCaption}) throws Array\+Index\+Out\+Of\+Bounds\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_stuff_1_1_core_a13f031be0ef81ce03100e56a2ac1177e}\label{class_stuff_1_1_core_a13f031be0ef81ce03100e56a2ac1177e} 
+\index{Stuff.Core@{Stuff.Core}!generateColumn@{generateColumn}}
+\index{generateColumn@{generateColumn}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{generateColumn()}{generateColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} Stuff.\+Core.\+generate\+Column (\begin{DoxyParamCaption}\item[{int}]{column\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_stuff_1_1_core_a81d9b312155816472d8cd732a1130841}\label{class_stuff_1_1_core_a81d9b312155816472d8cd732a1130841} 
+\index{Stuff.Core@{Stuff.Core}!generateGroups@{generateGroups}}
+\index{generateGroups@{generateGroups}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{generateGroups()}{generateGroups()}}
+{\footnotesize\ttfamily void Stuff.\+Core.\+generate\+Groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_stuff_1_1_core_a22f752a2232aba23d777fa764d512914}\label{class_stuff_1_1_core_a22f752a2232aba23d777fa764d512914} 
+\index{Stuff.Core@{Stuff.Core}!generateRow@{generateRow}}
+\index{generateRow@{generateRow}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{generateRow()}{generateRow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} Stuff.\+Core.\+generate\+Row (\begin{DoxyParamCaption}\item[{int}]{row\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_stuff_1_1_core_afde879c31994e7c5fcbce0d4f3f02adb}\label{class_stuff_1_1_core_afde879c31994e7c5fcbce0d4f3f02adb} 
+\index{Stuff.Core@{Stuff.Core}!get\_sudokuMatrix@{get\_sudokuMatrix}}
+\index{get\_sudokuMatrix@{get\_sudokuMatrix}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{get\_sudokuMatrix()}{get\_sudokuMatrix()}}
+{\footnotesize\ttfamily Collection$<$ \mbox{\hyperlink{classalternative_1_1_field}{Field}} $>$ Stuff.\+Core.\+get\+\_\+sudoku\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_a6824007f2d83f696e4ab5ea2beee91a2}\label{class_stuff_1_1_core_a6824007f2d83f696e4ab5ea2beee91a2} 
+\index{Stuff.Core@{Stuff.Core}!getBlock@{getBlock}}
+\index{getBlock@{getBlock}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{getBlock()}{getBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} Stuff.\+Core.\+get\+Block (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+thats the supposed order\+: 123 456 789 
+\end{DoxyReturn}
+\Hypertarget{class_stuff_1_1_core_a736b97b03e27596cd3329d1f61c5b51b}\label{class_stuff_1_1_core_a736b97b03e27596cd3329d1f61c5b51b} 
+\index{Stuff.Core@{Stuff.Core}!getColumn@{getColumn}}
+\index{getColumn@{getColumn}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{getColumn()}{getColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} Stuff.\+Core.\+get\+Column (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_a331ff6c2071c20be4e32a4fd40aea426}\label{class_stuff_1_1_core_a331ff6c2071c20be4e32a4fd40aea426} 
+\index{Stuff.Core@{Stuff.Core}!getFieldByCoordinate@{getFieldByCoordinate}}
+\index{getFieldByCoordinate@{getFieldByCoordinate}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{getFieldByCoordinate()}{getFieldByCoordinate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classalternative_1_1_field}{Field}} Stuff.\+Core.\+get\+Field\+By\+Coordinate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}}}]{coordinate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_ac18dcbfdd0272d18e2e4e23790ea35c4}\label{class_stuff_1_1_core_ac18dcbfdd0272d18e2e4e23790ea35c4} 
+\index{Stuff.Core@{Stuff.Core}!getFieldByCoordinate@{getFieldByCoordinate}}
+\index{getFieldByCoordinate@{getFieldByCoordinate}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{getFieldByCoordinate()}{getFieldByCoordinate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classalternative_1_1_field}{Field}} Stuff.\+Core.\+get\+Field\+By\+Coordinate (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_abc73cd6eb6a190d194b074b922db5ff0}\label{class_stuff_1_1_core_abc73cd6eb6a190d194b074b922db5ff0} 
+\index{Stuff.Core@{Stuff.Core}!getRow@{getRow}}
+\index{getRow@{getRow}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{getRow()}{getRow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}} Stuff.\+Core.\+get\+Row (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_a1a3dc6ec35fe2f4234dfe0a3bc4e7523}\label{class_stuff_1_1_core_a1a3dc6ec35fe2f4234dfe0a3bc4e7523} 
+\index{Stuff.Core@{Stuff.Core}!isSolvedCompleatly@{isSolvedCompleatly}}
+\index{isSolvedCompleatly@{isSolvedCompleatly}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{isSolvedCompleatly()}{isSolvedCompleatly()}}
+{\footnotesize\ttfamily boolean Stuff.\+Core.\+is\+Solved\+Compleatly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_a476917194b076af223d9cdc99a7cb7ed}\label{class_stuff_1_1_core_a476917194b076af223d9cdc99a7cb7ed} 
+\index{Stuff.Core@{Stuff.Core}!kickStartEventTrigger@{kickStartEventTrigger}}
+\index{kickStartEventTrigger@{kickStartEventTrigger}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{kickStartEventTrigger()}{kickStartEventTrigger()}}
+{\footnotesize\ttfamily void Stuff.\+Core.\+kick\+Start\+Event\+Trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_a17cfe7db1e3854f67dfa7776561eded6}\label{class_stuff_1_1_core_a17cfe7db1e3854f67dfa7776561eded6} 
+\index{Stuff.Core@{Stuff.Core}!randomCreate@{randomCreate}}
+\index{randomCreate@{randomCreate}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{randomCreate()}{randomCreate()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_stuff_1_1_core}{Core}} Stuff.\+Core.\+random\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_stuff_1_1_core_a5c31a8e46000eca54deec58a61a6ef16}\label{class_stuff_1_1_core_a5c31a8e46000eca54deec58a61a6ef16} 
+\index{Stuff.Core@{Stuff.Core}!setNumberOfRowRandom@{setNumberOfRowRandom}}
+\index{setNumberOfRowRandom@{setNumberOfRowRandom}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{setNumberOfRowRandom()}{setNumberOfRowRandom()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_stuff_1_1_core}{Core}} Stuff.\+Core.\+set\+Number\+Of\+Row\+Random (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stuff_1_1_core}{Core}}}]{\+\_\+core,  }\item[{int}]{set\+Numbers,  }\item[{\mbox{\hyperlink{classalternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class_stuff_1_1_core_a46a4371010073f3b2697fff93e411e87}\label{class_stuff_1_1_core_a46a4371010073f3b2697fff93e411e87} 
+\index{Stuff.Core@{Stuff.Core}!testCoherence@{testCoherence}}
+\index{testCoherence@{testCoherence}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{testCoherence()}{testCoherence()}}
+{\footnotesize\ttfamily void Stuff.\+Core.\+test\+Coherence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_stuff_1_1_core_a744d57ad23efa65765a37857fd44aa82}\label{class_stuff_1_1_core_a744d57ad23efa65765a37857fd44aa82} 
+\index{Stuff.Core@{Stuff.Core}!toString@{toString}}
+\index{toString@{toString}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Stuff.\+Core.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_stuff_1_1_core_ae9b54c4bf796e69d3285a2d617ff082d}\label{class_stuff_1_1_core_ae9b54c4bf796e69d3285a2d617ff082d} 
+\index{Stuff.Core@{Stuff.Core}!\_sudokuMatrix@{\_sudokuMatrix}}
+\index{\_sudokuMatrix@{\_sudokuMatrix}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{\_sudokuMatrix}{\_sudokuMatrix}}
+{\footnotesize\ttfamily final Collection$<$\mbox{\hyperlink{classalternative_1_1_field}{Field}}$>$ Stuff.\+Core.\+\_\+sudoku\+Matrix = new Hash\+Set$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+The first dimension goes right left, the second dimension up own. \Hypertarget{class_stuff_1_1_core_a463185f748b1f1aaec9a502cf9ab9b24}\label{class_stuff_1_1_core_a463185f748b1f1aaec9a502cf9ab9b24} 
+\index{Stuff.Core@{Stuff.Core}!sudokuBlocks@{sudokuBlocks}}
+\index{sudokuBlocks@{sudokuBlocks}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{sudokuBlocks}{sudokuBlocks}}
+{\footnotesize\ttfamily final List$<$\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}}$>$ Stuff.\+Core.\+sudoku\+Blocks = new Linked\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_stuff_1_1_core_afa65bdd7c5519b18689447a017d9b9e4}\label{class_stuff_1_1_core_afa65bdd7c5519b18689447a017d9b9e4} 
+\index{Stuff.Core@{Stuff.Core}!sudokuColumns@{sudokuColumns}}
+\index{sudokuColumns@{sudokuColumns}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{sudokuColumns}{sudokuColumns}}
+{\footnotesize\ttfamily final List$<$\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}}$>$ Stuff.\+Core.\+sudoku\+Columns = new Linked\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_stuff_1_1_core_afdb9f1eeb9be800e854af443c90c33ca}\label{class_stuff_1_1_core_afdb9f1eeb9be800e854af443c90c33ca} 
+\index{Stuff.Core@{Stuff.Core}!sudokuRows@{sudokuRows}}
+\index{sudokuRows@{sudokuRows}!Stuff.Core@{Stuff.Core}}
+\doxysubsubsection{\texorpdfstring{sudokuRows}{sudokuRows}}
+{\footnotesize\ttfamily final List$<$\mbox{\hyperlink{class_stuff_1_1_number_group}{Number\+Group}}$>$ Stuff.\+Core.\+sudoku\+Rows = new Linked\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/itpraktikant/\+Downloads/\+Sudoku\+Solver\+Reactive-\/main/\+Sudoku\+Solver\+Reactive-\/main/src/main/java/\+Stuff/\mbox{\hyperlink{_stuff_2_core_8java}{Core.\+java}}\end{DoxyCompactItemize}

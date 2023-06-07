@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_fork_join_alternative_1_1_empty_field" kind="class" language="Java" prot="public">
+    <compoundname>ForkJoinAlternative::EmptyField</compoundname>
+    <basecompoundref refid="class_fork_join_alternative_1_1_field" prot="public" virt="non-virtual">ForkJoinAlternative.Field</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_empty_field_1a6dbcd96ddbe05fb2ef0b19a4c1c8ce2e" prot="private" static="no" mutable="no">
+        <type>final Set&lt; Integer &gt;</type>
+        <definition>final Set&lt;Integer&gt; ForkJoinAlternative.EmptyField._possibleNumbers</definition>
+        <argsstring></argsstring>
+        <name>_possibleNumbers</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField._possibleNumbers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="11" column="23" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1a39a0df685d5b818b4816a945c1e06e0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.EmptyField.EmptyField</definition>
+        <argsstring>()</argsstring>
+        <name>EmptyField</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.EmptyField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="13" column="12" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="13" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1a1d647160776917e1bae4c940c184c0b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.EmptyField.EmptyField</definition>
+        <argsstring>(int number)</argsstring>
+        <name>EmptyField</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.EmptyField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="21" column="12" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="21" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1a04a98dd5677296ce86bddd1043429cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.EmptyField.EmptyField</definition>
+        <argsstring>(Set&lt; Integer &gt; possibleNumbers)</argsstring>
+        <name>EmptyField</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.EmptyField</qualifiedname>
+        <param>
+          <type>Set&lt; Integer &gt;</type>
+          <declname>possibleNumbers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="34" column="12" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1ac973a74b59a67acdbfcd0a0db1ddd865" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ForkJoinAlternative.EmptyField.isFixed</definition>
+        <argsstring>()</argsstring>
+        <name>isFixed</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.isFixed</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1a4a60f8dfa4447735488fa974b3dc35d3">isFixed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="43" column="20" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1a786c3dbf7fca5f055a18ce2f3524681d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized void</type>
+        <definition>synchronized void ForkJoinAlternative.EmptyField.exclude</definition>
+        <argsstring>(final int number)</argsstring>
+        <name>exclude</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.exclude</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1a83335f69c29ff39d12c583feb4dd3ed4">exclude</reimplements>
+        <param>
+          <type>final int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="48" column="30" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="48" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1a0f2fe405b302d6b76e1b12b7181594d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized Set&lt; Integer &gt;</type>
+        <definition>synchronized Set&lt; Integer &gt; ForkJoinAlternative.EmptyField.possibleNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>possibleNumbers</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.possibleNumbers</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1af53f66e598771da71b4549724cc6ed2f">possibleNumbers</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="64" column="29" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1ace75154d2bcf46a253e9cfd326958bc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized int</type>
+        <definition>synchronized int ForkJoinAlternative.EmptyField.toIntOrZero</definition>
+        <argsstring>()</argsstring>
+        <name>toIntOrZero</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.toIntOrZero</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1a606ef381b364d4e66b8b0458fc2b6d6d">toIntOrZero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="69" column="29" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1a90761c6f478a3a93b7be30b1f01b0f0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized void</type>
+        <definition>synchronized void ForkJoinAlternative.EmptyField.setNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumber</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.setNumber</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1ace6d25a5c3b950980a48edc19a173ea5">setNumber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="77" column="30" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="77" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_empty_field_1af219eef729801fedacced683c7e72185" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized void</type>
+        <definition>synchronized void ForkJoinAlternative.EmptyField.setRandomAvalibleNumber</definition>
+        <argsstring>()</argsstring>
+        <name>setRandomAvalibleNumber</name>
+        <qualifiedname>ForkJoinAlternative.EmptyField.setRandomAvalibleNumber</qualifiedname>
+        <reimplements refid="class_fork_join_alternative_1_1_field_1ac5aed6cb161ecd1aa9ec6d0fd0a7fbc0">setRandomAvalibleNumber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="87" column="30" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="87" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ForkJoinAlternative.EmptyField</label>
+        <link refid="class_fork_join_alternative_1_1_empty_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ForkJoinAlternative.Field</label>
+        <link refid="class_fork_join_alternative_1_1_field"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Stuff.EventManager&lt; Integer &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+      </node>
+      <node id="1">
+        <label>ForkJoinAlternative.EmptyField</label>
+        <link refid="class_fork_join_alternative_1_1_empty_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ForkJoinAlternative.Field</label>
+        <link refid="class_fork_join_alternative_1_1_field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_changeInPossibleNumbersEvent</edgelabel>
+          <edgelabel>_trueNumberFoundEvent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/ForkJoinAlternative/EmptyField.java" line="9" column="7" bodyfile="src/main/java/ForkJoinAlternative/EmptyField.java" bodystart="9" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_fork_join_alternative_1_1_field_1a7c6c85d03cacf51f9efd678667d7b94c" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>_changeInPossibleNumbersEvent</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1a6dbcd96ddbe05fb2ef0b19a4c1c8ce2e" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>_possibleNumbers</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1afddbf154985608df57656b3e98011fd2" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>_trueNumberFoundEvent</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1a1108f49a9f742f97edb46b82346c3cc5" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>copy</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1a39a0df685d5b818b4816a945c1e06e0e" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>EmptyField</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1a1d647160776917e1bae4c940c184c0b8" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>EmptyField</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1a04a98dd5677296ce86bddd1043429cf2" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>EmptyField</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1a786c3dbf7fca5f055a18ce2f3524681d" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>exclude</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1ac973a74b59a67acdbfcd0a0db1ddd865" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>isFixed</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1a0f2fe405b302d6b76e1b12b7181594d8" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>possibleNumbers</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1a90761c6f478a3a93b7be30b1f01b0f0e" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>setNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1af219eef729801fedacced683c7e72185" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>setRandomAvalibleNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_empty_field_1ace75154d2bcf46a253e9cfd326958bc0" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>toIntOrZero</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1aceff80f172b8872d377c2774d914806f" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::EmptyField</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

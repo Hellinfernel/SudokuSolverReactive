@@ -1,0 +1,11 @@
+<map id="alternative.StaticField" name="alternative.StaticField">
+<area shape="rect" id="Node000001" title=" " alt="" coords="112,624,331,875"/>
+<area shape="rect" id="Node000002" href="$classalternative_1_1_field.html" title=" " alt="" coords="5,240,216,560"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,573,184,623,179,625,163,574"/>
+<area shape="rect" id="Node000003" href="$class_stuff_1_1_event_manager.html" title=" " alt="" coords="19,5,203,144"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,144,113,223,108,223,108,144"/>
+<area shape="rect" id="Node000004" href="$classalternative_1_1_coordinate.html" title=" " alt="" coords="240,277,427,523"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="297,523,269,609,264,607,292,522"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="249,40,417,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="336,124,336,278,331,278,331,124"/>
+</map>

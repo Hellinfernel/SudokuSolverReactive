@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="class_stuff_1_1_constants" kind="class"><name>Stuff::Constants</name>
+    <member refid="class_stuff_1_1_constants_1ada224cf180808a404f901b45d699b370" kind="variable"><name>ALL_NUMBERS</name></member>
+    <member refid="class_stuff_1_1_constants_1a8c30a69546b7439aa977678a7d4153ad" kind="variable"><name>forkJoinPool</name></member>
+  </compound>
+  <compound refid="classalternative_1_1_coordinate" kind="class"><name>alternative::Coordinate</name>
+    <member refid="classalternative_1_1_coordinate_1ac388f136018b7ad7fe50e4661e94a0fd" kind="variable"><name>_x</name></member>
+    <member refid="classalternative_1_1_coordinate_1a0e917544200a850b4db8147326f8e1ed" kind="variable"><name>_y</name></member>
+    <member refid="classalternative_1_1_coordinate_1ac80bc31c4fbb6513b53a4caebb6f6b6d" kind="function"><name>Coordinate</name></member>
+    <member refid="classalternative_1_1_coordinate_1afe43a25edef166c399fbb0b939d6268e" kind="function"><name>coodinateIsEqual</name></member>
+    <member refid="classalternative_1_1_coordinate_1a6c47754a46ffcddfefb5904fcc752cdf" kind="function"><name>equals</name></member>
+    <member refid="classalternative_1_1_coordinate_1a52363ac6c017b56a5a4a8537e0e78dd2" kind="function"><name>hashCode</name></member>
+    <member refid="classalternative_1_1_coordinate_1a50fc9c69ba3e802c807aed5f039129fe" kind="function"><name>toString</name></member>
+    <member refid="classalternative_1_1_coordinate_1a97290491a191cbfb5a4d3a82debd164f" kind="function"><name>compareTo</name></member>
+  </compound>
+  <compound refid="class_fork_join_alternative_1_1_core" kind="class"><name>ForkJoinAlternative::Core</name>
+    <member refid="class_fork_join_alternative_1_1_core_1a34033df36f459c752e3cbce3cc2e4c9d" kind="variable"><name>sudokuMatrix</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1aeaaa4ffe0a1db96f4a4020afe009a99c" kind="variable"><name>sudokuRows</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1af0b0823abb5f17a615606ae7e8db555d" kind="variable"><name>sudokuColumns</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1addf288b87f248cebc3d8a9599640db42" kind="variable"><name>sudokuBlocks</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a058040fe029a5da08e3767d1c6dec89b" kind="variable"><name>executorService</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1ab759243743a387eae1dbb738d35efac6" kind="function"><name>Core</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1afc40cbb8ac6ec2c4f117c81351b3c5ab" kind="function"><name>Core</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1afbff3d77663947afd2c0759f5185ce7b" kind="function"><name>Core</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a3a4ef0c44c0dd20e2380380e9047811c" kind="function"><name>getSudokuMatrix</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a152752ff930aca8bf74b06160ca40381" kind="function"><name>getRow</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1ab9dace98db771aa818a1ece6497141bf" kind="function"><name>getColumn</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a75cd726b87f29f1493595fe6d8158ee4" kind="function"><name>getBlock</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a708b01feb34ecbe10037120adb3103e6" kind="function"><name>start</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1ac4850ce1b9e89d1d6e946be2e55c59de" kind="function"><name>parallelStart</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a31fee9687e6ae6fbf2ce2e40820d8c49" kind="function"><name>testCoherence</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a2e07a9a9e990039aa9b00af4c2925b33" kind="function"><name>doesContainOnlyZero</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a730bbc72cab219edb00da3b9f321e481" kind="function"><name>generateGroups</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1ad3d7d4bb594f74745743a1e859d23170" kind="function"><name>generateRow</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a015b2bc966399724ea0e509a848437a2" kind="function"><name>generateColumn</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a3e7d0a0165fe01b866f21a9959da1528" kind="function"><name>generateBlock</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1abbd6570a43cee92306d6b688e319e4b1" kind="function"><name>randomCreate</name></member>
+    <member refid="class_fork_join_alternative_1_1_core_1a014079869de47070bbff17b4985c98a7" kind="function"><name>setNumberOfRowRandom</name></member>
+  </compound>
+  <compound refid="class_stuff_1_1_core" kind="class"><name>Stuff::Core</name>
+    <member refid="class_stuff_1_1_core_1ae9b54c4bf796e69d3285a2d617ff082d" kind="variable"><name>_sudokuMatrix</name></member>
+    <member refid="class_stuff_1_1_core_1afdb9f1eeb9be800e854af443c90c33ca" kind="variable"><name>sudokuRows</name></member>
+    <member refid="class_stuff_1_1_core_1afa65bdd7c5519b18689447a017d9b9e4" kind="variable"><name>sudokuColumns</name></member>
+    <member refid="class_stuff_1_1_core_1a463185f748b1f1aaec9a502cf9ab9b24" kind="variable"><name>sudokuBlocks</name></member>
+    <member refid="class_stuff_1_1_core_1ad93991b2a2cdcebbb3eb0be5025c88c9" kind="function"><name>Core</name></member>
+    <member refid="class_stuff_1_1_core_1ad6fe449e188a1ac5cc02faaa829ab6bd" kind="function"><name>Core</name></member>
+    <member refid="class_stuff_1_1_core_1a519285b929b459447f0130b3fb1b24b5" kind="function"><name>Core</name></member>
+    <member refid="class_stuff_1_1_core_1afde879c31994e7c5fcbce0d4f3f02adb" kind="function"><name>get_sudokuMatrix</name></member>
+    <member refid="class_stuff_1_1_core_1abc73cd6eb6a190d194b074b922db5ff0" kind="function"><name>getRow</name></member>
+    <member refid="class_stuff_1_1_core_1a736b97b03e27596cd3329d1f61c5b51b" kind="function"><name>getColumn</name></member>
+    <member refid="class_stuff_1_1_core_1a6824007f2d83f696e4ab5ea2beee91a2" kind="function"><name>getBlock</name></member>
+    <member refid="class_stuff_1_1_core_1a476917194b076af223d9cdc99a7cb7ed" kind="function"><name>kickStartEventTrigger</name></member>
+    <member refid="class_stuff_1_1_core_1a46a4371010073f3b2697fff93e411e87" kind="function"><name>testCoherence</name></member>
+    <member refid="class_stuff_1_1_core_1a52f452b05bd6b4531b56f4329ed72f9e" kind="function"><name>doesContainOnlyZero</name></member>
+    <member refid="class_stuff_1_1_core_1a1a3dc6ec35fe2f4234dfe0a3bc4e7523" kind="function"><name>isSolvedCompleatly</name></member>
+    <member refid="class_stuff_1_1_core_1ac18dcbfdd0272d18e2e4e23790ea35c4" kind="function"><name>getFieldByCoordinate</name></member>
+    <member refid="class_stuff_1_1_core_1a331ff6c2071c20be4e32a4fd40aea426" kind="function"><name>getFieldByCoordinate</name></member>
+    <member refid="class_stuff_1_1_core_1a744d57ad23efa65765a37857fd44aa82" kind="function"><name>toString</name></member>
+    <member refid="class_stuff_1_1_core_1a81d9b312155816472d8cd732a1130841" kind="function"><name>generateGroups</name></member>
+    <member refid="class_stuff_1_1_core_1a22f752a2232aba23d777fa764d512914" kind="function"><name>generateRow</name></member>
+    <member refid="class_stuff_1_1_core_1a13f031be0ef81ce03100e56a2ac1177e" kind="function"><name>generateColumn</name></member>
+    <member refid="class_stuff_1_1_core_1a4578be9fb28135ae69de3dad050327e9" kind="function"><name>generateBlock</name></member>
+    <member refid="class_stuff_1_1_core_1a17cfe7db1e3854f67dfa7776561eded6" kind="function"><name>randomCreate</name></member>
+    <member refid="class_stuff_1_1_core_1a5c31a8e46000eca54deec58a61a6ef16" kind="function"><name>setNumberOfRowRandom</name></member>
+  </compound>
+  <compound refid="class_stuff_1_1_core_not_coherent_exeption" kind="class"><name>Stuff::CoreNotCoherentExeption</name>
+  </compound>
+  <compound refid="class_exeptions_1_1_double_number_exeption" kind="class"><name>Exeptions::DoubleNumberExeption</name>
+    <member refid="class_exeptions_1_1_double_number_exeption_1ae525c7126d3b6ea2e9f2d2a78070206c" kind="variable"><name>doubleFoundNumber</name></member>
+    <member refid="class_exeptions_1_1_double_number_exeption_1a50e56ded38c0d5da3e69d07e9406bed6" kind="function"><name>DoubleNumberExeption</name></member>
+    <member refid="class_exeptions_1_1_double_number_exeption_1a039ffa0310dcb4349d04fd1da9561084" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classalternative_1_1_empty_field" kind="class"><name>alternative::EmptyField</name>
+    <member refid="classalternative_1_1_empty_field_1a09e258ebb7f48d8e059fc365b096fe8f" kind="variable"><name>_coordinate</name></member>
+    <member refid="classalternative_1_1_empty_field_1abd6cbe83fc7a242fc6836bbd453bde45" kind="variable"><name>_possibleNumbers</name></member>
+    <member refid="classalternative_1_1_empty_field_1ab2bc3aa6195f3002ad75c3a189b5e41c" kind="function"><name>EmptyField</name></member>
+    <member refid="classalternative_1_1_empty_field_1a2546ac285f812620836ceb1c81c76f01" kind="function"><name>EmptyField</name></member>
+    <member refid="classalternative_1_1_empty_field_1af0f13d972380567c5b44da34a8d31766" kind="function"><name>EmptyField</name></member>
+    <member refid="classalternative_1_1_empty_field_1a0d7015341d4b4101b3beae54d41477b1" kind="function"><name>isFixed</name></member>
+    <member refid="classalternative_1_1_empty_field_1af756c0b0add8f4fec9ea63cd0b18ce99" kind="function"><name>exclude</name></member>
+    <member refid="classalternative_1_1_empty_field_1ad4abda1944f28d9297b622a017c780e6" kind="function"><name>possibleNumbers</name></member>
+    <member refid="classalternative_1_1_empty_field_1adbdae3f033c51f63784129a7d2297051" kind="function"><name>toIntOrZero</name></member>
+    <member refid="classalternative_1_1_empty_field_1a11d795b4a721476204ee17d5ad592811" kind="function"><name>setNumber</name></member>
+    <member refid="classalternative_1_1_empty_field_1a76b17e190e12822f939f333f4eb2fe8d" kind="function"><name>getCoordinate</name></member>
+    <member refid="classalternative_1_1_empty_field_1a2260f816a4f2535f87644fea443ae64a" kind="function"><name>setRandomAvalibleNumber</name></member>
+  </compound>
+  <compound refid="class_fork_join_alternative_1_1_empty_field" kind="class"><name>ForkJoinAlternative::EmptyField</name>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1a6dbcd96ddbe05fb2ef0b19a4c1c8ce2e" kind="variable"><name>_possibleNumbers</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1a39a0df685d5b818b4816a945c1e06e0e" kind="function"><name>EmptyField</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1a1d647160776917e1bae4c940c184c0b8" kind="function"><name>EmptyField</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1a04a98dd5677296ce86bddd1043429cf2" kind="function"><name>EmptyField</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1ac973a74b59a67acdbfcd0a0db1ddd865" kind="function"><name>isFixed</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1a786c3dbf7fca5f055a18ce2f3524681d" kind="function"><name>exclude</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1a0f2fe405b302d6b76e1b12b7181594d8" kind="function"><name>possibleNumbers</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1ace75154d2bcf46a253e9cfd326958bc0" kind="function"><name>toIntOrZero</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1a90761c6f478a3a93b7be30b1f01b0f0e" kind="function"><name>setNumber</name></member>
+    <member refid="class_fork_join_alternative_1_1_empty_field_1af219eef729801fedacced683c7e72185" kind="function"><name>setRandomAvalibleNumber</name></member>
+  </compound>
+  <compound refid="classnew_alternative_1_1field_1_1_empty_field" kind="class"><name>newAlternative::field::EmptyField</name>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a87ea1fb2595fef02d107074cd9d5ccb2" kind="variable"><name>_possibleNumbers</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1aa5b3b84f2c19caf7da2b2220a880e94a" kind="variable"><name>_taskSchedular</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a7af02955a3662b4912f47427026459b6" kind="function"><name>EmptyField</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a72355ae0ee67779dd0e452e6a2104bfd" kind="function"><name>EmptyField</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1af390e48c26e22a323b4edcfeb54f065f" kind="function"><name>EmptyField</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1ac8110f340f4d754e472e6db77bd96c53" kind="function"><name>isFixed</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a7d73bb560c96e6885398ba62307d24aa" kind="function"><name>exclude</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a07f8b93e22b4c9afe7f11f16a8f05495" kind="function"><name>possibleNumbers</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a2b558ab5e030b434719500ea60472a8a" kind="function"><name>toIntOrZero</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a525d156bc830bec898a44e7f88ccad62" kind="function"><name>setNumber</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a09b4c1bec9cf1847e155cdf2ac02a3be" kind="function"><name>setRandomAvalibleNumber</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_empty_field_1a726db0918662f43b86d6dc8cc3d8490c" kind="function"><name>giveTask</name></member>
+  </compound>
+  <compound refid="class_stuff_1_1_error_message" kind="class"><name>Stuff::ErrorMessage</name>
+    <member refid="class_stuff_1_1_error_message_1a4344111bd788f792c8eed1f50760c29f" kind="variable"><name>_message</name></member>
+    <member refid="class_stuff_1_1_error_message_1afe299ee96b52541f6ff1146306b190d9" kind="variable"><name>_success</name></member>
+    <member refid="class_stuff_1_1_error_message_1af6aa290285adcf3ddf41f54b86accceb" kind="function"><name>ErrorMessage</name></member>
+    <member refid="class_stuff_1_1_error_message_1a5f00ccd47067dceeb781cbb24423a057" kind="function"><name>get_message</name></member>
+    <member refid="class_stuff_1_1_error_message_1a15646955e9dea0400eb0b823a7c9af29" kind="function"><name>is_success</name></member>
+  </compound>
+  <compound refid="class_stuff_1_1_event_manager" kind="class"><name>Stuff::EventManager</name>
+    <member refid="class_stuff_1_1_event_manager_1a74db674c1d0a25a2b6379db5cd3cf70f" kind="variable"><name>functions</name></member>
+    <member refid="class_stuff_1_1_event_manager_1a72da4a1159c9b51476ed3f60e9ef3fa1" kind="function"><name>addFunction</name></member>
+    <member refid="class_stuff_1_1_event_manager_1a8f943eeeb9b348cec062644a39ba1e70" kind="function"><name>trigger</name></member>
+  </compound>
+  <compound refid="classalternative_1_1_field" kind="class"><name>alternative::Field</name>
+    <member refid="classalternative_1_1_field_1acf5585ca4f82b2b21127d0e006fca547" kind="variable"><name>_trueNumberFoundEvent</name></member>
+    <member refid="classalternative_1_1_field_1a8cd7923bd9044ff2ccd564af26338d12" kind="variable"><name>_changeInPossibleNumbersEvent</name></member>
+    <member refid="classalternative_1_1_field_1a2ce0d9a1369a9685f4789c1e2257fe2b" kind="function"><name>isFixed</name></member>
+    <member refid="classalternative_1_1_field_1af4d8e238d7c3511e467b3c3e6d382e0c" kind="function"><name>exclude</name></member>
+    <member refid="classalternative_1_1_field_1ab40e6c931aa1d79b89a5de3f0b7dbc61" kind="function"><name>possibleNumbers</name></member>
+    <member refid="classalternative_1_1_field_1aaa1993acc91f9d1109165229e4e8f104" kind="function"><name>toIntOrZero</name></member>
+    <member refid="classalternative_1_1_field_1a261ca28820cea5fef3b494c65ee05300" kind="function"><name>setNumber</name></member>
+    <member refid="classalternative_1_1_field_1a6dc289d8a14c9b112c89a343099d526e" kind="function"><name>getCoordinate</name></member>
+    <member refid="classalternative_1_1_field_1a214ef9e083b6089b8dda3b988ab3a913" kind="function"><name>setRandomAvalibleNumber</name></member>
+    <member refid="classalternative_1_1_field_1a98d9aacc846f615a044718ac04679a6a" kind="function"><name>copy</name></member>
+    <member refid="classalternative_1_1_field_1ab9ab8216e5a3abd31180a16bc9107bf8" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="class_fork_join_alternative_1_1_field" kind="class"><name>ForkJoinAlternative::Field</name>
+    <member refid="class_fork_join_alternative_1_1_field_1afddbf154985608df57656b3e98011fd2" kind="variable"><name>_trueNumberFoundEvent</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1a7c6c85d03cacf51f9efd678667d7b94c" kind="variable"><name>_changeInPossibleNumbersEvent</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1a4a60f8dfa4447735488fa974b3dc35d3" kind="function"><name>isFixed</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1a83335f69c29ff39d12c583feb4dd3ed4" kind="function"><name>exclude</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1af53f66e598771da71b4549724cc6ed2f" kind="function"><name>possibleNumbers</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1a606ef381b364d4e66b8b0458fc2b6d6d" kind="function"><name>toIntOrZero</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1ace6d25a5c3b950980a48edc19a173ea5" kind="function"><name>setNumber</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1ac5aed6cb161ecd1aa9ec6d0fd0a7fbc0" kind="function"><name>setRandomAvalibleNumber</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1a1108f49a9f742f97edb46b82346c3cc5" kind="function"><name>copy</name></member>
+    <member refid="class_fork_join_alternative_1_1_field_1aceff80f172b8872d377c2774d914806f" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classnew_alternative_1_1field_1_1_field" kind="class"><name>newAlternative::field::Field</name>
+    <member refid="classnew_alternative_1_1field_1_1_field_1af48c6c3de98cf1065e929bc2a92d2193" kind="variable"><name>_trueNumberFoundEvent</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1a2ecb616f4a2b14153ee4f32720b9f3a6" kind="variable"><name>_changeInPossibleNumbersEvent</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1adf93b6b21fbe5df7c53330871f0a5dbc" kind="function"><name>isFixed</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1a4106730e12954029b9cfffaf901a694b" kind="function"><name>exclude</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1a922b969100738fe958cae54c1e959d53" kind="function"><name>possibleNumbers</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1a139c48107678756facdeb3c7daa620c9" kind="function"><name>toIntOrZero</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1a61ced055632c54df7c0946ee7609a849" kind="function"><name>setNumber</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1ae98c367828d6e5629ba3c416a89f98fa" kind="function"><name>giveTask</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1a902926cd9997becc79b163d1b4d5a081" kind="function"><name>copy</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1a4264f48a51ccf758b5dd95605fbf4af1" kind="function"><name>toString</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_field_1afabb90d7571427e0b6a0cd9d76d2ea44" kind="function"><name>setRandomAvalibleNumber</name></member>
+  </compound>
+  <compound refid="enumnew_alternative_1_1field_1_1_field_task" kind="enum"><name>newAlternative::field::FieldTask</name>
+  </compound>
+  <compound refid="class_fork_join_test" kind="class"><name>ForkJoinTest</name>
+    <member refid="class_fork_join_test_1a020faa11256a00a6847188ede6eee864" kind="function"><name>forkJoinTest</name></member>
+  </compound>
+  <compound refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kind="class"><name>Exeptions::NotAllNumbersArePossibleExeption</name>
+    <member refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption_1a3c21aca060939033e284945c55267181" kind="variable"><name>_message</name></member>
+    <member refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption_1ad395fd4a79d0bd384e1df0e9a4b64ba9" kind="function"><name>NotAllNumbersArePossibleExeption</name></member>
+    <member refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption_1a3efc20ebb1dd1b033cdbf887b7d6b8c8" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="class_old_1_1_number_field" kind="class"><name>Old::NumberField</name>
+    <member refid="class_old_1_1_number_field_1a7a3a9d08710e90d0a4df90223d4b6e97" kind="variable"><name>isThisNumberPossible</name></member>
+    <member refid="class_old_1_1_number_field_1adf681eba311226217a1ef75626263e36" kind="variable"><name>changeInPossibleNumbersEvent</name></member>
+    <member refid="class_old_1_1_number_field_1ae9b33dc54681423c021be38b4cb33fa3" kind="function"><name>NumberField</name></member>
+    <member refid="class_old_1_1_number_field_1a752024e8b64c70f57507d16afe66310c" kind="function"><name>NumberField</name></member>
+    <member refid="class_old_1_1_number_field_1aa681a9690f56a117261259340c212084" kind="function"><name>possibleNumbers</name></member>
+    <member refid="class_old_1_1_number_field_1af1a8a8bc11f68217b3faf9d268738148" kind="function"><name>excludeNumber</name></member>
+    <member refid="class_old_1_1_number_field_1a120d894fd55301a001c256584fda9d41" kind="function"><name>toIntOrZero</name></member>
+    <member refid="class_old_1_1_number_field_1a58a23665a73d17b25dd47c50a2896f5e" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="class_fork_join_alternative_1_1_number_group" kind="class"><name>ForkJoinAlternative::NumberGroup</name>
+    <member refid="class_fork_join_alternative_1_1_number_group_1aaa795b411dbce74419fdeee18c52f031" kind="variable"><name>_numberFields</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1ae8421bcecdfa6f4db152a9333f5ad5dc" kind="variable"><name>_leftNumbers</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a16799fb17e2bd7200c046a91697fbc6e" kind="variable"><name>_executorService</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a2beca6b8dff5f5d84c1187741dbd09c8" kind="function"><name>NumberGroup</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a427672570d87c550fc56b68da08a57c3" kind="function"><name>NumberGroup</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a91589e98750bcb61edabe68e619a96d4" kind="function"><name>searchSetableNumber</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1aa6c9c79aff329220ec3a22c4b30ac85b" kind="function"><name>searchSetableNumber</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a9a8283a49140dfe0b404861eaf18f10c" kind="function"><name>analyse</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a9587c29445347757fd9798c7590766fc" kind="function"><name>getGroupAsArray</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a3d6c380b6c2b8f8cd22bff07731e76ea" kind="function"><name>get_numberFields</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1addc81a39fca2c19585bdc1f08ad74461" kind="function"><name>testCoherence</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1acf9149d16483967ea59eea68014ba041" kind="function"><name>testIfAllNumbersArePossible</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1aa60fc3999cf3074a3d924f2653a932c0" kind="function"><name>isThisNumberPossible</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a2a611aad5f9d87e5ca4c01b2d3d1c4d0" kind="function"><name>searchForDoubleSetNumbers</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1afdcf319781f5682f0cc4dc557af690d6" kind="function"><name>generateField</name></member>
+    <member refid="class_fork_join_alternative_1_1_number_group_1a5c38d758e508e9708a1dcd7f95f66162" kind="function"><name>excludeNumber</name></member>
+  </compound>
+  <compound refid="classnew_alternative_1_1_number_group" kind="class"><name>newAlternative::NumberGroup</name>
+    <member refid="classnew_alternative_1_1_number_group_1ac1428adf5bacca62c6d10350cbca2a16" kind="variable"><name>_numberFields</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a6c8e4f6e8af6dc6e6a2181e8a1e67185" kind="variable"><name>_leftNumbers</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a3edd4c2dbb0c423c68801443c93fd262" kind="variable"><name>_taskSchedular</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a8416e312d08632e26dae921335dc1a2b" kind="function"><name>NumberGroup</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a4db3a21f83edebb6688995e486d2c08e" kind="function"><name>NumberGroup</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1af8a29a8cdfd0e5a63416bfbc4755bb08" kind="function"><name>searchSetableNumber</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a24867ffd346656e2cd36babe532afc14" kind="function"><name>searchSetableNumber</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a99ee88ce9d8a1a7ee3c771a6336515df" kind="function"><name>analyse</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a73049dd9643683cbc04d2ca983748545" kind="function"><name>getGroupAsArray</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a1fe76a7ac0e9e967965f857e9c6a956d" kind="function"><name>get_numberFields</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1aab1441aa7e0092d950d04f5674f03e63" kind="function"><name>testCoherence</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1ab9fa7b44a85650dfdebfd3ee26d0ee7a" kind="function"><name>testIfAllNumbersArePossible</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1a68b59edd4d65aec7357228308f1ef730" kind="function"><name>isThisNumberPossible</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1ad4b58687efa7c9bfdde4b4303c856e7a" kind="function"><name>searchForDoubleSetNumbers</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1aa6be225cff30925de66733df441d4ea6" kind="function"><name>generateField</name></member>
+    <member refid="classnew_alternative_1_1_number_group_1aaf93e9efcece126b1a2f46d852830c76" kind="function"><name>excludeNumber</name></member>
+  </compound>
+  <compound refid="class_stuff_1_1_number_group" kind="class"><name>Stuff::NumberGroup</name>
+    <member refid="class_stuff_1_1_number_group_1ae77f480cef9304c8723f03c7d1886c96" kind="variable"><name>_numberFields</name></member>
+    <member refid="class_stuff_1_1_number_group_1a2e4083e53817ad98e1cdf6778b541f4a" kind="variable"><name>_leftNumbers</name></member>
+    <member refid="class_stuff_1_1_number_group_1a56e6e15c5f5ded64a8c2f5c79b7c6023" kind="function"><name>NumberGroup</name></member>
+    <member refid="class_stuff_1_1_number_group_1aede083bc889e2f3440b109b4968ee033" kind="function"><name>NumberGroup</name></member>
+    <member refid="class_stuff_1_1_number_group_1a3967bc7d829c5dd4fc80d09cee07edf8" kind="function"><name>NumberGroup</name></member>
+    <member refid="class_stuff_1_1_number_group_1a42f6680ddcb2116af66239edf9b85d5a" kind="function"><name>searchSetableNumber</name></member>
+    <member refid="class_stuff_1_1_number_group_1a11842014b48aa5ab285f785d6d2f2e2d" kind="function"><name>searchSetableNumber</name></member>
+    <member refid="class_stuff_1_1_number_group_1a223fdae0a7ade75f2415f0a5cc4bedaa" kind="function"><name>analyse</name></member>
+    <member refid="class_stuff_1_1_number_group_1a2f0da0323b2ca2fffca5e7fbd12480f5" kind="function"><name>getGroupAsArray</name></member>
+    <member refid="class_stuff_1_1_number_group_1accf2b3b8c385c9d6012a1f3ad58718a1" kind="function"><name>get_numberFields</name></member>
+    <member refid="class_stuff_1_1_number_group_1a421ca26326996ff80cb95ff26b96486c" kind="function"><name>testCoherence</name></member>
+    <member refid="class_stuff_1_1_number_group_1ae4fd555a835d929c883b442bde352b62" kind="function"><name>testIfAllNumbersArePossible</name></member>
+    <member refid="class_stuff_1_1_number_group_1a9336f494a61db1ae7560b3e94da4e2fc" kind="function"><name>isThisNumberPossible</name></member>
+    <member refid="class_stuff_1_1_number_group_1aa5216b6ded5ba82414f6afc5bf86f0cb" kind="function"><name>searchForDoubleSetNumbers</name></member>
+    <member refid="class_stuff_1_1_number_group_1a93565f233cb486d3521273e107f343be" kind="function"><name>generateField</name></member>
+    <member refid="class_stuff_1_1_number_group_1a07b55f429dcf9054bd62501bfac737b5" kind="function"><name>excludeNumber</name></member>
+  </compound>
+  <compound refid="class_stuff_1_1_speculative_solving" kind="class"><name>Stuff::SpeculativeSolving</name>
+    <member refid="class_stuff_1_1_speculative_solving_1ad86b16baf3a1c629b0d7f8cd12d03cf6" kind="function"><name>completeSolving</name></member>
+    <member refid="class_stuff_1_1_speculative_solving_1ac65239dc2633bbd94477f51cfd25180e" kind="function"><name>speculativeSolvingTry</name></member>
+  </compound>
+  <compound refid="interface_stuff_1_1_speculative_solving_interface" kind="interface"><name>Stuff::SpeculativeSolvingInterface</name>
+    <member refid="interface_stuff_1_1_speculative_solving_interface_1ab8b00110875006694b78f7c907ea071e" kind="function"><name>completeSolving</name></member>
+    <member refid="interface_stuff_1_1_speculative_solving_interface_1a74df78df3de7eed6d865c6678c6ee97e" kind="function"><name>searchCanidateForSpeculativeTry</name></member>
+  </compound>
+  <compound refid="class_stuff_1_1_speculative_solving_sequential" kind="class"><name>Stuff::SpeculativeSolvingSequential</name>
+    <member refid="class_stuff_1_1_speculative_solving_sequential_1a16b20e1e27fa6128145289c9a74c20d6" kind="function"><name>completeSolving</name></member>
+    <member refid="class_stuff_1_1_speculative_solving_sequential_1aeee8ee85b82b288d35180e27a8432495" kind="function"><name>completeAnalysis</name></member>
+    <member refid="class_stuff_1_1_speculative_solving_sequential_1adcfa88035c5df7b34c5ab3cfe392f9db" kind="function"><name>speculativeBranch</name></member>
+    <member refid="class_stuff_1_1_speculative_solving_sequential_1abbdc5585f3037a23b7da0a1547241aaa" kind="function"><name>speculativeSolvingTry</name></member>
+  </compound>
+  <compound refid="classalternative_1_1_static_field" kind="class"><name>alternative::StaticField</name>
+    <member refid="classalternative_1_1_static_field_1a706ebb48470ebc06ebd80067850fc1f2" kind="variable"><name>_number</name></member>
+    <member refid="classalternative_1_1_static_field_1a367beca80511dd3fa515f320e8635fa0" kind="variable"><name>_coordinate</name></member>
+    <member refid="classalternative_1_1_static_field_1ae81a22e971f17adbd851ee4a85fce938" kind="function"><name>isFixed</name></member>
+    <member refid="classalternative_1_1_static_field_1a7c5e537e74a2046243439ad2039e66f0" kind="function"><name>exclude</name></member>
+    <member refid="classalternative_1_1_static_field_1ab3626bcd5df199945272d7f2c7d79b30" kind="function"><name>possibleNumbers</name></member>
+    <member refid="classalternative_1_1_static_field_1a2b84342d5a8c9f5788d99754d2f253b8" kind="function"><name>toIntOrZero</name></member>
+    <member refid="classalternative_1_1_static_field_1aa49b7c035e0a1007fca81acdbcdf6231" kind="function"><name>setNumber</name></member>
+    <member refid="classalternative_1_1_static_field_1a4be22f49efa5f38b9304242f84e59cbe" kind="function"><name>getCoordinate</name></member>
+    <member refid="classalternative_1_1_static_field_1a5ac626e53cc9ee5b36b377b81a36e189" kind="function"><name>setRandomAvalibleNumber</name></member>
+    <member refid="classalternative_1_1_static_field_1a3467318f6b6b7c4e6528d59f56cd6eae" kind="function"><name>StaticField</name></member>
+  </compound>
+  <compound refid="class_fork_join_alternative_1_1_static_field" kind="class"><name>ForkJoinAlternative::StaticField</name>
+    <member refid="class_fork_join_alternative_1_1_static_field_1aceaf0ac774c131d1a10267cc6a4c3847" kind="variable"><name>_number</name></member>
+    <member refid="class_fork_join_alternative_1_1_static_field_1a4ecfda7f9ebc7c0b3cdd1f60c2091746" kind="function"><name>isFixed</name></member>
+    <member refid="class_fork_join_alternative_1_1_static_field_1a92926bf0e7203039fadacf9e1536dc8a" kind="function"><name>exclude</name></member>
+    <member refid="class_fork_join_alternative_1_1_static_field_1a76b4a2a0fdbf99204b966c1c641c9a49" kind="function"><name>possibleNumbers</name></member>
+    <member refid="class_fork_join_alternative_1_1_static_field_1a3bcf5a8c345d1d1779ae999c2664f9c4" kind="function"><name>toIntOrZero</name></member>
+    <member refid="class_fork_join_alternative_1_1_static_field_1aa82686a5e078679aea6cd183fdcb694c" kind="function"><name>setNumber</name></member>
+    <member refid="class_fork_join_alternative_1_1_static_field_1a4e664455ced7fef69ca606b192b364a6" kind="function"><name>setRandomAvalibleNumber</name></member>
+    <member refid="class_fork_join_alternative_1_1_static_field_1a79659a88d72b8b600c1d1e05e56a43df" kind="function"><name>StaticField</name></member>
+  </compound>
+  <compound refid="classnew_alternative_1_1field_1_1_static_field" kind="class"><name>newAlternative::field::StaticField</name>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1ada0647d316b5a923e06e45cdae75a473" kind="variable"><name>_number</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1a7ceb10bfe7154545d7a8006f436ce25f" kind="function"><name>isFixed</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1a5c9f5d4b4b95ee9bc70ed1684e587455" kind="function"><name>exclude</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1aef2de534b6ada7ab5a205e590b7f81a4" kind="function"><name>possibleNumbers</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1a565a0047252352921be276b2e4e1dbbb" kind="function"><name>toIntOrZero</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1a656d961c48202722276f10e09739e79f" kind="function"><name>setNumber</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1a417c30ac55e4b1405a1c71c91a966a65" kind="function"><name>setRandomAvalibleNumber</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1a73a3d7eea73eda367ddb4cb4305d4a4d" kind="function"><name>giveTask</name></member>
+    <member refid="classnew_alternative_1_1field_1_1_static_field_1ae6867cd3df79cb7bf462a8d3d63d03cf" kind="function"><name>StaticField</name></member>
+  </compound>
+  <compound refid="class_sudoku_test" kind="class"><name>SudokuTest</name>
+    <member refid="class_sudoku_test_1af08179ce9c612977e6bfd517aedff24d" kind="function"><name>numberFieldInitTest</name></member>
+    <member refid="class_sudoku_test_1a9471227d5c18678676a02a3922661dde" kind="function"><name>exceptionTest</name></member>
+    <member refid="class_sudoku_test_1ab09246e7afdc2ef36597e370e22e1cf0" kind="function"><name>numberGroupTest</name></member>
+    <member refid="class_sudoku_test_1a314bb636a2aa24e416508438a5a11d39" kind="function"><name>sudokuTest</name></member>
+    <member refid="class_sudoku_test_1a85e937dafb54515805102fc40a66daa9" kind="function"><name>analysisTest</name></member>
+    <member refid="class_sudoku_test_1a558e40fd1b3775131bd5c0d96da6668c" kind="function"><name>analyseSudokuTest</name></member>
+    <member refid="class_sudoku_test_1ac377e7e63b46ecb519e3713fed2e454f" kind="function"><name>createSudokuTest</name></member>
+    <member refid="class_sudoku_test_1a0f813525b82fd0139da7d12e0d9b41b4" kind="function"><name>CopyTest</name></member>
+    <member refid="class_sudoku_test_1a2123b5cfdb5447e47cbf20e0c02992eb" kind="function"><name>hardSudokuTest</name></member>
+    <member refid="class_sudoku_test_1af1b48be3d243f794de648f4a0dbbfddb" kind="function"><name>hardSudokuDeepAnalysis</name></member>
+  </compound>
+  <compound refid="classnew_alternative_1_1_task" kind="class"><name>newAlternative::Task</name>
+    <member refid="classnew_alternative_1_1_task_1abb0a537746731d3b32e72902344210bf" kind="variable"><name>_priority</name></member>
+    <member refid="classnew_alternative_1_1_task_1a8379ce45aea039e2bb47886f21904742" kind="variable"><name>_consumer</name></member>
+    <member refid="classnew_alternative_1_1_task_1ad12761ba75fc837881598c04c9a7e673" kind="function"><name>Task</name></member>
+    <member refid="classnew_alternative_1_1_task_1a0051838d6b447cdd1ac95116147c41aa" kind="function"><name>accept</name></member>
+    <member refid="classnew_alternative_1_1_task_1abdb01e09ef5b33f7bf7d68577fcd2b20" kind="function"><name>compareTo</name></member>
+  </compound>
+  <compound refid="class_experimental_1_1_task_schedular" kind="class"><name>Experimental::TaskSchedular</name>
+    <member refid="class_experimental_1_1_task_schedular_1a4d9298d5012aa1e5f4753fba0749ea95" kind="variable"><name>t</name></member>
+    <member refid="class_experimental_1_1_task_schedular_1a067eebbed3d0b715a7a8a6b94fcbc1ef" kind="variable"><name>thread</name></member>
+    <member refid="class_experimental_1_1_task_schedular_1a9d28f0948f0f7a40362d15c7e403e115" kind="function"><name>TaskSchedular</name></member>
+    <member refid="class_experimental_1_1_task_schedular_1af7753137f26ca617e21b894bc026e586" kind="function"><name>offer</name></member>
+  </compound>
+  <compound refid="namespacealternative" kind="namespace"><name>alternative</name>
+  </compound>
+  <compound refid="namespace_exeptions" kind="namespace"><name>Exeptions</name>
+  </compound>
+  <compound refid="namespace_experimental" kind="namespace"><name>Experimental</name>
+  </compound>
+  <compound refid="namespace_fork_join_alternative" kind="namespace"><name>ForkJoinAlternative</name>
+  </compound>
+  <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
+  </compound>
+  <compound refid="namespacejava_1_1util" kind="namespace"><name>java::util</name>
+  </compound>
+  <compound refid="namespacenew_alternative" kind="namespace"><name>newAlternative</name>
+  </compound>
+  <compound refid="namespacenew_alternative_1_1field" kind="namespace"><name>newAlternative::field</name>
+  </compound>
+  <compound refid="namespace_old" kind="namespace"><name>Old</name>
+  </compound>
+  <compound refid="namespaceorg_1_1assertj_1_1core_1_1api_1_1_assertions" kind="namespace"><name>org::assertj::core::api::Assertions</name>
+  </compound>
+  <compound refid="namespace_stuff" kind="namespace"><name>Stuff</name>
+  </compound>
+  <compound refid="_coordinate_8java" kind="file"><name>Coordinate.java</name>
+  </compound>
+  <compound refid="alternative_2_empty_field_8java" kind="file"><name>EmptyField.java</name>
+  </compound>
+  <compound refid="_fork_join_alternative_2_empty_field_8java" kind="file"><name>EmptyField.java</name>
+  </compound>
+  <compound refid="new_alternative_2field_2_empty_field_8java" kind="file"><name>EmptyField.java</name>
+  </compound>
+  <compound refid="alternative_2_field_8java" kind="file"><name>Field.java</name>
+  </compound>
+  <compound refid="_fork_join_alternative_2_field_8java" kind="file"><name>Field.java</name>
+  </compound>
+  <compound refid="new_alternative_2field_2_field_8java" kind="file"><name>Field.java</name>
+  </compound>
+  <compound refid="alternative_2_static_field_8java" kind="file"><name>StaticField.java</name>
+  </compound>
+  <compound refid="_fork_join_alternative_2_static_field_8java" kind="file"><name>StaticField.java</name>
+  </compound>
+  <compound refid="new_alternative_2field_2_static_field_8java" kind="file"><name>StaticField.java</name>
+  </compound>
+  <compound refid="_double_number_exeption_8java" kind="file"><name>DoubleNumberExeption.java</name>
+  </compound>
+  <compound refid="_not_all_numbers_are_possible_exeption_8java" kind="file"><name>NotAllNumbersArePossibleExeption.java</name>
+  </compound>
+  <compound refid="_task_schedular_8java" kind="file"><name>TaskSchedular.java</name>
+  </compound>
+  <compound refid="_fork_join_alternative_2_core_8java" kind="file"><name>Core.java</name>
+  </compound>
+  <compound refid="_stuff_2_core_8java" kind="file"><name>Core.java</name>
+  </compound>
+  <compound refid="_fork_join_alternative_2_number_group_8java" kind="file"><name>NumberGroup.java</name>
+  </compound>
+  <compound refid="new_alternative_2_number_group_8java" kind="file"><name>NumberGroup.java</name>
+  </compound>
+  <compound refid="_stuff_2_number_group_8java" kind="file"><name>NumberGroup.java</name>
+  </compound>
+  <compound refid="_field_task_8java" kind="file"><name>FieldTask.java</name>
+  </compound>
+  <compound refid="_task_8java" kind="file"><name>Task.java</name>
+  </compound>
+  <compound refid="_number_field_8java" kind="file"><name>NumberField.java</name>
+  </compound>
+  <compound refid="_constants_8java" kind="file"><name>Constants.java</name>
+  </compound>
+  <compound refid="_core_not_coherent_exeption_8java" kind="file"><name>CoreNotCoherentExeption.java</name>
+  </compound>
+  <compound refid="_error_message_8java" kind="file"><name>ErrorMessage.java</name>
+  </compound>
+  <compound refid="_event_manager_8java" kind="file"><name>EventManager.java</name>
+  </compound>
+  <compound refid="_speculative_solving_8java" kind="file"><name>SpeculativeSolving.java</name>
+  </compound>
+  <compound refid="_speculative_solving_interface_8java" kind="file"><name>SpeculativeSolvingInterface.java</name>
+  </compound>
+  <compound refid="_speculative_solving_sequential_8java" kind="file"><name>SpeculativeSolvingSequential.java</name>
+  </compound>
+  <compound refid="_fork_join_test_8java" kind="file"><name>ForkJoinTest.java</name>
+  </compound>
+  <compound refid="_sudoku_test_8java" kind="file"><name>SudokuTest.java</name>
+  </compound>
+  <compound refid="dir_eee9e8091d7932847591790e111268ce" kind="dir"><name>src/main/java/alternative</name>
+  </compound>
+  <compound refid="dir_c9d973b8c812743ec6a867cfdeef94d4" kind="dir"><name>src/main/java/Exeptions</name>
+  </compound>
+  <compound refid="dir_cc1b1cf3e4b25441ae0445a10bfbe1b7" kind="dir"><name>src/main/java/Experimental</name>
+  </compound>
+  <compound refid="dir_927f98ce21712220380dfe18f85f71a0" kind="dir"><name>src/main/java/newAlternative/field</name>
+  </compound>
+  <compound refid="dir_3b010198052071d883bcb6b67a594350" kind="dir"><name>src/main/java/ForkJoinAlternative</name>
+  </compound>
+  <compound refid="dir_fd3f6763802dee1ad875f6c80eac0bda" kind="dir"><name>src/main/java</name>
+  </compound>
+  <compound refid="dir_97debbc39e3b917fca663601bb2b0709" kind="dir"><name>src/test/java</name>
+  </compound>
+  <compound refid="dir_5eb159725f84c66aafd839904a4acdd0" kind="dir"><name>src/main</name>
+  </compound>
+  <compound refid="dir_7cdbff14b0292c422c7f4e0f494c10f5" kind="dir"><name>src/main/java/newAlternative</name>
+  </compound>
+  <compound refid="dir_55020acc04fce045e3eccf793d69641d" kind="dir"><name>src/main/java/Old</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_adec60c4ec334b09b9c29787cc9d3d0b" kind="dir"><name>src/main/java/Stuff</name>
+  </compound>
+  <compound refid="dir_120ed4da3e3217b1e7fc0b4f48568e79" kind="dir"><name>src/test</name>
+  </compound>
+</doxygenindex>

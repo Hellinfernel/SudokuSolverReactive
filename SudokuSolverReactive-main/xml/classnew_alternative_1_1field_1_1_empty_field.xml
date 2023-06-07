@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classnew_alternative_1_1field_1_1_empty_field" kind="class" language="Java" prot="public">
+    <compoundname>newAlternative::field::EmptyField</compoundname>
+    <basecompoundref refid="classnew_alternative_1_1field_1_1_field" prot="public" virt="non-virtual">newAlternative.field.Field</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnew_alternative_1_1field_1_1_empty_field_1a87ea1fb2595fef02d107074cd9d5ccb2" prot="private" static="no" mutable="no">
+        <type>final Set&lt; Integer &gt;</type>
+        <definition>final Set&lt;Integer&gt; newAlternative.field.EmptyField._possibleNumbers</definition>
+        <argsstring></argsstring>
+        <name>_possibleNumbers</name>
+        <qualifiedname>newAlternative.field.EmptyField._possibleNumbers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="16" column="23" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnew_alternative_1_1field_1_1_empty_field_1aa5b3b84f2c19caf7da2b2220a880e94a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_experimental_1_1_task_schedular" kindref="compound">TaskSchedular</ref>&lt; <ref refid="classnew_alternative_1_1field_1_1_field" kindref="compound">Field</ref> &gt;</type>
+        <definition>TaskSchedular&lt;Field&gt; newAlternative.field.EmptyField._taskSchedular</definition>
+        <argsstring></argsstring>
+        <name>_taskSchedular</name>
+        <qualifiedname>newAlternative.field.EmptyField._taskSchedular</qualifiedname>
+        <initializer>= new <ref refid="class_experimental_1_1_task_schedular" kindref="compound">TaskSchedular</ref>&lt;&gt;(this)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="17" column="27" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a7af02955a3662b4912f47427026459b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>newAlternative.field.EmptyField.EmptyField</definition>
+        <argsstring>()</argsstring>
+        <name>EmptyField</name>
+        <qualifiedname>newAlternative.field.EmptyField.EmptyField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="19" column="12" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a72355ae0ee67779dd0e452e6a2104bfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>newAlternative.field.EmptyField.EmptyField</definition>
+        <argsstring>(int number)</argsstring>
+        <name>EmptyField</name>
+        <qualifiedname>newAlternative.field.EmptyField.EmptyField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="27" column="12" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1af390e48c26e22a323b4edcfeb54f065f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>newAlternative.field.EmptyField.EmptyField</definition>
+        <argsstring>(Set&lt; Integer &gt; possibleNumbers)</argsstring>
+        <name>EmptyField</name>
+        <qualifiedname>newAlternative.field.EmptyField.EmptyField</qualifiedname>
+        <param>
+          <type>Set&lt; Integer &gt;</type>
+          <declname>possibleNumbers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="40" column="12" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1ac8110f340f4d754e472e6db77bd96c53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean newAlternative.field.EmptyField.isFixed</definition>
+        <argsstring>()</argsstring>
+        <name>isFixed</name>
+        <qualifiedname>newAlternative.field.EmptyField.isFixed</qualifiedname>
+        <reimplements refid="classnew_alternative_1_1field_1_1_field_1adf93b6b21fbe5df7c53330871f0a5dbc">isFixed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="49" column="20" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a7d73bb560c96e6885398ba62307d24aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized void</type>
+        <definition>synchronized void newAlternative.field.EmptyField.exclude</definition>
+        <argsstring>(final int number)</argsstring>
+        <name>exclude</name>
+        <qualifiedname>newAlternative.field.EmptyField.exclude</qualifiedname>
+        <reimplements refid="classnew_alternative_1_1field_1_1_field_1a4106730e12954029b9cfffaf901a694b">exclude</reimplements>
+        <param>
+          <type>final int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="54" column="30" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="54" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a07f8b93e22b4c9afe7f11f16a8f05495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; Integer &gt;</type>
+        <definition>Set&lt; Integer &gt; newAlternative.field.EmptyField.possibleNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>possibleNumbers</name>
+        <qualifiedname>newAlternative.field.EmptyField.possibleNumbers</qualifiedname>
+        <reimplements refid="classnew_alternative_1_1field_1_1_field_1a922b969100738fe958cae54c1e959d53">possibleNumbers</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="70" column="16" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a2b558ab5e030b434719500ea60472a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int newAlternative.field.EmptyField.toIntOrZero</definition>
+        <argsstring>()</argsstring>
+        <name>toIntOrZero</name>
+        <qualifiedname>newAlternative.field.EmptyField.toIntOrZero</qualifiedname>
+        <reimplements refid="classnew_alternative_1_1field_1_1_field_1a139c48107678756facdeb3c7daa620c9">toIntOrZero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="75" column="16" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a525d156bc830bec898a44e7f88ccad62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.field.EmptyField.setNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumber</name>
+        <qualifiedname>newAlternative.field.EmptyField.setNumber</qualifiedname>
+        <reimplements refid="classnew_alternative_1_1field_1_1_field_1a61ced055632c54df7c0946ee7609a849">setNumber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="83" column="17" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="83" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a09b4c1bec9cf1847e155cdf2ac02a3be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.field.EmptyField.setRandomAvalibleNumber</definition>
+        <argsstring>()</argsstring>
+        <name>setRandomAvalibleNumber</name>
+        <qualifiedname>newAlternative.field.EmptyField.setRandomAvalibleNumber</qualifiedname>
+        <reimplements refid="classnew_alternative_1_1field_1_1_field_1afabb90d7571427e0b6a0cd9d76d2ea44">setRandomAvalibleNumber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="93" column="17" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="93" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classnew_alternative_1_1field_1_1_empty_field_1a726db0918662f43b86d6dc8cc3d8490c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void newAlternative.field.EmptyField.giveTask</definition>
+        <argsstring>(Task&lt; Field &gt; task)</argsstring>
+        <name>giveTask</name>
+        <qualifiedname>newAlternative.field.EmptyField.giveTask</qualifiedname>
+        <reimplements refid="classnew_alternative_1_1field_1_1_field_1ae98c367828d6e5629ba3c416a89f98fa">giveTask</reimplements>
+        <param>
+          <type><ref refid="classnew_alternative_1_1_task" kindref="compound">Task</ref>&lt; <ref refid="classnew_alternative_1_1field_1_1_field" kindref="compound">Field</ref> &gt;</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/newAlternative/field/EmptyField.java" line="110" column="17" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="110" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>newAlternative.field.EmptyField</label>
+        <link refid="classnew_alternative_1_1field_1_1_empty_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>newAlternative.field.Field</label>
+        <link refid="classnew_alternative_1_1field_1_1_field"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Stuff.EventManager&lt; Integer &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+      </node>
+      <node id="1">
+        <label>newAlternative.field.EmptyField</label>
+        <link refid="classnew_alternative_1_1field_1_1_empty_field"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>newAlternative.field.Field</label>
+        <link refid="classnew_alternative_1_1field_1_1_field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_changeInPossibleNumbersEvent</edgelabel>
+          <edgelabel>_trueNumberFoundEvent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/newAlternative/field/EmptyField.java" line="14" column="7" bodyfile="src/main/java/newAlternative/field/EmptyField.java" bodystart="14" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classnew_alternative_1_1field_1_1_field_1a2ecb616f4a2b14153ee4f32720b9f3a6" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>_changeInPossibleNumbersEvent</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a87ea1fb2595fef02d107074cd9d5ccb2" prot="private" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>_possibleNumbers</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1aa5b3b84f2c19caf7da2b2220a880e94a" prot="private" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>_taskSchedular</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_field_1af48c6c3de98cf1065e929bc2a92d2193" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>_trueNumberFoundEvent</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_field_1a902926cd9997becc79b163d1b4d5a081" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>copy</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a7af02955a3662b4912f47427026459b6" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>EmptyField</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a72355ae0ee67779dd0e452e6a2104bfd" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>EmptyField</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1af390e48c26e22a323b4edcfeb54f065f" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>EmptyField</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a7d73bb560c96e6885398ba62307d24aa" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>exclude</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a726db0918662f43b86d6dc8cc3d8490c" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>giveTask</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1ac8110f340f4d754e472e6db77bd96c53" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>isFixed</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a07f8b93e22b4c9afe7f11f16a8f05495" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>possibleNumbers</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a525d156bc830bec898a44e7f88ccad62" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>setNumber</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a09b4c1bec9cf1847e155cdf2ac02a3be" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>setRandomAvalibleNumber</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_empty_field_1a2b558ab5e030b434719500ea60472a8a" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>toIntOrZero</name></member>
+      <member refid="classnew_alternative_1_1field_1_1_field_1a4264f48a51ccf758b5dd95605fbf4af1" prot="public" virt="non-virtual"><scope>newAlternative::field::EmptyField</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

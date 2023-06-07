@@ -1,0 +1,64 @@
+\doxysection{Static\+Field.\+java}
+\hypertarget{new_alternative_2field_2_static_field_8java_source}{}\label{new_alternative_2field_2_static_field_8java_source}\index{src/main/java/newAlternative/field/StaticField.java@{src/main/java/newAlternative/field/StaticField.java}}
+\mbox{\hyperlink{new_alternative_2field_2_static_field_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00001}00001\ \textcolor{keyword}{package\ }newAlternative.field;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespace_stuff}{Stuff}}.\mbox{\hyperlink{class_stuff_1_1_event_manager}{EventManager}};}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacenew_alternative}{newAlternative}}.\mbox{\hyperlink{classnew_alternative_1_1_task}{Task}};}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacenew_alternative}{newAlternative}}.\mbox{\hyperlink{namespacenew_alternative_1_1field}{field}}.\mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}};}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00008}00008\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00009}00009\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00010}00010\ \textcolor{keyword}{import}\ java.util.function.Consumer;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00012}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field}{00012}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field}{StaticField}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}}\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00013}00013\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ \_number;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00015}00015\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00016}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a7ceb10bfe7154545d7a8006f436ce25f}{00016}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a7ceb10bfe7154545d7a8006f436ce25f}{isFixed}}()\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00018}00018\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00020}00020\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00021}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a5c9f5d4b4b95ee9bc70ed1684e587455}{00021}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a5c9f5d4b4b95ee9bc70ed1684e587455}{exclude}}(\textcolor{keywordtype}{int}\ number)\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00025}00025\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00026}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_aef2de534b6ada7ab5a205e590b7f81a4}{00026}}\ \ \ \ \ \textcolor{keyword}{public}\ Set<Integer>\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_aef2de534b6ada7ab5a205e590b7f81a4}{possibleNumbers}}()\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ Set<Integer>\ number\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ number.add(\_number);}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ number;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00032}00032\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00033}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a565a0047252352921be276b2e4e1dbbb}{00033}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a565a0047252352921be276b2e4e1dbbb}{toIntOrZero}}()\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_number;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00037}00037\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00038}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a656d961c48202722276f10e09739e79f}{00038}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a656d961c48202722276f10e09739e79f}{setNumber}}(\textcolor{keywordtype}{int}\ number)\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00042}00042\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00043}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a417c30ac55e4b1405a1c71c91a966a65}{00043}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a417c30ac55e4b1405a1c71c91a966a65}{setRandomAvalibleNumber}}()\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00045}00045\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00047}00047\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00048}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a73a3d7eea73eda367ddb4cb4305d4a4d}{00048}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_a73a3d7eea73eda367ddb4cb4305d4a4d}{giveTask}}(\mbox{\hyperlink{classnew_alternative_1_1_task}{Task<Field>}}\ task)\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00053}\mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_ae6867cd3df79cb7bf462a8d3d63d03cf}{00053}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_static_field_ae6867cd3df79cb7bf462a8d3d63d03cf}{StaticField}}(\textcolor{keywordtype}{int}\ number)\ \{}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ \_number\ =\ number;}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_field_af48c6c3de98cf1065e929bc2a92d2193}{\_trueNumberFoundEvent}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_stuff_1_1_event_manager}{EventManager}}();}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_field_a2ecb616f4a2b14153ee4f32720b9f3a6}{\_changeInPossibleNumbersEvent}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_stuff_1_1_event_manager}{EventManager}}();}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{new_alternative_2field_2_static_field_8java_source_l00058}00058\ \}}
+
+\end{DoxyCode}

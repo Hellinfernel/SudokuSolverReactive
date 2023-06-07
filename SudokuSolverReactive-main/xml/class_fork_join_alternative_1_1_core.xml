@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_fork_join_alternative_1_1_core" kind="class" language="Java" prot="public">
+    <compoundname>ForkJoinAlternative::Core</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_core_1a34033df36f459c752e3cbce3cc2e4c9d" prot="private" static="no" mutable="no">
+        <type>final <ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref>[][]</type>
+        <definition>final Field [][] ForkJoinAlternative.Core.sudokuMatrix</definition>
+        <argsstring></argsstring>
+        <name>sudokuMatrix</name>
+        <qualifiedname>ForkJoinAlternative.Core.sudokuMatrix</qualifiedname>
+        <initializer>= new <ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref>[9][9]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The first dimension goes right left, the second dimension up own. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="21" column="25" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_core_1aeaaa4ffe0a1db96f4a4020afe009a99c" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref> &gt;</type>
+        <definition>final List&lt;NumberGroup&gt; ForkJoinAlternative.Core.sudokuRows</definition>
+        <argsstring></argsstring>
+        <name>sudokuRows</name>
+        <qualifiedname>ForkJoinAlternative.Core.sudokuRows</qualifiedname>
+        <initializer>= new LinkedList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="22" column="24" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_core_1af0b0823abb5f17a615606ae7e8db555d" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref> &gt;</type>
+        <definition>final List&lt;NumberGroup&gt; ForkJoinAlternative.Core.sudokuColumns</definition>
+        <argsstring></argsstring>
+        <name>sudokuColumns</name>
+        <qualifiedname>ForkJoinAlternative.Core.sudokuColumns</qualifiedname>
+        <initializer>= new LinkedList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="23" column="24" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_core_1addf288b87f248cebc3d8a9599640db42" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref> &gt;</type>
+        <definition>final List&lt;NumberGroup&gt; ForkJoinAlternative.Core.sudokuBlocks</definition>
+        <argsstring></argsstring>
+        <name>sudokuBlocks</name>
+        <qualifiedname>ForkJoinAlternative.Core.sudokuBlocks</qualifiedname>
+        <initializer>=new LinkedList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="24" column="24" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_core_1a058040fe029a5da08e3767d1c6dec89b" prot="private" static="no" mutable="no">
+        <type>final ExecutorService</type>
+        <definition>final ExecutorService ForkJoinAlternative.Core.executorService</definition>
+        <argsstring></argsstring>
+        <name>executorService</name>
+        <qualifiedname>ForkJoinAlternative.Core.executorService</qualifiedname>
+        <initializer>= ForkJoinPool.commonPool()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="25" column="35" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1ab759243743a387eae1dbb738d35efac6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.Core.Core</definition>
+        <argsstring>()</argsstring>
+        <name>Core</name>
+        <qualifiedname>ForkJoinAlternative.Core.Core</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="32" column="12" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="32" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1afc40cbb8ac6ec2c4f117c81351b3c5ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.Core.Core</definition>
+        <argsstring>(Core core)</argsstring>
+        <name>Core</name>
+        <qualifiedname>ForkJoinAlternative.Core.Core</qualifiedname>
+        <param>
+          <type><ref refid="class_fork_join_alternative_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="41" column="12" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1afbff3d77663947afd2c0759f5185ce7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.Core.Core</definition>
+        <argsstring>(int[][] inputMatrix)</argsstring>
+        <name>Core</name>
+        <qualifiedname>ForkJoinAlternative.Core.Core</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inputMatrix</declname>
+          <array>[][]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="71" column="12" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="71" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a3a4ef0c44c0dd20e2380380e9047811c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref>[][]</type>
+        <definition>Field[][] ForkJoinAlternative.Core.getSudokuMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getSudokuMatrix</name>
+        <qualifiedname>ForkJoinAlternative.Core.getSudokuMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="151" column="18" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a152752ff930aca8bf74b06160ca40381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup ForkJoinAlternative.Core.getRow</definition>
+        <argsstring>(int number)</argsstring>
+        <name>getRow</name>
+        <qualifiedname>ForkJoinAlternative.Core.getRow</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="158" column="24" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1ab9dace98db771aa818a1ece6497141bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup ForkJoinAlternative.Core.getColumn</definition>
+        <argsstring>(int number)</argsstring>
+        <name>getColumn</name>
+        <qualifiedname>ForkJoinAlternative.Core.getColumn</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="161" column="24" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a75cd726b87f29f1493595fe6d8158ee4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup ForkJoinAlternative.Core.getBlock</definition>
+        <argsstring>(int number)</argsstring>
+        <name>getBlock</name>
+        <qualifiedname>ForkJoinAlternative.Core.getBlock</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>thats the supposed order: 123 456 789 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="174" column="24" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a708b01feb34ecbe10037120adb3103e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.Core.start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>ForkJoinAlternative.Core.start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="199" column="17" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="199" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1ac4850ce1b9e89d1d6e946be2e55c59de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.Core.parallelStart</definition>
+        <argsstring>()</argsstring>
+        <name>parallelStart</name>
+        <qualifiedname>ForkJoinAlternative.Core.parallelStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="219" column="17" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="219" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a31fee9687e6ae6fbf2ce2e40820d8c49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.Core.testCoherence</definition>
+        <argsstring>()</argsstring>
+        <name>testCoherence</name>
+        <qualifiedname>ForkJoinAlternative.Core.testCoherence</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>, <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="226" column="17" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="226" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a2e07a9a9e990039aa9b00af4c2925b33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ForkJoinAlternative.Core.doesContainOnlyZero</definition>
+        <argsstring>()</argsstring>
+        <name>doesContainOnlyZero</name>
+        <qualifiedname>ForkJoinAlternative.Core.doesContainOnlyZero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if every field.possibleNumbers contains all possible numbers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="243" column="20" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="243" bodyend="252"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a730bbc72cab219edb00da3b9f321e481" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.Core.generateGroups</definition>
+        <argsstring>()</argsstring>
+        <name>generateGroups</name>
+        <qualifiedname>ForkJoinAlternative.Core.generateGroups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="50" column="18" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="50" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1ad3d7d4bb594f74745743a1e859d23170" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup ForkJoinAlternative.Core.generateRow</definition>
+        <argsstring>(int rowNumber)</argsstring>
+        <name>generateRow</name>
+        <qualifiedname>ForkJoinAlternative.Core.generateRow</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rowNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="154" column="25" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a015b2bc966399724ea0e509a848437a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup ForkJoinAlternative.Core.generateColumn</definition>
+        <argsstring>(int columnNumber)</argsstring>
+        <name>generateColumn</name>
+        <qualifiedname>ForkJoinAlternative.Core.generateColumn</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>columnNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="177" column="25" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="177" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a3e7d0a0165fe01b866f21a9959da1528" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup ForkJoinAlternative.Core.generateBlock</definition>
+        <argsstring>(int height, int lenght)</argsstring>
+        <name>generateBlock</name>
+        <qualifiedname>ForkJoinAlternative.Core.generateBlock</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lenght</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="184" column="25" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="184" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1abbd6570a43cee92306d6b688e319e4b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_core" kindref="compound">Core</ref></type>
+        <definition>static Core ForkJoinAlternative.Core.randomCreate</definition>
+        <argsstring>()</argsstring>
+        <name>randomCreate</name>
+        <qualifiedname>ForkJoinAlternative.Core.randomCreate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="84" column="24" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="84" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_core_1a014079869de47070bbff17b4985c98a7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_core" kindref="compound">Core</ref></type>
+        <definition>static Core ForkJoinAlternative.Core.setNumberOfRowRandom</definition>
+        <argsstring>(Core _core, int setNumbers, Field[] array)</argsstring>
+        <name>setNumberOfRowRandom</name>
+        <qualifiedname>ForkJoinAlternative.Core.setNumberOfRowRandom</qualifiedname>
+        <param>
+          <type><ref refid="class_fork_join_alternative_1_1_core" kindref="compound">Core</ref></type>
+          <declname>_core</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>setNumbers</declname>
+        </param>
+        <param>
+          <type><ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref>[]</type>
+          <declname>array</declname>
+        </param>
+        <exceptions> throws <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref>, <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Core.java" line="122" column="25" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="122" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/ForkJoinAlternative/Core.java" line="14" column="7" bodyfile="src/main/java/ForkJoinAlternative/Core.java" bodystart="14" bodyend="254"/>
+    <listofallmembers>
+      <member refid="class_fork_join_alternative_1_1_core_1ab759243743a387eae1dbb738d35efac6" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>Core</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1afc40cbb8ac6ec2c4f117c81351b3c5ab" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>Core</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1afbff3d77663947afd2c0759f5185ce7b" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>Core</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a2e07a9a9e990039aa9b00af4c2925b33" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>doesContainOnlyZero</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a058040fe029a5da08e3767d1c6dec89b" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>executorService</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a3e7d0a0165fe01b866f21a9959da1528" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>generateBlock</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a015b2bc966399724ea0e509a848437a2" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>generateColumn</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a730bbc72cab219edb00da3b9f321e481" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>generateGroups</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1ad3d7d4bb594f74745743a1e859d23170" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>generateRow</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a75cd726b87f29f1493595fe6d8158ee4" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>getBlock</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1ab9dace98db771aa818a1ece6497141bf" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>getColumn</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a152752ff930aca8bf74b06160ca40381" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>getRow</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a3a4ef0c44c0dd20e2380380e9047811c" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>getSudokuMatrix</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1ac4850ce1b9e89d1d6e946be2e55c59de" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>parallelStart</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1abbd6570a43cee92306d6b688e319e4b1" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>randomCreate</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a014079869de47070bbff17b4985c98a7" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>setNumberOfRowRandom</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a708b01feb34ecbe10037120adb3103e6" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>start</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1addf288b87f248cebc3d8a9599640db42" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>sudokuBlocks</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1af0b0823abb5f17a615606ae7e8db555d" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>sudokuColumns</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a34033df36f459c752e3cbce3cc2e4c9d" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>sudokuMatrix</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1aeaaa4ffe0a1db96f4a4020afe009a99c" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>sudokuRows</name></member>
+      <member refid="class_fork_join_alternative_1_1_core_1a31fee9687e6ae6fbf2ce2e40820d8c49" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Core</scope><name>testCoherence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
