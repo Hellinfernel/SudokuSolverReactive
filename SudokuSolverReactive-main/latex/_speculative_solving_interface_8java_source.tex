@@ -1,0 +1,27 @@
+\doxysection{Speculative\+Solving\+Interface.\+java}
+\hypertarget{_speculative_solving_interface_8java_source}{}\label{_speculative_solving_interface_8java_source}\index{src/main/java/Stuff/SpeculativeSolvingInterface.java@{src/main/java/Stuff/SpeculativeSolvingInterface.java}}
+\mbox{\hyperlink{_speculative_solving_interface_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00001}00001\ \textcolor{keyword}{package\ }Stuff;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacealternative}{alternative}}.\mbox{\hyperlink{classalternative_1_1_field}{Field}};}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00005}00005\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00006}00006\ \textcolor{keyword}{import}\ java.util.Comparator;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00007}00007\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00008}00008\ \textcolor{keyword}{import}\ java.util.NoSuchElementException;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00009}00009\ \textcolor{keyword}{import}\ java.util.concurrent.CompletableFuture;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00011}\mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface}{00011}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface}{SpeculativeSolvingInterface}}\ \{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00012}\mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface_ab8b00110875006694b78f7c907ea071e}{00012}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_stuff_1_1_core}{Core}}\ \mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface_ab8b00110875006694b78f7c907ea071e}{completeSolving}}(\mbox{\hyperlink{class_stuff_1_1_core}{Core}}\ core)\ \textcolor{keywordflow}{throws}\ \mbox{\hyperlink{class_stuff_1_1_core_not_coherent_exeption}{CoreNotCoherentExeption}};}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00013}\mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface_a74df78df3de7eed6d865c6678c6ee97e}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{classalternative_1_1_field}{Field}}\ \mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface_a74df78df3de7eed6d865c6678c6ee97e}{searchCanidateForSpeculativeTry}}(\mbox{\hyperlink{class_stuff_1_1_core}{Core}}\ core)\ \textcolor{keywordflow}{throws}\ NoSuchElementException\{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ core.get\_sudokuMatrix().stream()}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00015}00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .filter(field\ -\/>\ !field.isFixed())}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .min(Comparator.comparing((\mbox{\hyperlink{classalternative_1_1_field}{Field}}\ field)\ -\/>\ field.\mbox{\hyperlink{classalternative_1_1_field_ab40e6c931aa1d79b89a5de3f0b7dbc61}{possibleNumbers}}().size()))}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .orElseThrow();}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_interface_8java_source_l00021}00021\ \}}
+
+\end{DoxyCode}

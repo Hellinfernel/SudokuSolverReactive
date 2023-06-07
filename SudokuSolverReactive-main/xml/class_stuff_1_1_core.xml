@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_stuff_1_1_core" kind="class" language="Java" prot="public">
+    <compoundname>Stuff::Core</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stuff_1_1_core_1ae9b54c4bf796e69d3285a2d617ff082d" prot="private" static="no" mutable="no">
+        <type>final Collection&lt; <ref refid="classalternative_1_1_field" kindref="compound">Field</ref> &gt;</type>
+        <definition>final Collection&lt;Field&gt; Stuff.Core._sudokuMatrix</definition>
+        <argsstring></argsstring>
+        <name>_sudokuMatrix</name>
+        <qualifiedname>Stuff.Core._sudokuMatrix</qualifiedname>
+        <initializer>= new HashSet&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The first dimension goes right left, the second dimension up own. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="29" column="30" bodyfile="src/main/java/Stuff/Core.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stuff_1_1_core_1afdb9f1eeb9be800e854af443c90c33ca" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref> &gt;</type>
+        <definition>final List&lt;NumberGroup&gt; Stuff.Core.sudokuRows</definition>
+        <argsstring></argsstring>
+        <name>sudokuRows</name>
+        <qualifiedname>Stuff.Core.sudokuRows</qualifiedname>
+        <initializer>= new LinkedList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="30" column="24" bodyfile="src/main/java/Stuff/Core.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stuff_1_1_core_1afa65bdd7c5519b18689447a017d9b9e4" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref> &gt;</type>
+        <definition>final List&lt;NumberGroup&gt; Stuff.Core.sudokuColumns</definition>
+        <argsstring></argsstring>
+        <name>sudokuColumns</name>
+        <qualifiedname>Stuff.Core.sudokuColumns</qualifiedname>
+        <initializer>= new LinkedList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="31" column="24" bodyfile="src/main/java/Stuff/Core.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stuff_1_1_core_1a463185f748b1f1aaec9a502cf9ab9b24" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref> &gt;</type>
+        <definition>final List&lt;NumberGroup&gt; Stuff.Core.sudokuBlocks</definition>
+        <argsstring></argsstring>
+        <name>sudokuBlocks</name>
+        <qualifiedname>Stuff.Core.sudokuBlocks</qualifiedname>
+        <initializer>= new LinkedList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="32" column="24" bodyfile="src/main/java/Stuff/Core.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stuff_1_1_core_1ad93991b2a2cdcebbb3eb0be5025c88c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stuff.Core.Core</definition>
+        <argsstring>()</argsstring>
+        <name>Core</name>
+        <qualifiedname>Stuff.Core.Core</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the Standard Constructor of this class. It allows you to generate a </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="40" column="12" bodyfile="src/main/java/Stuff/Core.java" bodystart="40" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1ad6fe449e188a1ac5cc02faaa829ab6bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stuff.Core.Core</definition>
+        <argsstring>(Core core)</argsstring>
+        <name>Core</name>
+        <qualifiedname>Stuff.Core.Core</qualifiedname>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="60" column="12" bodyfile="src/main/java/Stuff/Core.java" bodystart="60" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a519285b929b459447f0130b3fb1b24b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stuff.Core.Core</definition>
+        <argsstring>(int[][] inputMatrix)</argsstring>
+        <name>Core</name>
+        <qualifiedname>Stuff.Core.Core</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inputMatrix</declname>
+          <array>[][]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="101" column="12" bodyfile="src/main/java/Stuff/Core.java" bodystart="101" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1afde879c31994e7c5fcbce0d4f3f02adb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Collection&lt; <ref refid="classalternative_1_1_field" kindref="compound">Field</ref> &gt;</type>
+        <definition>Collection&lt; Field &gt; Stuff.Core.get_sudokuMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>get_sudokuMatrix</name>
+        <qualifiedname>Stuff.Core.get_sudokuMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="197" column="23" bodyfile="src/main/java/Stuff/Core.java" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1abc73cd6eb6a190d194b074b922db5ff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup Stuff.Core.getRow</definition>
+        <argsstring>(int number)</argsstring>
+        <name>getRow</name>
+        <qualifiedname>Stuff.Core.getRow</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="204" column="24" bodyfile="src/main/java/Stuff/Core.java" bodystart="204" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a736b97b03e27596cd3329d1f61c5b51b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup Stuff.Core.getColumn</definition>
+        <argsstring>(int number)</argsstring>
+        <name>getColumn</name>
+        <qualifiedname>Stuff.Core.getColumn</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="207" column="24" bodyfile="src/main/java/Stuff/Core.java" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a6824007f2d83f696e4ab5ea2beee91a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup Stuff.Core.getBlock</definition>
+        <argsstring>(int number)</argsstring>
+        <name>getBlock</name>
+        <qualifiedname>Stuff.Core.getBlock</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>thats the supposed order: 123 456 789 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="220" column="24" bodyfile="src/main/java/Stuff/Core.java" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a476917194b076af223d9cdc99a7cb7ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.Core.kickStartEventTrigger</definition>
+        <argsstring>()</argsstring>
+        <name>kickStartEventTrigger</name>
+        <qualifiedname>Stuff.Core.kickStartEventTrigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="241" column="17" bodyfile="src/main/java/Stuff/Core.java" bodystart="241" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a46a4371010073f3b2697fff93e411e87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.Core.testCoherence</definition>
+        <argsstring>()</argsstring>
+        <name>testCoherence</name>
+        <qualifiedname>Stuff.Core.testCoherence</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>, <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="258" column="17" bodyfile="src/main/java/Stuff/Core.java" bodystart="258" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a52f452b05bd6b4531b56f4329ed72f9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Stuff.Core.doesContainOnlyZero</definition>
+        <argsstring>()</argsstring>
+        <name>doesContainOnlyZero</name>
+        <qualifiedname>Stuff.Core.doesContainOnlyZero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if every field.possibleNumbers contains all possible numbers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="275" column="20" bodyfile="src/main/java/Stuff/Core.java" bodystart="275" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a1a3dc6ec35fe2f4234dfe0a3bc4e7523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Stuff.Core.isSolvedCompleatly</definition>
+        <argsstring>()</argsstring>
+        <name>isSolvedCompleatly</name>
+        <qualifiedname>Stuff.Core.isSolvedCompleatly</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="286" column="20" bodyfile="src/main/java/Stuff/Core.java" bodystart="286" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1ac18dcbfdd0272d18e2e4e23790ea35c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref></type>
+        <definition>Field Stuff.Core.getFieldByCoordinate</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>getFieldByCoordinate</name>
+        <qualifiedname>Stuff.Core.getFieldByCoordinate</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="298" column="18" bodyfile="src/main/java/Stuff/Core.java" bodystart="298" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a331ff6c2071c20be4e32a4fd40aea426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref></type>
+        <definition>Field Stuff.Core.getFieldByCoordinate</definition>
+        <argsstring>(Coordinate coordinate)</argsstring>
+        <name>getFieldByCoordinate</name>
+        <qualifiedname>Stuff.Core.getFieldByCoordinate</qualifiedname>
+        <param>
+          <type><ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+          <declname>coordinate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="301" column="18" bodyfile="src/main/java/Stuff/Core.java" bodystart="301" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a744d57ad23efa65765a37857fd44aa82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String Stuff.Core.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>Stuff.Core.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="307" column="19" bodyfile="src/main/java/Stuff/Core.java" bodystart="307" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_stuff_1_1_core_1a81d9b312155816472d8cd732a1130841" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.Core.generateGroups</definition>
+        <argsstring>()</argsstring>
+        <name>generateGroups</name>
+        <qualifiedname>Stuff.Core.generateGroups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="80" column="18" bodyfile="src/main/java/Stuff/Core.java" bodystart="80" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a22f752a2232aba23d777fa764d512914" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup Stuff.Core.generateRow</definition>
+        <argsstring>(int rowNumber)</argsstring>
+        <name>generateRow</name>
+        <qualifiedname>Stuff.Core.generateRow</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rowNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="200" column="25" bodyfile="src/main/java/Stuff/Core.java" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a13f031be0ef81ce03100e56a2ac1177e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup Stuff.Core.generateColumn</definition>
+        <argsstring>(int columnNumber)</argsstring>
+        <name>generateColumn</name>
+        <qualifiedname>Stuff.Core.generateColumn</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>columnNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="223" column="25" bodyfile="src/main/java/Stuff/Core.java" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_core_1a4578be9fb28135ae69de3dad050327e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_number_group" kindref="compound">NumberGroup</ref></type>
+        <definition>NumberGroup Stuff.Core.generateBlock</definition>
+        <argsstring>(int height, int lenght)</argsstring>
+        <name>generateBlock</name>
+        <qualifiedname>Stuff.Core.generateBlock</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lenght</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="226" column="25" bodyfile="src/main/java/Stuff/Core.java" bodystart="226" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_stuff_1_1_core_1a17cfe7db1e3854f67dfa7776561eded6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+        <definition>static Core Stuff.Core.randomCreate</definition>
+        <argsstring>()</argsstring>
+        <name>randomCreate</name>
+        <qualifiedname>Stuff.Core.randomCreate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="126" column="24" bodyfile="src/main/java/Stuff/Core.java" bodystart="126" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_stuff_1_1_core_1a5c31a8e46000eca54deec58a61a6ef16" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+        <definition>static Core Stuff.Core.setNumberOfRowRandom</definition>
+        <argsstring>(Core _core, int setNumbers, Field[] array)</argsstring>
+        <name>setNumberOfRowRandom</name>
+        <qualifiedname>Stuff.Core.setNumberOfRowRandom</qualifiedname>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>_core</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>setNumbers</declname>
+        </param>
+        <param>
+          <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref>[]</type>
+          <declname>array</declname>
+        </param>
+        <exceptions> throws <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref>, <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/Core.java" line="163" column="25" bodyfile="src/main/java/Stuff/Core.java" bodystart="163" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/Stuff/Core.java" line="21" column="7" bodyfile="src/main/java/Stuff/Core.java" bodystart="21" bodyend="315"/>
+    <listofallmembers>
+      <member refid="class_stuff_1_1_core_1ae9b54c4bf796e69d3285a2d617ff082d" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>_sudokuMatrix</name></member>
+      <member refid="class_stuff_1_1_core_1ad93991b2a2cdcebbb3eb0be5025c88c9" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>Core</name></member>
+      <member refid="class_stuff_1_1_core_1ad6fe449e188a1ac5cc02faaa829ab6bd" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>Core</name></member>
+      <member refid="class_stuff_1_1_core_1a519285b929b459447f0130b3fb1b24b5" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>Core</name></member>
+      <member refid="class_stuff_1_1_core_1a52f452b05bd6b4531b56f4329ed72f9e" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>doesContainOnlyZero</name></member>
+      <member refid="class_stuff_1_1_core_1a4578be9fb28135ae69de3dad050327e9" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>generateBlock</name></member>
+      <member refid="class_stuff_1_1_core_1a13f031be0ef81ce03100e56a2ac1177e" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>generateColumn</name></member>
+      <member refid="class_stuff_1_1_core_1a81d9b312155816472d8cd732a1130841" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>generateGroups</name></member>
+      <member refid="class_stuff_1_1_core_1a22f752a2232aba23d777fa764d512914" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>generateRow</name></member>
+      <member refid="class_stuff_1_1_core_1afde879c31994e7c5fcbce0d4f3f02adb" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>get_sudokuMatrix</name></member>
+      <member refid="class_stuff_1_1_core_1a6824007f2d83f696e4ab5ea2beee91a2" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>getBlock</name></member>
+      <member refid="class_stuff_1_1_core_1a736b97b03e27596cd3329d1f61c5b51b" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>getColumn</name></member>
+      <member refid="class_stuff_1_1_core_1ac18dcbfdd0272d18e2e4e23790ea35c4" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>getFieldByCoordinate</name></member>
+      <member refid="class_stuff_1_1_core_1a331ff6c2071c20be4e32a4fd40aea426" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>getFieldByCoordinate</name></member>
+      <member refid="class_stuff_1_1_core_1abc73cd6eb6a190d194b074b922db5ff0" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>getRow</name></member>
+      <member refid="class_stuff_1_1_core_1a1a3dc6ec35fe2f4234dfe0a3bc4e7523" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>isSolvedCompleatly</name></member>
+      <member refid="class_stuff_1_1_core_1a476917194b076af223d9cdc99a7cb7ed" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>kickStartEventTrigger</name></member>
+      <member refid="class_stuff_1_1_core_1a17cfe7db1e3854f67dfa7776561eded6" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>randomCreate</name></member>
+      <member refid="class_stuff_1_1_core_1a5c31a8e46000eca54deec58a61a6ef16" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>setNumberOfRowRandom</name></member>
+      <member refid="class_stuff_1_1_core_1a463185f748b1f1aaec9a502cf9ab9b24" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>sudokuBlocks</name></member>
+      <member refid="class_stuff_1_1_core_1afa65bdd7c5519b18689447a017d9b9e4" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>sudokuColumns</name></member>
+      <member refid="class_stuff_1_1_core_1afdb9f1eeb9be800e854af443c90c33ca" prot="private" virt="non-virtual"><scope>Stuff::Core</scope><name>sudokuRows</name></member>
+      <member refid="class_stuff_1_1_core_1a46a4371010073f3b2697fff93e411e87" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>testCoherence</name></member>
+      <member refid="class_stuff_1_1_core_1a744d57ad23efa65765a37857fd44aa82" prot="public" virt="non-virtual"><scope>Stuff::Core</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

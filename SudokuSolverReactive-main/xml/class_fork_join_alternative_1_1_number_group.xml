@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_fork_join_alternative_1_1_number_group" kind="class" language="Java" prot="public">
+    <compoundname>ForkJoinAlternative::NumberGroup</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_number_group_1aaa795b411dbce74419fdeee18c52f031" prot="private" static="no" mutable="no">
+        <type>final Set&lt; <ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref> &gt;</type>
+        <definition>final Set&lt;Field&gt; ForkJoinAlternative.NumberGroup._numberFields</definition>
+        <argsstring></argsstring>
+        <name>_numberFields</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup._numberFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="13" column="23" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_number_group_1ae8421bcecdfa6f4db152a9333f5ad5dc" prot="private" static="no" mutable="no">
+        <type>final Set&lt; Integer &gt;</type>
+        <definition>final Set&lt;Integer&gt; ForkJoinAlternative.NumberGroup._leftNumbers</definition>
+        <argsstring></argsstring>
+        <name>_leftNumbers</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup._leftNumbers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="14" column="23" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_number_group_1a16799fb17e2bd7200c046a91697fbc6e" prot="private" static="no" mutable="no">
+        <type>final ExecutorService</type>
+        <definition>final ExecutorService ForkJoinAlternative.NumberGroup._executorService</definition>
+        <argsstring></argsstring>
+        <name>_executorService</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup._executorService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="15" column="35" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a2beca6b8dff5f5d84c1187741dbd09c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.NumberGroup.NumberGroup</definition>
+        <argsstring>(Field[] matrix, ExecutorService executorService)</argsstring>
+        <name>NumberGroup</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.NumberGroup</qualifiedname>
+        <param>
+          <type><ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref>[]</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>ExecutorService</type>
+          <declname>executorService</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="18" column="12" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="18" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a427672570d87c550fc56b68da08a57c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ForkJoinAlternative.NumberGroup.NumberGroup</definition>
+        <argsstring>(int[] matrix, ExecutorService executorService)</argsstring>
+        <name>NumberGroup</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.NumberGroup</qualifiedname>
+        <param>
+          <type>int[]</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>ExecutorService</type>
+          <declname>executorService</declname>
+        </param>
+        <exceptions> throws ArrayIndexOutOfBoundsException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="35" column="12" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="35" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a91589e98750bcb61edabe68e619a96d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.NumberGroup.searchSetableNumber</definition>
+        <argsstring>()</argsstring>
+        <name>searchSetableNumber</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.searchSetableNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Searches a number who can be set in this group </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="70" column="17" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="70" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1aa6c9c79aff329220ec3a22c4b30ac85b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.NumberGroup.searchSetableNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>searchSetableNumber</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.searchSetableNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>searches for a field where this number fits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="93" column="17" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="93" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a9a8283a49140dfe0b404861eaf18f10c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.NumberGroup.analyse</definition>
+        <argsstring>()</argsstring>
+        <name>analyse</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.analyse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mainly a test method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="133" column="17" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="133" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a9587c29445347757fd9798c7590766fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int[] ForkJoinAlternative.NumberGroup.getGroupAsArray</definition>
+        <argsstring>()</argsstring>
+        <name>getGroupAsArray</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.getGroupAsArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="141" column="16" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a3d6c380b6c2b8f8cd22bff07731e76ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref>[]</type>
+        <definition>Field[] ForkJoinAlternative.NumberGroup.get_numberFields</definition>
+        <argsstring>()</argsstring>
+        <name>get_numberFields</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.get_numberFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="146" column="18" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1addc81a39fca2c19585bdc1f08ad74461" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.NumberGroup.testCoherence</definition>
+        <argsstring>()</argsstring>
+        <name>testCoherence</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.testCoherence</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>, <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="150" column="17" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="150" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1acf9149d16483967ea59eea68014ba041" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.NumberGroup.testIfAllNumbersArePossible</definition>
+        <argsstring>()</argsstring>
+        <name>testIfAllNumbersArePossible</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.testIfAllNumbersArePossible</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if all numbers are possible </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="166" column="17" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="166" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1aa60fc3999cf3074a3d924f2653a932c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ForkJoinAlternative.NumberGroup.isThisNumberPossible</definition>
+        <argsstring>(int number)</argsstring>
+        <name>isThisNumberPossible</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.isThisNumberPossible</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number who is tested. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a true if there is a field where this number can placed. false should only ocure if the sudoku has mistakes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="186" column="20" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="186" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a2a611aad5f9d87e5ca4c01b2d3d1c4d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.NumberGroup.searchForDoubleSetNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>searchForDoubleSetNumbers</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.searchForDoubleSetNumbers</qualifiedname>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>DoubleNumberExeption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is a number 2 times in the same group </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="205" column="17" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="205" bodyend="219"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1afdcf319781f5682f0cc4dc557af690d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref></type>
+        <definition>Field ForkJoinAlternative.NumberGroup.generateField</definition>
+        <argsstring>(int number)</argsstring>
+        <name>generateField</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.generateField</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="51" column="19" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="51" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_number_group_1a5c38d758e508e9708a1dcd7f95f66162" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ForkJoinAlternative.NumberGroup.excludeNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>excludeNumber</name>
+        <qualifiedname>ForkJoinAlternative.NumberGroup.excludeNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>analyses the group and uses excludeNumber() from NumberFields in _numberFields if there are fields with a guarantied number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="114" column="18" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="114" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/ForkJoinAlternative/NumberGroup.java" line="12" column="7" bodyfile="src/main/java/ForkJoinAlternative/NumberGroup.java" bodystart="12" bodyend="220"/>
+    <listofallmembers>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a16799fb17e2bd7200c046a91697fbc6e" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>_executorService</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1ae8421bcecdfa6f4db152a9333f5ad5dc" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>_leftNumbers</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1aaa795b411dbce74419fdeee18c52f031" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>_numberFields</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a9a8283a49140dfe0b404861eaf18f10c" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>analyse</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a5c38d758e508e9708a1dcd7f95f66162" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>excludeNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1afdcf319781f5682f0cc4dc557af690d6" prot="private" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>generateField</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a3d6c380b6c2b8f8cd22bff07731e76ea" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>get_numberFields</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a9587c29445347757fd9798c7590766fc" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>getGroupAsArray</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1aa60fc3999cf3074a3d924f2653a932c0" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>isThisNumberPossible</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a2beca6b8dff5f5d84c1187741dbd09c8" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>NumberGroup</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a427672570d87c550fc56b68da08a57c3" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>NumberGroup</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a2a611aad5f9d87e5ca4c01b2d3d1c4d0" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>searchForDoubleSetNumbers</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1a91589e98750bcb61edabe68e619a96d4" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>searchSetableNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1aa6c9c79aff329220ec3a22c4b30ac85b" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>searchSetableNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1addc81a39fca2c19585bdc1f08ad74461" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>testCoherence</name></member>
+      <member refid="class_fork_join_alternative_1_1_number_group_1acf9149d16483967ea59eea68014ba041" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::NumberGroup</scope><name>testIfAllNumbersArePossible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

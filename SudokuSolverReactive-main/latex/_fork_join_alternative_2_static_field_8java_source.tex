@@ -1,0 +1,55 @@
+\doxysection{Static\+Field.\+java}
+\hypertarget{_fork_join_alternative_2_static_field_8java_source}{}\label{_fork_join_alternative_2_static_field_8java_source}\index{src/main/java/ForkJoinAlternative/StaticField.java@{src/main/java/ForkJoinAlternative/StaticField.java}}
+\mbox{\hyperlink{_fork_join_alternative_2_static_field_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00001}00001\ \textcolor{keyword}{package\ }ForkJoinAlternative;}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespace_stuff}{Stuff}}.\mbox{\hyperlink{class_stuff_1_1_event_manager}{EventManager}};}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00006}00006\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00007}00007\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00009}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field}{00009}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field}{StaticField}}\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ \_number;}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00012}00012\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00013}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a4ecfda7f9ebc7c0b3cdd1f60c2091746}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a4ecfda7f9ebc7c0b3cdd1f60c2091746}{isFixed}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00017}00017\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00018}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a92926bf0e7203039fadacf9e1536dc8a}{00018}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a92926bf0e7203039fadacf9e1536dc8a}{exclude}}(\textcolor{keywordtype}{int}\ number)\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00022}00022\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00023}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a76b4a2a0fdbf99204b966c1c641c9a49}{00023}}\ \ \ \ \ \textcolor{keyword}{public}\ Set<Integer>\ \mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a76b4a2a0fdbf99204b966c1c641c9a49}{possibleNumbers}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00024}00024\ \ \ \ \ \ \ \ \ Set<Integer>\ number\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00025}00025\ \ \ \ \ \ \ \ \ number.add(\_number);}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ number;}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00029}00029\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00030}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a3bcf5a8c345d1d1779ae999c2664f9c4}{00030}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a3bcf5a8c345d1d1779ae999c2664f9c4}{toIntOrZero}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_number;}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00034}00034\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00035}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_aa82686a5e078679aea6cd183fdcb694c}{00035}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_aa82686a5e078679aea6cd183fdcb694c}{setNumber}}(\textcolor{keywordtype}{int}\ number)\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00039}00039\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00040}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a4e664455ced7fef69ca606b192b364a6}{00040}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a4e664455ced7fef69ca606b192b364a6}{setRandomAvalibleNumber}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00042}00042\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00044}\mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a79659a88d72b8b600c1d1e05e56a43df}{00044}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_fork_join_alternative_1_1_static_field_a79659a88d72b8b600c1d1e05e56a43df}{StaticField}}(\textcolor{keywordtype}{int}\ number)\ \{}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00045}00045\ \ \ \ \ \ \ \ \ \_number\ =\ number;}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00046}00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_fork_join_alternative_1_1_field_afddbf154985608df57656b3e98011fd2}{\_trueNumberFoundEvent}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_stuff_1_1_event_manager}{EventManager}}();}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_fork_join_alternative_1_1_field_a7c6c85d03cacf51f9efd678667d7b94c}{\_changeInPossibleNumbersEvent}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_stuff_1_1_event_manager}{EventManager}}();}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fork_join_alternative_2_static_field_8java_source_l00049}00049\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_97debbc39e3b917fca663601bb2b0709" kind="dir">
+    <compoundname>src/test/java</compoundname>
+    <innerfile refid="_fork_join_test_8java">ForkJoinTest.java</innerfile>
+    <innerfile refid="_sudoku_test_8java">SudokuTest.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/test/java/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_stuff_1_1_event_manager" kind="class" language="Java" prot="public">
+    <compoundname>Stuff::EventManager</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_stuff_1_1_event_manager_1a74db674c1d0a25a2b6379db5cd3cf70f" prot="package" static="no" mutable="no">
+        <type>List&lt; Consumer&lt; T &gt; &gt;</type>
+        <definition>List&lt;Consumer&lt;T&gt; &gt; Stuff.EventManager&lt; T &gt;.functions</definition>
+        <argsstring></argsstring>
+        <name>functions</name>
+        <qualifiedname>Stuff.EventManager.functions</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/EventManager.java" line="12" column="10" bodyfile="src/main/java/Stuff/EventManager.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stuff_1_1_event_manager_1a72da4a1159c9b51476ed3f60e9ef3fa1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.EventManager&lt; T &gt;.addFunction</definition>
+        <argsstring>(Consumer&lt; T &gt; function)</argsstring>
+        <name>addFunction</name>
+        <qualifiedname>Stuff.EventManager.addFunction</qualifiedname>
+        <param>
+          <type>Consumer&lt; T &gt;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/EventManager.java" line="14" column="17" bodyfile="src/main/java/Stuff/EventManager.java" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_event_manager_1a8f943eeeb9b348cec062644a39ba1e70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stuff.EventManager&lt; T &gt;.trigger</definition>
+        <argsstring>(T t)</argsstring>
+        <name>trigger</name>
+        <qualifiedname>Stuff.EventManager.trigger</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/EventManager.java" line="17" column="17" bodyfile="src/main/java/Stuff/EventManager.java" bodystart="17" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>List&lt; Consumer&lt; T &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>Stuff.EventManager&lt; T &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>functions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/Stuff/EventManager.java" line="10" column="7" bodyfile="src/main/java/Stuff/EventManager.java" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_stuff_1_1_event_manager_1a72da4a1159c9b51476ed3f60e9ef3fa1" prot="public" virt="non-virtual"><scope>Stuff::EventManager</scope><name>addFunction</name></member>
+      <member refid="class_stuff_1_1_event_manager_1a74db674c1d0a25a2b6379db5cd3cf70f" prot="package" virt="non-virtual"><scope>Stuff::EventManager</scope><name>functions</name></member>
+      <member refid="class_stuff_1_1_event_manager_1a8f943eeeb9b348cec062644a39ba1e70" prot="public" virt="non-virtual"><scope>Stuff::EventManager</scope><name>trigger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$interface_stuff_1_1_speculative_solving_interface.html" title=" " alt="" coords="5,27,164,69"/>
+<area shape="rect" id="Node000001" href="$class_stuff_1_1_speculative_solving.html" title=" " alt="" coords="212,5,370,32"/>
+<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="178,32,211,27,212,33,179,37"/>
+<area shape="rect" id="Node000002" href="$class_stuff_1_1_speculative_solving_sequential.html" title=" " alt="" coords="212,56,370,99"/>
+<area shape="poly" id="edge14_Node000000_Node000002" title=" " alt="" coords="179,59,212,63,211,69,178,64"/>
+</map>

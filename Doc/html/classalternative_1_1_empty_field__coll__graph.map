@@ -1,0 +1,13 @@
+<map id="alternative.EmptyField" name="alternative.EmptyField">
+<area shape="rect" id="Node000001" title=" " alt="" coords="224,624,443,981"/>
+<area shape="rect" id="Node000002" href="$classalternative_1_1_field.html" title=" " alt="" coords="5,240,216,560"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,571,237,623,233,626,204,574"/>
+<area shape="rect" id="Node000003" href="$class_stuff_1_1_event_manager.html" title=" " alt="" coords="19,5,203,144"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,144,113,223,108,223,108,144"/>
+<area shape="rect" id="Node000004" href="$classalternative_1_1_coordinate.html" title=" " alt="" coords="240,277,427,523"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="336,522,336,607,331,607,331,522"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="249,40,417,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="336,124,336,278,331,278,331,124"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="451,365,547,435"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="489,435,441,561,421,610,416,608,436,559,484,433"/>
+</map>
