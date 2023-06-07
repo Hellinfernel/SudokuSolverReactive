@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_stuff_1_1_speculative_solving_sequential" kind="class" language="Java" prot="public">
+    <compoundname>Stuff::SpeculativeSolvingSequential</compoundname>
+    <basecompoundref refid="interface_stuff_1_1_speculative_solving_interface" prot="public" virt="non-virtual">Stuff.SpeculativeSolvingInterface</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stuff_1_1_speculative_solving_sequential_1a16b20e1e27fa6128145289c9a74c20d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+        <definition>Core Stuff.SpeculativeSolvingSequential.completeSolving</definition>
+        <argsstring>(Core core)</argsstring>
+        <name>completeSolving</name>
+        <qualifiedname>Stuff.SpeculativeSolvingSequential.completeSolving</qualifiedname>
+        <reimplements refid="interface_stuff_1_1_speculative_solving_interface_1ab8b00110875006694b78f7c907ea071e">completeSolving</reimplements>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <exceptions> throws <ref refid="class_stuff_1_1_core_not_coherent_exeption" kindref="compound">CoreNotCoherentExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/SpeculativeSolvingSequential.java" line="19" column="17" bodyfile="src/main/java/Stuff/SpeculativeSolvingSequential.java" bodystart="19" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_speculative_solving_sequential_1aeee8ee85b82b288d35180e27a8432495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Collection&lt; <ref refid="class_stuff_1_1_core" kindref="compound">Core</ref> &gt;</type>
+        <definition>Collection&lt; Core &gt; Stuff.SpeculativeSolvingSequential.completeAnalysis</definition>
+        <argsstring>(Core core)</argsstring>
+        <name>completeAnalysis</name>
+        <qualifiedname>Stuff.SpeculativeSolvingSequential.completeAnalysis</qualifiedname>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <exceptions> throws <ref refid="class_stuff_1_1_core_not_coherent_exeption" kindref="compound">CoreNotCoherentExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/SpeculativeSolvingSequential.java" line="57" column="23" bodyfile="src/main/java/Stuff/SpeculativeSolvingSequential.java" bodystart="57" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_stuff_1_1_speculative_solving_sequential_1adcfa88035c5df7b34c5ab3cfe392f9db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Collection&lt; <ref refid="class_stuff_1_1_core" kindref="compound">Core</ref> &gt;</type>
+        <definition>Collection&lt; Core &gt; Stuff.SpeculativeSolvingSequential.speculativeBranch</definition>
+        <argsstring>(Core core, Coordinate coordinate, int speculatedNumber)</argsstring>
+        <name>speculativeBranch</name>
+        <qualifiedname>Stuff.SpeculativeSolvingSequential.speculativeBranch</qualifiedname>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type><ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+          <declname>coordinate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>speculatedNumber</declname>
+        </param>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>, <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref>, <ref refid="class_stuff_1_1_core_not_coherent_exeption" kindref="compound">CoreNotCoherentExeption</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/SpeculativeSolvingSequential.java" line="86" column="24" bodyfile="src/main/java/Stuff/SpeculativeSolvingSequential.java" bodystart="86" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stuff_1_1_speculative_solving_sequential_1abbdc5585f3037a23b7da0a1547241aaa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+        <definition>Core Stuff.SpeculativeSolvingSequential.speculativeSolvingTry</definition>
+        <argsstring>(Core core, Coordinate coordinate, int speculatedNumber)</argsstring>
+        <name>speculativeSolvingTry</name>
+        <qualifiedname>Stuff.SpeculativeSolvingSequential.speculativeSolvingTry</qualifiedname>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type><ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+          <declname>coordinate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>speculatedNumber</declname>
+        </param>
+        <exceptions> throws <ref refid="class_exeptions_1_1_double_number_exeption" kindref="compound">DoubleNumberExeption</ref>, <ref refid="class_exeptions_1_1_not_all_numbers_are_possible_exeption" kindref="compound">NotAllNumbersArePossibleExeption</ref>, <ref refid="class_stuff_1_1_core_not_coherent_exeption" kindref="compound">CoreNotCoherentExeption</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to solve a Core by adding a number to a field where it isnt save that it can contain this number <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coordinate of the field where the number is speculated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speculatedNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the speculated number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a CompletableFuture&lt;Core&gt; or an error if the </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/SpeculativeSolvingSequential.java" line="107" column="18" bodyfile="src/main/java/Stuff/SpeculativeSolvingSequential.java" bodystart="107" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Stuff.SpeculativeSolvingSequential</label>
+        <link refid="class_stuff_1_1_speculative_solving_sequential"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stuff.SpeculativeSolvingInterface</label>
+        <link refid="interface_stuff_1_1_speculative_solving_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Stuff.SpeculativeSolvingSequential</label>
+        <link refid="class_stuff_1_1_speculative_solving_sequential"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stuff.SpeculativeSolvingInterface</label>
+        <link refid="interface_stuff_1_1_speculative_solving_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/Stuff/SpeculativeSolvingSequential.java" line="16" column="7" bodyfile="src/main/java/Stuff/SpeculativeSolvingSequential.java" bodystart="16" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_stuff_1_1_speculative_solving_sequential_1aeee8ee85b82b288d35180e27a8432495" prot="public" virt="non-virtual"><scope>Stuff::SpeculativeSolvingSequential</scope><name>completeAnalysis</name></member>
+      <member refid="class_stuff_1_1_speculative_solving_sequential_1a16b20e1e27fa6128145289c9a74c20d6" prot="public" virt="non-virtual"><scope>Stuff::SpeculativeSolvingSequential</scope><name>completeSolving</name></member>
+      <member refid="interface_stuff_1_1_speculative_solving_interface_1a74df78df3de7eed6d865c6678c6ee97e" prot="public" virt="non-virtual"><scope>Stuff::SpeculativeSolvingSequential</scope><name>searchCanidateForSpeculativeTry</name></member>
+      <member refid="class_stuff_1_1_speculative_solving_sequential_1adcfa88035c5df7b34c5ab3cfe392f9db" prot="private" virt="non-virtual"><scope>Stuff::SpeculativeSolvingSequential</scope><name>speculativeBranch</name></member>
+      <member refid="class_stuff_1_1_speculative_solving_sequential_1abbdc5585f3037a23b7da0a1547241aaa" prot="private" virt="non-virtual"><scope>Stuff::SpeculativeSolvingSequential</scope><name>speculativeSolvingTry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

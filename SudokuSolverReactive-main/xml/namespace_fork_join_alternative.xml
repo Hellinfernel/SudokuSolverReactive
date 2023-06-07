@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_fork_join_alternative" kind="namespace" language="Java">
+    <compoundname>ForkJoinAlternative</compoundname>
+    <innerclass refid="class_fork_join_alternative_1_1_core" prot="public">ForkJoinAlternative::Core</innerclass>
+    <innerclass refid="class_fork_join_alternative_1_1_empty_field" prot="public">ForkJoinAlternative::EmptyField</innerclass>
+    <innerclass refid="class_fork_join_alternative_1_1_field" prot="public">ForkJoinAlternative::Field</innerclass>
+    <innerclass refid="class_fork_join_alternative_1_1_number_group" prot="public">ForkJoinAlternative::NumberGroup</innerclass>
+    <innerclass refid="class_fork_join_alternative_1_1_static_field" prot="public">ForkJoinAlternative::StaticField</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/ForkJoinAlternative/Core.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

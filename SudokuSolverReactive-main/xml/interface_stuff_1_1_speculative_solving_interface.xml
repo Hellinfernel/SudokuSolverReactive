@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_stuff_1_1_speculative_solving_interface" kind="interface" language="Java" prot="public">
+    <compoundname>Stuff::SpeculativeSolvingInterface</compoundname>
+    <derivedcompoundref refid="class_stuff_1_1_speculative_solving" prot="public" virt="non-virtual">Stuff.SpeculativeSolving</derivedcompoundref>
+    <derivedcompoundref refid="class_stuff_1_1_speculative_solving_sequential" prot="public" virt="non-virtual">Stuff.SpeculativeSolvingSequential</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_stuff_1_1_speculative_solving_interface_1ab8b00110875006694b78f7c907ea071e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+        <definition>Core Stuff.SpeculativeSolvingInterface.completeSolving</definition>
+        <argsstring>(Core core)</argsstring>
+        <name>completeSolving</name>
+        <qualifiedname>Stuff.SpeculativeSolvingInterface.completeSolving</qualifiedname>
+        <reimplementedby refid="class_stuff_1_1_speculative_solving_1ad86b16baf3a1c629b0d7f8cd12d03cf6">completeSolving</reimplementedby>
+        <reimplementedby refid="class_stuff_1_1_speculative_solving_sequential_1a16b20e1e27fa6128145289c9a74c20d6">completeSolving</reimplementedby>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <exceptions> throws <ref refid="class_stuff_1_1_core_not_coherent_exeption" kindref="compound">CoreNotCoherentExeption</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/SpeculativeSolvingInterface.java" line="12" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_stuff_1_1_speculative_solving_interface_1a74df78df3de7eed6d865c6678c6ee97e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classalternative_1_1_field" kindref="compound">Field</ref></type>
+        <definition>static Field Stuff.SpeculativeSolvingInterface.searchCanidateForSpeculativeTry</definition>
+        <argsstring>(Core core)</argsstring>
+        <name>searchCanidateForSpeculativeTry</name>
+        <qualifiedname>Stuff.SpeculativeSolvingInterface.searchCanidateForSpeculativeTry</qualifiedname>
+        <param>
+          <type><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref></type>
+          <declname>core</declname>
+        </param>
+        <exceptions> throws NoSuchElementException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/Stuff/SpeculativeSolvingInterface.java" line="13" column="25" bodyfile="src/main/java/Stuff/SpeculativeSolvingInterface.java" bodystart="13" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Stuff.SpeculativeSolvingInterface</label>
+        <link refid="interface_stuff_1_1_speculative_solving_interface"/>
+      </node>
+      <node id="2">
+        <label>Stuff.SpeculativeSolving</label>
+        <link refid="class_stuff_1_1_speculative_solving"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Stuff.SpeculativeSolvingSequential</label>
+        <link refid="class_stuff_1_1_speculative_solving_sequential"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/main/java/Stuff/SpeculativeSolvingInterface.java" line="11" column="18" bodyfile="src/main/java/Stuff/SpeculativeSolvingInterface.java" bodystart="11" bodyend="21"/>
+    <listofallmembers>
+      <member refid="interface_stuff_1_1_speculative_solving_interface_1ab8b00110875006694b78f7c907ea071e" prot="public" virt="non-virtual"><scope>Stuff::SpeculativeSolvingInterface</scope><name>completeSolving</name></member>
+      <member refid="interface_stuff_1_1_speculative_solving_interface_1a74df78df3de7eed6d865c6678c6ee97e" prot="public" virt="non-virtual"><scope>Stuff::SpeculativeSolvingInterface</scope><name>searchCanidateForSpeculativeTry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

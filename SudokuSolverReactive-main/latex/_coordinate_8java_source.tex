@@ -1,0 +1,58 @@
+\doxysection{Coordinate.\+java}
+\hypertarget{_coordinate_8java_source}{}\label{_coordinate_8java_source}\index{src/main/java/alternative/Coordinate.java@{src/main/java/alternative/Coordinate.java}}
+\mbox{\hyperlink{_coordinate_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00001}\mbox{\hyperlink{namespacealternative}{00001}}\ \textcolor{keyword}{package\ }alternative;}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.util.Objects;}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00005}\mbox{\hyperlink{classalternative_1_1_coordinate}{00005}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}}\ \textcolor{keyword}{implements}\ Comparable<Coordinate>\{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00006}\mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{00006}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00007}\mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{00007}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00009}\mbox{\hyperlink{classalternative_1_1_coordinate_ac80bc31c4fbb6513b53a4caebb6f6b6d}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classalternative_1_1_coordinate_ac80bc31c4fbb6513b53a4caebb6f6b6d}{Coordinate}}(\textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ y)\ \{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00010}00010\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (x\ <\ 1||\ x\ >\ 9\ ||\ y\ <\ 1||\ y\ >\ 9)\{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00011}00011\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ IndexOutOfBoundsException();}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00012}00012\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00013}00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}}\ =\ x;}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00014}00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}}\ =\ y;}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00016}\mbox{\hyperlink{classalternative_1_1_coordinate_afe43a25edef166c399fbb0b939d6268e}{00016}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classalternative_1_1_coordinate_afe43a25edef166c399fbb0b939d6268e}{coodinateIsEqual}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (x\ ==\ \mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}})\{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (y\ ==\ \mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}})\{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00021}00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00025}00025\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00026}\mbox{\hyperlink{classalternative_1_1_coordinate_a6c47754a46ffcddfefb5904fcc752cdf}{00026}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classalternative_1_1_coordinate_a6c47754a46ffcddfefb5904fcc752cdf}{equals}}(\textcolor{keyword}{final}\ Object\ o)\ \{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ o)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (o\ ==\ \textcolor{keyword}{null}\ ||\ getClass()\ !=\ o.getClass())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{final}\ \mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}}\ that\ =\ (\mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}})\ o;}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}}\ ==\ that.\_x\ \&\&\ \mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}}\ ==\ that.\mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00031}00031\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00033}00033\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00034}\mbox{\hyperlink{classalternative_1_1_coordinate_a52363ac6c017b56a5a4a8537e0e78dd2}{00034}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classalternative_1_1_coordinate_a52363ac6c017b56a5a4a8537e0e78dd2}{hashCode}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Objects.hash(\mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}},\ \mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}});}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00038}00038\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00039}\mbox{\hyperlink{classalternative_1_1_coordinate_a50fc9c69ba3e802c807aed5f039129fe}{00039}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classalternative_1_1_coordinate_a50fc9c69ba3e802c807aed5f039129fe}{toString}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Coordinate\{"{}}\ +}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_x="{}}\ +\ \mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}}\ +}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{},\ \_y="{}}\ +\ \mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}}\ +}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'\}'};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00046}00046\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00047}\mbox{\hyperlink{classalternative_1_1_coordinate_a97290491a191cbfb5a4d3a82debd164f}{00047}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classalternative_1_1_coordinate_a97290491a191cbfb5a4d3a82debd164f}{compareTo}}(\mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}}\ o)\ \{}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ownValue\ =\ (\mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}}-\/1)*9\ +\ \mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ comparedValue\ =\ (o.\mbox{\hyperlink{classalternative_1_1_coordinate_ac388f136018b7ad7fe50e4661e94a0fd}{\_x}}-\/1)*9\ +\ o.\mbox{\hyperlink{classalternative_1_1_coordinate_a0e917544200a850b4db8147326f8e1ed}{\_y}};}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ownValue-\/comparedValue;}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_coordinate_8java_source_l00052}00052\ \}}
+
+\end{DoxyCode}

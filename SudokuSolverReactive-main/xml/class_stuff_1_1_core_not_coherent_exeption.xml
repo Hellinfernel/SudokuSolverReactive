@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_stuff_1_1_core_not_coherent_exeption" kind="class" language="Java" prot="public">
+    <compoundname>Stuff::CoreNotCoherentExeption</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Throwable</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Stuff.CoreNotCoherentExeption</label>
+        <link refid="class_stuff_1_1_core_not_coherent_exeption"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Throwable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Stuff.CoreNotCoherentExeption</label>
+        <link refid="class_stuff_1_1_core_not_coherent_exeption"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Throwable</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/Stuff/CoreNotCoherentExeption.java" line="3" column="7" bodyfile="src/main/java/Stuff/CoreNotCoherentExeption.java" bodystart="3" bodyend="4"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

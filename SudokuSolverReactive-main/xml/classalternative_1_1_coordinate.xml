@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classalternative_1_1_coordinate" kind="class" language="Java" prot="public">
+    <compoundname>alternative::Coordinate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Comparable&lt; Coordinate &gt;</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classalternative_1_1_coordinate_1ac388f136018b7ad7fe50e4661e94a0fd" prot="public" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int alternative.Coordinate._x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>alternative.Coordinate._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="6" column="22" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classalternative_1_1_coordinate_1a0e917544200a850b4db8147326f8e1ed" prot="public" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int alternative.Coordinate._y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>alternative.Coordinate._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="7" column="22" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classalternative_1_1_coordinate_1ac80bc31c4fbb6513b53a4caebb6f6b6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>alternative.Coordinate.Coordinate</definition>
+        <argsstring>(final int x, final int y)</argsstring>
+        <name>Coordinate</name>
+        <qualifiedname>alternative.Coordinate.Coordinate</qualifiedname>
+        <param>
+          <type>final int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>final int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="9" column="12" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_coordinate_1afe43a25edef166c399fbb0b939d6268e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean alternative.Coordinate.coodinateIsEqual</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>coodinateIsEqual</name>
+        <qualifiedname>alternative.Coordinate.coodinateIsEqual</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="16" column="20" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="16" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_coordinate_1a6c47754a46ffcddfefb5904fcc752cdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean alternative.Coordinate.equals</definition>
+        <argsstring>(final Object o)</argsstring>
+        <name>equals</name>
+        <qualifiedname>alternative.Coordinate.equals</qualifiedname>
+        <param>
+          <type>final Object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="26" column="20" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_coordinate_1a52363ac6c017b56a5a4a8537e0e78dd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int alternative.Coordinate.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <qualifiedname>alternative.Coordinate.hashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="34" column="16" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_coordinate_1a50fc9c69ba3e802c807aed5f039129fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String alternative.Coordinate.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>alternative.Coordinate.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="39" column="19" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classalternative_1_1_coordinate_1a97290491a191cbfb5a4d3a82debd164f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int alternative.Coordinate.compareTo</definition>
+        <argsstring>(Coordinate o)</argsstring>
+        <name>compareTo</name>
+        <qualifiedname>alternative.Coordinate.compareTo</qualifiedname>
+        <param>
+          <type><ref refid="classalternative_1_1_coordinate" kindref="compound">Coordinate</ref></type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/alternative/Coordinate.java" line="47" column="16" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="47" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Comparable&lt; Coordinate &gt;</label>
+      </node>
+      <node id="1">
+        <label>alternative.Coordinate</label>
+        <link refid="classalternative_1_1_coordinate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Comparable&lt; Coordinate &gt;</label>
+      </node>
+      <node id="1">
+        <label>alternative.Coordinate</label>
+        <link refid="classalternative_1_1_coordinate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/alternative/Coordinate.java" line="5" column="7" bodyfile="src/main/java/alternative/Coordinate.java" bodystart="5" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classalternative_1_1_coordinate_1ac388f136018b7ad7fe50e4661e94a0fd" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>_x</name></member>
+      <member refid="classalternative_1_1_coordinate_1a0e917544200a850b4db8147326f8e1ed" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>_y</name></member>
+      <member refid="classalternative_1_1_coordinate_1a97290491a191cbfb5a4d3a82debd164f" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>compareTo</name></member>
+      <member refid="classalternative_1_1_coordinate_1afe43a25edef166c399fbb0b939d6268e" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>coodinateIsEqual</name></member>
+      <member refid="classalternative_1_1_coordinate_1ac80bc31c4fbb6513b53a4caebb6f6b6d" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>Coordinate</name></member>
+      <member refid="classalternative_1_1_coordinate_1a6c47754a46ffcddfefb5904fcc752cdf" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>equals</name></member>
+      <member refid="classalternative_1_1_coordinate_1a52363ac6c017b56a5a4a8537e0e78dd2" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>hashCode</name></member>
+      <member refid="classalternative_1_1_coordinate_1a50fc9c69ba3e802c807aed5f039129fe" prot="public" virt="non-virtual"><scope>alternative::Coordinate</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

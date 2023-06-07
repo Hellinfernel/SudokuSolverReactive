@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_fork_join_alternative_1_1_field" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>ForkJoinAlternative::Field</compoundname>
+    <derivedcompoundref refid="class_fork_join_alternative_1_1_empty_field" prot="public" virt="non-virtual">ForkJoinAlternative.EmptyField</derivedcompoundref>
+    <derivedcompoundref refid="class_fork_join_alternative_1_1_static_field" prot="public" virt="non-virtual">ForkJoinAlternative.StaticField</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_field_1afddbf154985608df57656b3e98011fd2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_stuff_1_1_event_manager" kindref="compound">EventManager</ref>&lt; Integer &gt;</type>
+        <definition>EventManager&lt;Integer&gt; ForkJoinAlternative.Field._trueNumberFoundEvent</definition>
+        <argsstring></argsstring>
+        <name>_trueNumberFoundEvent</name>
+        <qualifiedname>ForkJoinAlternative.Field._trueNumberFoundEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="21" column="25" bodyfile="src/main/java/ForkJoinAlternative/Field.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fork_join_alternative_1_1_field_1a7c6c85d03cacf51f9efd678667d7b94c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_stuff_1_1_event_manager" kindref="compound">EventManager</ref>&lt; Integer &gt;</type>
+        <definition>EventManager&lt;Integer&gt; ForkJoinAlternative.Field._changeInPossibleNumbersEvent</definition>
+        <argsstring></argsstring>
+        <name>_changeInPossibleNumbersEvent</name>
+        <qualifiedname>ForkJoinAlternative.Field._changeInPossibleNumbersEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="22" column="25" bodyfile="src/main/java/ForkJoinAlternative/Field.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1a4a60f8dfa4447735488fa974b3dc35d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract boolean</type>
+        <definition>abstract boolean ForkJoinAlternative.Field.isFixed</definition>
+        <argsstring>()</argsstring>
+        <name>isFixed</name>
+        <qualifiedname>ForkJoinAlternative.Field.isFixed</qualifiedname>
+        <reimplementedby refid="class_fork_join_alternative_1_1_empty_field_1ac973a74b59a67acdbfcd0a0db1ddd865">isFixed</reimplementedby>
+        <reimplementedby refid="class_fork_join_alternative_1_1_static_field_1a4ecfda7f9ebc7c0b3cdd1f60c2091746">isFixed</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="11" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1a83335f69c29ff39d12c583feb4dd3ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void ForkJoinAlternative.Field.exclude</definition>
+        <argsstring>(int number)</argsstring>
+        <name>exclude</name>
+        <qualifiedname>ForkJoinAlternative.Field.exclude</qualifiedname>
+        <reimplementedby refid="class_fork_join_alternative_1_1_empty_field_1a786c3dbf7fca5f055a18ce2f3524681d">exclude</reimplementedby>
+        <reimplementedby refid="class_fork_join_alternative_1_1_static_field_1a92926bf0e7203039fadacf9e1536dc8a">exclude</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="13" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1af53f66e598771da71b4549724cc6ed2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract Set&lt; Integer &gt;</type>
+        <definition>abstract Set&lt; Integer &gt; ForkJoinAlternative.Field.possibleNumbers</definition>
+        <argsstring>()</argsstring>
+        <name>possibleNumbers</name>
+        <qualifiedname>ForkJoinAlternative.Field.possibleNumbers</qualifiedname>
+        <reimplementedby refid="class_fork_join_alternative_1_1_empty_field_1a0f2fe405b302d6b76e1b12b7181594d8">possibleNumbers</reimplementedby>
+        <reimplementedby refid="class_fork_join_alternative_1_1_static_field_1a76b4a2a0fdbf99204b966c1c641c9a49">possibleNumbers</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="15" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1a606ef381b364d4e66b8b0458fc2b6d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract int</type>
+        <definition>abstract int ForkJoinAlternative.Field.toIntOrZero</definition>
+        <argsstring>()</argsstring>
+        <name>toIntOrZero</name>
+        <qualifiedname>ForkJoinAlternative.Field.toIntOrZero</qualifiedname>
+        <reimplementedby refid="class_fork_join_alternative_1_1_empty_field_1ace75154d2bcf46a253e9cfd326958bc0">toIntOrZero</reimplementedby>
+        <reimplementedby refid="class_fork_join_alternative_1_1_static_field_1a3bcf5a8c345d1d1779ae999c2664f9c4">toIntOrZero</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="17" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1ace6d25a5c3b950980a48edc19a173ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void ForkJoinAlternative.Field.setNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setNumber</name>
+        <qualifiedname>ForkJoinAlternative.Field.setNumber</qualifiedname>
+        <reimplementedby refid="class_fork_join_alternative_1_1_empty_field_1a90761c6f478a3a93b7be30b1f01b0f0e">setNumber</reimplementedby>
+        <reimplementedby refid="class_fork_join_alternative_1_1_static_field_1aa82686a5e078679aea6cd183fdcb694c">setNumber</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="19" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1ac5aed6cb161ecd1aa9ec6d0fd0a7fbc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void ForkJoinAlternative.Field.setRandomAvalibleNumber</definition>
+        <argsstring>()</argsstring>
+        <name>setRandomAvalibleNumber</name>
+        <qualifiedname>ForkJoinAlternative.Field.setRandomAvalibleNumber</qualifiedname>
+        <reimplementedby refid="class_fork_join_alternative_1_1_empty_field_1af219eef729801fedacced683c7e72185">setRandomAvalibleNumber</reimplementedby>
+        <reimplementedby refid="class_fork_join_alternative_1_1_static_field_1a4e664455ced7fef69ca606b192b364a6">setRandomAvalibleNumber</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="24" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1a1108f49a9f742f97edb46b82346c3cc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_fork_join_alternative_1_1_field" kindref="compound">Field</ref></type>
+        <definition>Field ForkJoinAlternative.Field.copy</definition>
+        <argsstring>()</argsstring>
+        <name>copy</name>
+        <qualifiedname>ForkJoinAlternative.Field.copy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="27" column="18" bodyfile="src/main/java/ForkJoinAlternative/Field.java" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fork_join_alternative_1_1_field_1aceff80f172b8872d377c2774d914806f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ForkJoinAlternative.Field.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>ForkJoinAlternative.Field.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/ForkJoinAlternative/Field.java" line="36" column="19" bodyfile="src/main/java/ForkJoinAlternative/Field.java" bodystart="36" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ForkJoinAlternative.Field</label>
+        <link refid="class_fork_join_alternative_1_1_field"/>
+      </node>
+      <node id="2">
+        <label>ForkJoinAlternative.EmptyField</label>
+        <link refid="class_fork_join_alternative_1_1_empty_field"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ForkJoinAlternative.StaticField</label>
+        <link refid="class_fork_join_alternative_1_1_static_field"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Stuff.EventManager&lt; Integer &gt;</label>
+        <link refid="class_stuff_1_1_event_manager"/>
+      </node>
+      <node id="1">
+        <label>ForkJoinAlternative.Field</label>
+        <link refid="class_fork_join_alternative_1_1_field"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_changeInPossibleNumbersEvent</edgelabel>
+          <edgelabel>_trueNumberFoundEvent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/ForkJoinAlternative/Field.java" line="9" column="17" bodyfile="src/main/java/ForkJoinAlternative/Field.java" bodystart="9" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_fork_join_alternative_1_1_field_1a7c6c85d03cacf51f9efd678667d7b94c" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>_changeInPossibleNumbersEvent</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1afddbf154985608df57656b3e98011fd2" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>_trueNumberFoundEvent</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1a1108f49a9f742f97edb46b82346c3cc5" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>copy</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1a83335f69c29ff39d12c583feb4dd3ed4" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>exclude</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1a4a60f8dfa4447735488fa974b3dc35d3" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>isFixed</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1af53f66e598771da71b4549724cc6ed2f" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>possibleNumbers</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1ace6d25a5c3b950980a48edc19a173ea5" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>setNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1ac5aed6cb161ecd1aa9ec6d0fd0a7fbc0" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>setRandomAvalibleNumber</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1a606ef381b364d4e66b8b0458fc2b6d6d" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>toIntOrZero</name></member>
+      <member refid="class_fork_join_alternative_1_1_field_1aceff80f172b8872d377c2774d914806f" prot="public" virt="non-virtual"><scope>ForkJoinAlternative::Field</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

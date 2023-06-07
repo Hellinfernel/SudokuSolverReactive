@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_speculative_solving_interface_8java" kind="file" language="Java">
+    <compoundname>SpeculativeSolvingInterface.java</compoundname>
+    <innerclass refid="interface_stuff_1_1_speculative_solving_interface" prot="public">Stuff::SpeculativeSolvingInterface</innerclass>
+    <innernamespace refid="namespace_stuff">Stuff</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">Stuff;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacealternative" kindref="compound">alternative</ref>.<ref refid="classalternative_1_1_field" kindref="compound">Field</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Comparator;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.NoSuchElementException;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.concurrent.CompletableFuture;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="interface_stuff_1_1_speculative_solving_interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_stuff_1_1_speculative_solving_interface" kindref="compound">SpeculativeSolvingInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="interface_stuff_1_1_speculative_solving_interface_1ab8b00110875006694b78f7c907ea071e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_stuff_1_1_core" kindref="compound">Core</ref><sp/><ref refid="interface_stuff_1_1_speculative_solving_interface_1ab8b00110875006694b78f7c907ea071e" kindref="member">completeSolving</ref>(<ref refid="class_stuff_1_1_core" kindref="compound">Core</ref><sp/>core)<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="class_stuff_1_1_core_not_coherent_exeption" kindref="compound">CoreNotCoherentExeption</ref>;</highlight></codeline>
+<codeline lineno="13" refid="interface_stuff_1_1_speculative_solving_interface_1a74df78df3de7eed6d865c6678c6ee97e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classalternative_1_1_field" kindref="compound">Field</ref><sp/><ref refid="interface_stuff_1_1_speculative_solving_interface_1a74df78df3de7eed6d865c6678c6ee97e" kindref="member">searchCanidateForSpeculativeTry</ref>(<ref refid="class_stuff_1_1_core" kindref="compound">Core</ref><sp/>core)<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/>NoSuchElementException{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>core.get_sudokuMatrix().stream()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.filter(field<sp/>-&gt;<sp/>!field.isFixed())</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.min(Comparator.comparing((<ref refid="classalternative_1_1_field" kindref="compound">Field</ref><sp/>field)<sp/>-&gt;<sp/>field.<ref refid="classalternative_1_1_field_1ab40e6c931aa1d79b89a5de3f0b7dbc61" kindref="member">possibleNumbers</ref>().size()))</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.orElseThrow();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/Stuff/SpeculativeSolvingInterface.java"/>
+  </compounddef>
+</doxygen>

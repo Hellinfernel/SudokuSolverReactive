@@ -1,0 +1,228 @@
+\doxysection{Fork\+Join\+Alternative.\+Core Class Reference}
+\hypertarget{class_fork_join_alternative_1_1_core}{}\label{class_fork_join_alternative_1_1_core}\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+
+
+Collaboration diagram for Fork\+Join\+Alternative.\+Core\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_fork_join_alternative_1_1_core__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_core_ab759243743a387eae1dbb738d35efac6}{Core}} ()
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_core_afc40cbb8ac6ec2c4f117c81351b3c5ab}{Core}} (\mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}} core)
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_core_afbff3d77663947afd2c0759f5185ce7b}{Core}} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} input\+Matrix)
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a3a4ef0c44c0dd20e2380380e9047811c}{get\+Sudoku\+Matrix}} ()
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a152752ff930aca8bf74b06160ca40381}{get\+Row}} (int number)
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_ab9dace98db771aa818a1ece6497141bf}{get\+Column}} (int number)
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a75cd726b87f29f1493595fe6d8158ee4}{get\+Block}} (int number)
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a708b01feb34ecbe10037120adb3103e6}{start}} ()
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_core_ac4850ce1b9e89d1d6e946be2e55c59de}{parallel\+Start}} ()
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a31fee9687e6ae6fbf2ce2e40820d8c49}{test\+Coherence}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}} 
+\item 
+boolean \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a2e07a9a9e990039aa9b00af4c2925b33}{does\+Contain\+Only\+Zero}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_abbd6570a43cee92306d6b688e319e4b1}{random\+Create}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a730bbc72cab219edb00da3b9f321e481}{generate\+Groups}} ()
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_ad3d7d4bb594f74745743a1e859d23170}{generate\+Row}} (int row\+Number)
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a015b2bc966399724ea0e509a848437a2}{generate\+Column}} (int column\+Number)
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a3e7d0a0165fe01b866f21a9959da1528}{generate\+Block}} (int height, int lenght)  throws Array\+Index\+Out\+Of\+Bounds\+Exception
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a014079869de47070bbff17b4985c98a7}{set\+Number\+Of\+Row\+Random}} (\mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}} \+\_\+core, int set\+Numbers, \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} array)  throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}} 
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a34033df36f459c752e3cbce3cc2e4c9d}{sudoku\+Matrix}} = new \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}
+\item 
+final List$<$ \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} $>$ \mbox{\hyperlink{class_fork_join_alternative_1_1_core_aeaaa4ffe0a1db96f4a4020afe009a99c}{sudoku\+Rows}} = new Linked\+List$<$$>$()
+\item 
+final List$<$ \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} $>$ \mbox{\hyperlink{class_fork_join_alternative_1_1_core_af0b0823abb5f17a615606ae7e8db555d}{sudoku\+Columns}} = new Linked\+List$<$$>$()
+\item 
+final List$<$ \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} $>$ \mbox{\hyperlink{class_fork_join_alternative_1_1_core_addf288b87f248cebc3d8a9599640db42}{sudoku\+Blocks}} =new Linked\+List$<$$>$()
+\item 
+final Executor\+Service \mbox{\hyperlink{class_fork_join_alternative_1_1_core_a058040fe029a5da08e3767d1c6dec89b}{executor\+Service}} = Fork\+Join\+Pool.\+common\+Pool()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fork_join_alternative_1_1_core_ab759243743a387eae1dbb738d35efac6}\label{class_fork_join_alternative_1_1_core_ab759243743a387eae1dbb738d35efac6} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!Core@{Core}}
+\index{Core@{Core}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Fork\+Join\+Alternative.\+Core.\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_afc40cbb8ac6ec2c4f117c81351b3c5ab}\label{class_fork_join_alternative_1_1_core_afc40cbb8ac6ec2c4f117c81351b3c5ab} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!Core@{Core}}
+\index{Core@{Core}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Fork\+Join\+Alternative.\+Core.\+Core (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}}}]{core }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_afbff3d77663947afd2c0759f5185ce7b}\label{class_fork_join_alternative_1_1_core_afbff3d77663947afd2c0759f5185ce7b} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!Core@{Core}}
+\index{Core@{Core}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Fork\+Join\+Alternative.\+Core.\+Core (\begin{DoxyParamCaption}\item[{int}]{input\+Matrix\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fork_join_alternative_1_1_core_a2e07a9a9e990039aa9b00af4c2925b33}\label{class_fork_join_alternative_1_1_core_a2e07a9a9e990039aa9b00af4c2925b33} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!doesContainOnlyZero@{doesContainOnlyZero}}
+\index{doesContainOnlyZero@{doesContainOnlyZero}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{doesContainOnlyZero()}{doesContainOnlyZero()}}
+{\footnotesize\ttfamily boolean Fork\+Join\+Alternative.\+Core.\+does\+Contain\+Only\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+true if every field.\+possible\+Numbers contains all possible numbers 
+\end{DoxyReturn}
+\Hypertarget{class_fork_join_alternative_1_1_core_a3e7d0a0165fe01b866f21a9959da1528}\label{class_fork_join_alternative_1_1_core_a3e7d0a0165fe01b866f21a9959da1528} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!generateBlock@{generateBlock}}
+\index{generateBlock@{generateBlock}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{generateBlock()}{generateBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} Fork\+Join\+Alternative.\+Core.\+generate\+Block (\begin{DoxyParamCaption}\item[{int}]{height,  }\item[{int}]{lenght }\end{DoxyParamCaption}) throws Array\+Index\+Out\+Of\+Bounds\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a015b2bc966399724ea0e509a848437a2}\label{class_fork_join_alternative_1_1_core_a015b2bc966399724ea0e509a848437a2} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!generateColumn@{generateColumn}}
+\index{generateColumn@{generateColumn}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{generateColumn()}{generateColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} Fork\+Join\+Alternative.\+Core.\+generate\+Column (\begin{DoxyParamCaption}\item[{int}]{column\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a730bbc72cab219edb00da3b9f321e481}\label{class_fork_join_alternative_1_1_core_a730bbc72cab219edb00da3b9f321e481} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!generateGroups@{generateGroups}}
+\index{generateGroups@{generateGroups}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{generateGroups()}{generateGroups()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Core.\+generate\+Groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_ad3d7d4bb594f74745743a1e859d23170}\label{class_fork_join_alternative_1_1_core_ad3d7d4bb594f74745743a1e859d23170} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!generateRow@{generateRow}}
+\index{generateRow@{generateRow}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{generateRow()}{generateRow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} Fork\+Join\+Alternative.\+Core.\+generate\+Row (\begin{DoxyParamCaption}\item[{int}]{row\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a75cd726b87f29f1493595fe6d8158ee4}\label{class_fork_join_alternative_1_1_core_a75cd726b87f29f1493595fe6d8158ee4} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!getBlock@{getBlock}}
+\index{getBlock@{getBlock}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{getBlock()}{getBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} Fork\+Join\+Alternative.\+Core.\+get\+Block (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+thats the supposed order\+: 123 456 789 
+\end{DoxyReturn}
+\Hypertarget{class_fork_join_alternative_1_1_core_ab9dace98db771aa818a1ece6497141bf}\label{class_fork_join_alternative_1_1_core_ab9dace98db771aa818a1ece6497141bf} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!getColumn@{getColumn}}
+\index{getColumn@{getColumn}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{getColumn()}{getColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} Fork\+Join\+Alternative.\+Core.\+get\+Column (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a152752ff930aca8bf74b06160ca40381}\label{class_fork_join_alternative_1_1_core_a152752ff930aca8bf74b06160ca40381} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!getRow@{getRow}}
+\index{getRow@{getRow}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{getRow()}{getRow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}} Fork\+Join\+Alternative.\+Core.\+get\+Row (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a3a4ef0c44c0dd20e2380380e9047811c}\label{class_fork_join_alternative_1_1_core_a3a4ef0c44c0dd20e2380380e9047811c} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!getSudokuMatrix@{getSudokuMatrix}}
+\index{getSudokuMatrix@{getSudokuMatrix}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{getSudokuMatrix()}{getSudokuMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Fork\+Join\+Alternative.\+Core.\+get\+Sudoku\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_ac4850ce1b9e89d1d6e946be2e55c59de}\label{class_fork_join_alternative_1_1_core_ac4850ce1b9e89d1d6e946be2e55c59de} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!parallelStart@{parallelStart}}
+\index{parallelStart@{parallelStart}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{parallelStart()}{parallelStart()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Core.\+parallel\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_abbd6570a43cee92306d6b688e319e4b1}\label{class_fork_join_alternative_1_1_core_abbd6570a43cee92306d6b688e319e4b1} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!randomCreate@{randomCreate}}
+\index{randomCreate@{randomCreate}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{randomCreate()}{randomCreate()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}} Fork\+Join\+Alternative.\+Core.\+random\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a014079869de47070bbff17b4985c98a7}\label{class_fork_join_alternative_1_1_core_a014079869de47070bbff17b4985c98a7} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!setNumberOfRowRandom@{setNumberOfRowRandom}}
+\index{setNumberOfRowRandom@{setNumberOfRowRandom}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{setNumberOfRowRandom()}{setNumberOfRowRandom()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}} Fork\+Join\+Alternative.\+Core.\+set\+Number\+Of\+Row\+Random (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fork_join_alternative_1_1_core}{Core}}}]{\+\_\+core,  }\item[{int}]{set\+Numbers,  }\item[{\mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a708b01feb34ecbe10037120adb3103e6}\label{class_fork_join_alternative_1_1_core_a708b01feb34ecbe10037120adb3103e6} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!start@{start}}
+\index{start@{start}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Core.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a31fee9687e6ae6fbf2ce2e40820d8c49}\label{class_fork_join_alternative_1_1_core_a31fee9687e6ae6fbf2ce2e40820d8c49} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!testCoherence@{testCoherence}}
+\index{testCoherence@{testCoherence}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{testCoherence()}{testCoherence()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Core.\+test\+Coherence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_fork_join_alternative_1_1_core_a058040fe029a5da08e3767d1c6dec89b}\label{class_fork_join_alternative_1_1_core_a058040fe029a5da08e3767d1c6dec89b} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!executorService@{executorService}}
+\index{executorService@{executorService}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{executorService}{executorService}}
+{\footnotesize\ttfamily final Executor\+Service Fork\+Join\+Alternative.\+Core.\+executor\+Service = Fork\+Join\+Pool.\+common\+Pool()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_addf288b87f248cebc3d8a9599640db42}\label{class_fork_join_alternative_1_1_core_addf288b87f248cebc3d8a9599640db42} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!sudokuBlocks@{sudokuBlocks}}
+\index{sudokuBlocks@{sudokuBlocks}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{sudokuBlocks}{sudokuBlocks}}
+{\footnotesize\ttfamily final List$<$\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}}$>$ Fork\+Join\+Alternative.\+Core.\+sudoku\+Blocks =new Linked\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_af0b0823abb5f17a615606ae7e8db555d}\label{class_fork_join_alternative_1_1_core_af0b0823abb5f17a615606ae7e8db555d} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!sudokuColumns@{sudokuColumns}}
+\index{sudokuColumns@{sudokuColumns}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{sudokuColumns}{sudokuColumns}}
+{\footnotesize\ttfamily final List$<$\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}}$>$ Fork\+Join\+Alternative.\+Core.\+sudoku\+Columns = new Linked\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_core_a34033df36f459c752e3cbce3cc2e4c9d}\label{class_fork_join_alternative_1_1_core_a34033df36f459c752e3cbce3cc2e4c9d} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!sudokuMatrix@{sudokuMatrix}}
+\index{sudokuMatrix@{sudokuMatrix}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{sudokuMatrix}{sudokuMatrix}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Fork\+Join\+Alternative.\+Core.\+sudoku\+Matrix = new \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The first dimension goes right left, the second dimension up own. \Hypertarget{class_fork_join_alternative_1_1_core_aeaaa4ffe0a1db96f4a4020afe009a99c}\label{class_fork_join_alternative_1_1_core_aeaaa4ffe0a1db96f4a4020afe009a99c} 
+\index{ForkJoinAlternative.Core@{ForkJoinAlternative.Core}!sudokuRows@{sudokuRows}}
+\index{sudokuRows@{sudokuRows}!ForkJoinAlternative.Core@{ForkJoinAlternative.Core}}
+\doxysubsubsection{\texorpdfstring{sudokuRows}{sudokuRows}}
+{\footnotesize\ttfamily final List$<$\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group}{Number\+Group}}$>$ Fork\+Join\+Alternative.\+Core.\+sudoku\+Rows = new Linked\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/itpraktikant/\+Downloads/\+Sudoku\+Solver\+Reactive-\/main/\+Sudoku\+Solver\+Reactive-\/main/src/main/java/\+Fork\+Join\+Alternative/\mbox{\hyperlink{_fork_join_alternative_2_core_8java}{Core.\+java}}\end{DoxyCompactItemize}

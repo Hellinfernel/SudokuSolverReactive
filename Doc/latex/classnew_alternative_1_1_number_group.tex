@@ -1,0 +1,184 @@
+\doxysection{new\+Alternative.\+Number\+Group Class Reference}
+\hypertarget{classnew_alternative_1_1_number_group}{}\label{classnew_alternative_1_1_number_group}\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+
+
+Collaboration diagram for new\+Alternative.\+Number\+Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnew_alternative_1_1_number_group__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnew_alternative_1_1_number_group_a8416e312d08632e26dae921335dc1a2b}{Number\+Group}} (\mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} matrix)  throws Array\+Index\+Out\+Of\+Bounds\+Exception 
+\item 
+\mbox{\hyperlink{classnew_alternative_1_1_number_group_a4db3a21f83edebb6688995e486d2c08e}{Number\+Group}} (int\mbox{[}$\,$\mbox{]} matrix)  throws Array\+Index\+Out\+Of\+Bounds\+Exception
+\item 
+void \mbox{\hyperlink{classnew_alternative_1_1_number_group_af8a29a8cdfd0e5a63416bfbc4755bb08}{search\+Setable\+Number}} ()
+\item 
+void \mbox{\hyperlink{classnew_alternative_1_1_number_group_a24867ffd346656e2cd36babe532afc14}{search\+Setable\+Number}} (int number)
+\item 
+void \mbox{\hyperlink{classnew_alternative_1_1_number_group_a99ee88ce9d8a1a7ee3c771a6336515df}{analyse}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classnew_alternative_1_1_number_group_a73049dd9643683cbc04d2ca983748545}{get\+Group\+As\+Array}} ()
+\item 
+\mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classnew_alternative_1_1_number_group_a1fe76a7ac0e9e967965f857e9c6a956d}{get\+\_\+number\+Fields}} ()
+\item 
+void \mbox{\hyperlink{classnew_alternative_1_1_number_group_aab1441aa7e0092d950d04f5674f03e63}{test\+Coherence}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}} 
+\item 
+void \mbox{\hyperlink{classnew_alternative_1_1_number_group_ab9fa7b44a85650dfdebfd3ee26d0ee7a}{test\+If\+All\+Numbers\+Are\+Possible}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}} 
+\item 
+boolean \mbox{\hyperlink{classnew_alternative_1_1_number_group_a68b59edd4d65aec7357228308f1ef730}{is\+This\+Number\+Possible}} (int number)
+\item 
+void \mbox{\hyperlink{classnew_alternative_1_1_number_group_ad4b58687efa7c9bfdde4b4303c856e7a}{search\+For\+Double\+Set\+Numbers}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}} \mbox{\hyperlink{classnew_alternative_1_1_number_group_aa6be225cff30925de66733df441d4ea6}{generate\+Field}} (int number)
+\item 
+void \mbox{\hyperlink{classnew_alternative_1_1_number_group_aaf93e9efcece126b1a2f46d852830c76}{exclude\+Number}} (int number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Set$<$ \mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}} $>$ \mbox{\hyperlink{classnew_alternative_1_1_number_group_ac1428adf5bacca62c6d10350cbca2a16}{\+\_\+number\+Fields}}
+\item 
+final Set$<$ Integer $>$ \mbox{\hyperlink{classnew_alternative_1_1_number_group_a6c8e4f6e8af6dc6e6a2181e8a1e67185}{\+\_\+left\+Numbers}}
+\item 
+final \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Task\+Schedular}}$<$ \mbox{\hyperlink{classnew_alternative_1_1_number_group}{Number\+Group}} $>$ \mbox{\hyperlink{classnew_alternative_1_1_number_group_a3edd4c2dbb0c423c68801443c93fd262}{\+\_\+task\+Schedular}} = new \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Task\+Schedular}}$<$$>$(this)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classnew_alternative_1_1_number_group_a8416e312d08632e26dae921335dc1a2b}\label{classnew_alternative_1_1_number_group_a8416e312d08632e26dae921335dc1a2b} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!NumberGroup@{NumberGroup}}
+\index{NumberGroup@{NumberGroup}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{NumberGroup()}{NumberGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily new\+Alternative.\+Number\+Group.\+Number\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}}\mbox{[}$\,$\mbox{]}}]{matrix }\end{DoxyParamCaption}) throws Array\+Index\+Out\+Of\+Bounds\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classnew_alternative_1_1_number_group_a4db3a21f83edebb6688995e486d2c08e}\label{classnew_alternative_1_1_number_group_a4db3a21f83edebb6688995e486d2c08e} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!NumberGroup@{NumberGroup}}
+\index{NumberGroup@{NumberGroup}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{NumberGroup()}{NumberGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily new\+Alternative.\+Number\+Group.\+Number\+Group (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{matrix }\end{DoxyParamCaption}) throws Array\+Index\+Out\+Of\+Bounds\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classnew_alternative_1_1_number_group_a99ee88ce9d8a1a7ee3c771a6336515df}\label{classnew_alternative_1_1_number_group_a99ee88ce9d8a1a7ee3c771a6336515df} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!analyse@{analyse}}
+\index{analyse@{analyse}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{analyse()}{analyse()}}
+{\footnotesize\ttfamily void new\+Alternative.\+Number\+Group.\+analyse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+mainly a test method. \Hypertarget{classnew_alternative_1_1_number_group_aaf93e9efcece126b1a2f46d852830c76}\label{classnew_alternative_1_1_number_group_aaf93e9efcece126b1a2f46d852830c76} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!excludeNumber@{excludeNumber}}
+\index{excludeNumber@{excludeNumber}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{excludeNumber()}{excludeNumber()}}
+{\footnotesize\ttfamily void new\+Alternative.\+Number\+Group.\+exclude\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+analyses the group and uses exclude\+Number() from Number\+Fields in \+\_\+number\+Fields if there are fields with a guarantied number \Hypertarget{classnew_alternative_1_1_number_group_aa6be225cff30925de66733df441d4ea6}\label{classnew_alternative_1_1_number_group_aa6be225cff30925de66733df441d4ea6} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!generateField@{generateField}}
+\index{generateField@{generateField}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{generateField()}{generateField()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}} new\+Alternative.\+Number\+Group.\+generate\+Field (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classnew_alternative_1_1_number_group_a1fe76a7ac0e9e967965f857e9c6a956d}\label{classnew_alternative_1_1_number_group_a1fe76a7ac0e9e967965f857e9c6a956d} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!get\_numberFields@{get\_numberFields}}
+\index{get\_numberFields@{get\_numberFields}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{get\_numberFields()}{get\_numberFields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} new\+Alternative.\+Number\+Group.\+get\+\_\+number\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classnew_alternative_1_1_number_group_a73049dd9643683cbc04d2ca983748545}\label{classnew_alternative_1_1_number_group_a73049dd9643683cbc04d2ca983748545} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!getGroupAsArray@{getGroupAsArray}}
+\index{getGroupAsArray@{getGroupAsArray}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{getGroupAsArray()}{getGroupAsArray()}}
+{\footnotesize\ttfamily int\mbox{[}$\,$\mbox{]} new\+Alternative.\+Number\+Group.\+get\+Group\+As\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classnew_alternative_1_1_number_group_a68b59edd4d65aec7357228308f1ef730}\label{classnew_alternative_1_1_number_group_a68b59edd4d65aec7357228308f1ef730} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!isThisNumberPossible@{isThisNumberPossible}}
+\index{isThisNumberPossible@{isThisNumberPossible}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{isThisNumberPossible()}{isThisNumberPossible()}}
+{\footnotesize\ttfamily boolean new\+Alternative.\+Number\+Group.\+is\+This\+Number\+Possible (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & the number who is tested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a true if there is a field where this number can placed. false should only ocure if the sudoku has mistakes. 
+\end{DoxyReturn}
+\Hypertarget{classnew_alternative_1_1_number_group_ad4b58687efa7c9bfdde4b4303c856e7a}\label{classnew_alternative_1_1_number_group_ad4b58687efa7c9bfdde4b4303c856e7a} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!searchForDoubleSetNumbers@{searchForDoubleSetNumbers}}
+\index{searchForDoubleSetNumbers@{searchForDoubleSetNumbers}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{searchForDoubleSetNumbers()}{searchForDoubleSetNumbers()}}
+{\footnotesize\ttfamily void new\+Alternative.\+Number\+Group.\+search\+For\+Double\+Set\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Double\+Number\+Exeption} & if there is a number 2 times in the same group \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classnew_alternative_1_1_number_group_af8a29a8cdfd0e5a63416bfbc4755bb08}\label{classnew_alternative_1_1_number_group_af8a29a8cdfd0e5a63416bfbc4755bb08} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!searchSetableNumber@{searchSetableNumber}}
+\index{searchSetableNumber@{searchSetableNumber}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{searchSetableNumber()}{searchSetableNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void new\+Alternative.\+Number\+Group.\+search\+Setable\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches a number who can be set in this group \Hypertarget{classnew_alternative_1_1_number_group_a24867ffd346656e2cd36babe532afc14}\label{classnew_alternative_1_1_number_group_a24867ffd346656e2cd36babe532afc14} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!searchSetableNumber@{searchSetableNumber}}
+\index{searchSetableNumber@{searchSetableNumber}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{searchSetableNumber()}{searchSetableNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void new\+Alternative.\+Number\+Group.\+search\+Setable\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+searches for a field where this number fits. 
+\begin{DoxyParams}{Parameters}
+{\em number} & the number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classnew_alternative_1_1_number_group_aab1441aa7e0092d950d04f5674f03e63}\label{classnew_alternative_1_1_number_group_aab1441aa7e0092d950d04f5674f03e63} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!testCoherence@{testCoherence}}
+\index{testCoherence@{testCoherence}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{testCoherence()}{testCoherence()}}
+{\footnotesize\ttfamily void new\+Alternative.\+Number\+Group.\+test\+Coherence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classnew_alternative_1_1_number_group_ab9fa7b44a85650dfdebfd3ee26d0ee7a}\label{classnew_alternative_1_1_number_group_ab9fa7b44a85650dfdebfd3ee26d0ee7a} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!testIfAllNumbersArePossible@{testIfAllNumbersArePossible}}
+\index{testIfAllNumbersArePossible@{testIfAllNumbersArePossible}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{testIfAllNumbersArePossible()}{testIfAllNumbersArePossible()}}
+{\footnotesize\ttfamily void new\+Alternative.\+Number\+Group.\+test\+If\+All\+Numbers\+Are\+Possible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+true if all numbers are possible 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classnew_alternative_1_1_number_group_a6c8e4f6e8af6dc6e6a2181e8a1e67185}\label{classnew_alternative_1_1_number_group_a6c8e4f6e8af6dc6e6a2181e8a1e67185} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!\_leftNumbers@{\_leftNumbers}}
+\index{\_leftNumbers@{\_leftNumbers}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{\_leftNumbers}{\_leftNumbers}}
+{\footnotesize\ttfamily final Set$<$Integer$>$ new\+Alternative.\+Number\+Group.\+\_\+left\+Numbers\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classnew_alternative_1_1_number_group_ac1428adf5bacca62c6d10350cbca2a16}\label{classnew_alternative_1_1_number_group_ac1428adf5bacca62c6d10350cbca2a16} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!\_numberFields@{\_numberFields}}
+\index{\_numberFields@{\_numberFields}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{\_numberFields}{\_numberFields}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{classnew_alternative_1_1field_1_1_field}{Field}}$>$ new\+Alternative.\+Number\+Group.\+\_\+number\+Fields\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classnew_alternative_1_1_number_group_a3edd4c2dbb0c423c68801443c93fd262}\label{classnew_alternative_1_1_number_group_a3edd4c2dbb0c423c68801443c93fd262} 
+\index{newAlternative.NumberGroup@{newAlternative.NumberGroup}!\_taskSchedular@{\_taskSchedular}}
+\index{\_taskSchedular@{\_taskSchedular}!newAlternative.NumberGroup@{newAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{\_taskSchedular}{\_taskSchedular}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Task\+Schedular}}$<$\mbox{\hyperlink{classnew_alternative_1_1_number_group}{Number\+Group}}$>$ new\+Alternative.\+Number\+Group.\+\_\+task\+Schedular = new \mbox{\hyperlink{class_experimental_1_1_task_schedular}{Task\+Schedular}}$<$$>$(this)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/itpraktikant/\+Downloads/\+Sudoku\+Solver\+Reactive-\/main/\+Sudoku\+Solver\+Reactive-\/main/src/main/java/new\+Alternative/\mbox{\hyperlink{new_alternative_2_number_group_8java}{Number\+Group.\+java}}\end{DoxyCompactItemize}

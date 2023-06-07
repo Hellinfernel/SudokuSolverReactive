@@ -1,0 +1,184 @@
+\doxysection{Fork\+Join\+Alternative.\+Number\+Group Class Reference}
+\hypertarget{class_fork_join_alternative_1_1_number_group}{}\label{class_fork_join_alternative_1_1_number_group}\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+
+
+Collaboration diagram for Fork\+Join\+Alternative.\+Number\+Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fork_join_alternative_1_1_number_group__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a2beca6b8dff5f5d84c1187741dbd09c8}{Number\+Group}} (\mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} matrix, Executor\+Service executor\+Service)  throws Array\+Index\+Out\+Of\+Bounds\+Exception 
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a427672570d87c550fc56b68da08a57c3}{Number\+Group}} (int\mbox{[}$\,$\mbox{]} matrix, Executor\+Service executor\+Service)  throws Array\+Index\+Out\+Of\+Bounds\+Exception
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a91589e98750bcb61edabe68e619a96d4}{search\+Setable\+Number}} ()
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_aa6c9c79aff329220ec3a22c4b30ac85b}{search\+Setable\+Number}} (int number)
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a9a8283a49140dfe0b404861eaf18f10c}{analyse}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a9587c29445347757fd9798c7590766fc}{get\+Group\+As\+Array}} ()
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a3d6c380b6c2b8f8cd22bff07731e76ea}{get\+\_\+number\+Fields}} ()
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_addc81a39fca2c19585bdc1f08ad74461}{test\+Coherence}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}} 
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_acf9149d16483967ea59eea68014ba041}{test\+If\+All\+Numbers\+Are\+Possible}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}} 
+\item 
+boolean \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_aa60fc3999cf3074a3d924f2653a932c0}{is\+This\+Number\+Possible}} (int number)
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a2a611aad5f9d87e5ca4c01b2d3d1c4d0}{search\+For\+Double\+Set\+Numbers}} ()  throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}} \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_afdcf319781f5682f0cc4dc557af690d6}{generate\+Field}} (int number)
+\item 
+void \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a5c38d758e508e9708a1dcd7f95f66162}{exclude\+Number}} (int number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Set$<$ \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}} $>$ \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_aaa795b411dbce74419fdeee18c52f031}{\+\_\+number\+Fields}}
+\item 
+final Set$<$ Integer $>$ \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_ae8421bcecdfa6f4db152a9333f5ad5dc}{\+\_\+left\+Numbers}}
+\item 
+final Executor\+Service \mbox{\hyperlink{class_fork_join_alternative_1_1_number_group_a16799fb17e2bd7200c046a91697fbc6e}{\+\_\+executor\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a2beca6b8dff5f5d84c1187741dbd09c8}\label{class_fork_join_alternative_1_1_number_group_a2beca6b8dff5f5d84c1187741dbd09c8} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!NumberGroup@{NumberGroup}}
+\index{NumberGroup@{NumberGroup}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{NumberGroup()}{NumberGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fork\+Join\+Alternative.\+Number\+Group.\+Number\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]}}]{matrix,  }\item[{Executor\+Service}]{executor\+Service }\end{DoxyParamCaption}) throws Array\+Index\+Out\+Of\+Bounds\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a427672570d87c550fc56b68da08a57c3}\label{class_fork_join_alternative_1_1_number_group_a427672570d87c550fc56b68da08a57c3} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!NumberGroup@{NumberGroup}}
+\index{NumberGroup@{NumberGroup}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{NumberGroup()}{NumberGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fork\+Join\+Alternative.\+Number\+Group.\+Number\+Group (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{matrix,  }\item[{Executor\+Service}]{executor\+Service }\end{DoxyParamCaption}) throws Array\+Index\+Out\+Of\+Bounds\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a9a8283a49140dfe0b404861eaf18f10c}\label{class_fork_join_alternative_1_1_number_group_a9a8283a49140dfe0b404861eaf18f10c} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!analyse@{analyse}}
+\index{analyse@{analyse}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{analyse()}{analyse()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Number\+Group.\+analyse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+mainly a test method. \Hypertarget{class_fork_join_alternative_1_1_number_group_a5c38d758e508e9708a1dcd7f95f66162}\label{class_fork_join_alternative_1_1_number_group_a5c38d758e508e9708a1dcd7f95f66162} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!excludeNumber@{excludeNumber}}
+\index{excludeNumber@{excludeNumber}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{excludeNumber()}{excludeNumber()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Number\+Group.\+exclude\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+analyses the group and uses exclude\+Number() from Number\+Fields in \+\_\+number\+Fields if there are fields with a guarantied number \Hypertarget{class_fork_join_alternative_1_1_number_group_afdcf319781f5682f0cc4dc557af690d6}\label{class_fork_join_alternative_1_1_number_group_afdcf319781f5682f0cc4dc557af690d6} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!generateField@{generateField}}
+\index{generateField@{generateField}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{generateField()}{generateField()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}} Fork\+Join\+Alternative.\+Number\+Group.\+generate\+Field (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a3d6c380b6c2b8f8cd22bff07731e76ea}\label{class_fork_join_alternative_1_1_number_group_a3d6c380b6c2b8f8cd22bff07731e76ea} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!get\_numberFields@{get\_numberFields}}
+\index{get\_numberFields@{get\_numberFields}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{get\_numberFields()}{get\_numberFields()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} Fork\+Join\+Alternative.\+Number\+Group.\+get\+\_\+number\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a9587c29445347757fd9798c7590766fc}\label{class_fork_join_alternative_1_1_number_group_a9587c29445347757fd9798c7590766fc} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!getGroupAsArray@{getGroupAsArray}}
+\index{getGroupAsArray@{getGroupAsArray}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{getGroupAsArray()}{getGroupAsArray()}}
+{\footnotesize\ttfamily int\mbox{[}$\,$\mbox{]} Fork\+Join\+Alternative.\+Number\+Group.\+get\+Group\+As\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_number_group_aa60fc3999cf3074a3d924f2653a932c0}\label{class_fork_join_alternative_1_1_number_group_aa60fc3999cf3074a3d924f2653a932c0} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!isThisNumberPossible@{isThisNumberPossible}}
+\index{isThisNumberPossible@{isThisNumberPossible}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{isThisNumberPossible()}{isThisNumberPossible()}}
+{\footnotesize\ttfamily boolean Fork\+Join\+Alternative.\+Number\+Group.\+is\+This\+Number\+Possible (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & the number who is tested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a true if there is a field where this number can placed. false should only ocure if the sudoku has mistakes. 
+\end{DoxyReturn}
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a2a611aad5f9d87e5ca4c01b2d3d1c4d0}\label{class_fork_join_alternative_1_1_number_group_a2a611aad5f9d87e5ca4c01b2d3d1c4d0} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!searchForDoubleSetNumbers@{searchForDoubleSetNumbers}}
+\index{searchForDoubleSetNumbers@{searchForDoubleSetNumbers}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{searchForDoubleSetNumbers()}{searchForDoubleSetNumbers()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Number\+Group.\+search\+For\+Double\+Set\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Double\+Number\+Exeption} & if there is a number 2 times in the same group \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a91589e98750bcb61edabe68e619a96d4}\label{class_fork_join_alternative_1_1_number_group_a91589e98750bcb61edabe68e619a96d4} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!searchSetableNumber@{searchSetableNumber}}
+\index{searchSetableNumber@{searchSetableNumber}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{searchSetableNumber()}{searchSetableNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Number\+Group.\+search\+Setable\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches a number who can be set in this group \Hypertarget{class_fork_join_alternative_1_1_number_group_aa6c9c79aff329220ec3a22c4b30ac85b}\label{class_fork_join_alternative_1_1_number_group_aa6c9c79aff329220ec3a22c4b30ac85b} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!searchSetableNumber@{searchSetableNumber}}
+\index{searchSetableNumber@{searchSetableNumber}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{searchSetableNumber()}{searchSetableNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Number\+Group.\+search\+Setable\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+searches for a field where this number fits. 
+\begin{DoxyParams}{Parameters}
+{\em number} & the number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fork_join_alternative_1_1_number_group_addc81a39fca2c19585bdc1f08ad74461}\label{class_fork_join_alternative_1_1_number_group_addc81a39fca2c19585bdc1f08ad74461} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!testCoherence@{testCoherence}}
+\index{testCoherence@{testCoherence}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{testCoherence()}{testCoherence()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Number\+Group.\+test\+Coherence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{Double\+Number\+Exeption}}, \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_number_group_acf9149d16483967ea59eea68014ba041}\label{class_fork_join_alternative_1_1_number_group_acf9149d16483967ea59eea68014ba041} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!testIfAllNumbersArePossible@{testIfAllNumbersArePossible}}
+\index{testIfAllNumbersArePossible@{testIfAllNumbersArePossible}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{testIfAllNumbersArePossible()}{testIfAllNumbersArePossible()}}
+{\footnotesize\ttfamily void Fork\+Join\+Alternative.\+Number\+Group.\+test\+If\+All\+Numbers\+Are\+Possible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{Not\+All\+Numbers\+Are\+Possible\+Exeption}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+true if all numbers are possible 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_fork_join_alternative_1_1_number_group_a16799fb17e2bd7200c046a91697fbc6e}\label{class_fork_join_alternative_1_1_number_group_a16799fb17e2bd7200c046a91697fbc6e} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!\_executorService@{\_executorService}}
+\index{\_executorService@{\_executorService}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{\_executorService}{\_executorService}}
+{\footnotesize\ttfamily final Executor\+Service Fork\+Join\+Alternative.\+Number\+Group.\+\_\+executor\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_number_group_ae8421bcecdfa6f4db152a9333f5ad5dc}\label{class_fork_join_alternative_1_1_number_group_ae8421bcecdfa6f4db152a9333f5ad5dc} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!\_leftNumbers@{\_leftNumbers}}
+\index{\_leftNumbers@{\_leftNumbers}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{\_leftNumbers}{\_leftNumbers}}
+{\footnotesize\ttfamily final Set$<$Integer$>$ Fork\+Join\+Alternative.\+Number\+Group.\+\_\+left\+Numbers\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_fork_join_alternative_1_1_number_group_aaa795b411dbce74419fdeee18c52f031}\label{class_fork_join_alternative_1_1_number_group_aaa795b411dbce74419fdeee18c52f031} 
+\index{ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}!\_numberFields@{\_numberFields}}
+\index{\_numberFields@{\_numberFields}!ForkJoinAlternative.NumberGroup@{ForkJoinAlternative.NumberGroup}}
+\doxysubsubsection{\texorpdfstring{\_numberFields}{\_numberFields}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{class_fork_join_alternative_1_1_field}{Field}}$>$ Fork\+Join\+Alternative.\+Number\+Group.\+\_\+number\+Fields\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/itpraktikant/\+Downloads/\+Sudoku\+Solver\+Reactive-\/main/\+Sudoku\+Solver\+Reactive-\/main/src/main/java/\+Fork\+Join\+Alternative/\mbox{\hyperlink{_fork_join_alternative_2_number_group_8java}{Number\+Group.\+java}}\end{DoxyCompactItemize}

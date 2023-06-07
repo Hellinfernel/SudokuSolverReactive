@@ -1,0 +1,59 @@
+\doxysection{Speculative\+Solving.\+java}
+\hypertarget{_speculative_solving_8java_source}{}\label{_speculative_solving_8java_source}\index{src/main/java/Stuff/SpeculativeSolving.java@{src/main/java/Stuff/SpeculativeSolving.java}}
+\mbox{\hyperlink{_speculative_solving_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00001}00001\ \textcolor{keyword}{package\ }Stuff;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespace_exeptions}{Exeptions}}.\mbox{\hyperlink{class_exeptions_1_1_double_number_exeption}{DoubleNumberExeption}};}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespace_exeptions}{Exeptions}}.\mbox{\hyperlink{class_exeptions_1_1_not_all_numbers_are_possible_exeption}{NotAllNumbersArePossibleExeption}};}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacealternative}{alternative}}.\mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}};}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00006}00006\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacealternative}{alternative}}.\mbox{\hyperlink{classalternative_1_1_field}{Field}};}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00008}00008\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00009}00009\ \textcolor{keyword}{import}\ java.util.Comparator;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00010}00010\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00011}00011\ \textcolor{keyword}{import}\ java.util.concurrent.CompletableFuture;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00013}\mbox{\hyperlink{class_stuff_1_1_speculative_solving}{00013}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_stuff_1_1_speculative_solving}{SpeculativeSolving}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface}{SpeculativeSolvingInterface}}\ \{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00014}\mbox{\hyperlink{class_stuff_1_1_speculative_solving_ad86b16baf3a1c629b0d7f8cd12d03cf6}{00014}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_stuff_1_1_core}{Core}}\ \mbox{\hyperlink{class_stuff_1_1_speculative_solving_ad86b16baf3a1c629b0d7f8cd12d03cf6}{completeSolving}}(\mbox{\hyperlink{class_stuff_1_1_core}{Core}}\ core)\ \{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00015}00015\ \ \ \ \ \ \ \ \ core.\mbox{\hyperlink{class_stuff_1_1_core_a476917194b076af223d9cdc99a7cb7ed}{kickStartEventTrigger}}();}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00017}00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classalternative_1_1_field}{Field}}\ triedField\ =\ \mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface}{SpeculativeSolvingInterface}}.\mbox{\hyperlink{interface_stuff_1_1_speculative_solving_interface_a74df78df3de7eed6d865c6678c6ee97e}{searchCanidateForSpeculativeTry}}(core);}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00018}00018\ \ \ \ \ \ \ \ \ List<CompletableFuture<Core>>\ completableFutures\ =\ \textcolor{keyword}{new}\ ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00019}00019\ \ \ \ \ \ \ \ \ triedField.\mbox{\hyperlink{classalternative_1_1_field_ab40e6c931aa1d79b89a5de3f0b7dbc61}{possibleNumbers}}().forEach(integer\ -\/>\ completableFutures.add(speculativeSolvingTry(core,\ triedField.\mbox{\hyperlink{classalternative_1_1_field_a6dc289d8a14c9b112c89a343099d526e}{getCoordinate}}(),\ integer)));}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00020}00020\ \ \ \ \ \ \ \ \ CompletableFuture<Core>\ finishedCore\ =\ \textcolor{keyword}{new}\ CompletableFuture<>();}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (CompletableFuture<Core>\ coreCompletableFuture\ :\ completableFutures)\ \{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ finishedCore\ =\ finishedCore.applyToEitherAsync(coreCompletableFuture,\ thatCore\ -\/>\ thatCore);}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00023}00023\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ finishedCore.join();}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{private}\ CompletableFuture<Core>\ speculativeSolvingTry(\mbox{\hyperlink{class_stuff_1_1_core}{Core}}\ core,\mbox{\hyperlink{classalternative_1_1_coordinate}{Coordinate}}\ coordinate,\ \textcolor{keywordtype}{int}\ speculatedNumber)\{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_stuff_1_1_core}{Core}}\ saveCore\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_stuff_1_1_core}{Core}}(core);}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classalternative_1_1_field}{Field}}\ targetField\ =\ saveCore.\mbox{\hyperlink{class_stuff_1_1_core_ac18dcbfdd0272d18e2e4e23790ea35c4}{getFieldByCoordinate}}(coordinate);}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ CompletableFuture<Core>\ completableFuture\ =\ CompletableFuture.supplyAsync(()\ -\/>\ \{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ targetField.\mbox{\hyperlink{classalternative_1_1_field_a261ca28820cea5fef3b494c65ee05300}{setNumber}}(speculatedNumber);}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ saveCore.\mbox{\hyperlink{class_stuff_1_1_core_a46a4371010073f3b2697fff93e411e87}{testCoherence}}();}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!saveCore.\mbox{\hyperlink{class_stuff_1_1_core_a1a3dc6ec35fe2f4234dfe0a3bc4e7523}{isSolvedCompleatly}}())\{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ completeSolving(saveCore);}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (DoubleNumberExeption\ |\ NotAllNumbersArePossibleExeption\ exeption)\ \{}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exeption.printStackTrace();}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ saveCore;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ \}).exceptionally(throwable\ -\/>\ \textcolor{keyword}{new}\ Core());}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ completableFuture;}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{comment}{//return\ core;}}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00054}00054\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_speculative_solving_8java_source_l00059}00059\ \}}
+
+\end{DoxyCode}
