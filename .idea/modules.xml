@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/SudokuSolverReactive-main/SudokuSolverReactive.iml" filepath="$PROJECT_DIR$/SudokuSolverReactive-main/SudokuSolverReactive.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/SudokuSolverReactive-main.iml" filepath="$PROJECT_DIR$/.idea/SudokuSolverReactive-main.iml" />
-    </modules>
-  </component>
-</project>
