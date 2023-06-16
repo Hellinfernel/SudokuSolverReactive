@@ -270,6 +270,91 @@ public class  SudokuTest {
 
 
     }
+    @RepeatedTest(100)
+    void analyseSudokuTest2(){
+        int[][] intMatrix= {
+                {0,3,0,0,0,0,0,0,0},
+                {0,0,0,1,9,5,0,0,0},
+                {0,0,8,0,0,0,0,6,0},
+                {8,0,0,0,6,0,0,0,0},
+                {4,0,0,8,0,0,0,0,1},
+                {0,0,0,0,2,0,0,0,0},
+                {0,6,0,0,0,0,2,8,0},
+                {0,0,0,4,1,9,0,0,5},
+                {0,0,0,0,0,0,0,7,0}
+        };
+
+        Core core = new Core(intMatrix);
+        NumberGroup testRow1 = core.getRow(1);
+        NumberGroup testRow2 = core.getRow(2);
+        NumberGroup testRow3 = core.getRow(3);
+        NumberGroup testRow4 = core.getRow(4);
+        NumberGroup testRow5 = core.getRow(5);
+        NumberGroup testRow6 = core.getRow(6);
+        NumberGroup testRow7 = core.getRow(7);
+        NumberGroup testRow8 = core.getRow(8);
+        NumberGroup testRow9 = core.getRow(9);
+        NumberGroup testColumn1 = core.getColumn(1);
+        NumberGroup testColumn2 = core.getColumn(2);
+        NumberGroup testColumn3 = core.getColumn(3);
+        NumberGroup testColumn4 = core.getColumn(4);
+        NumberGroup testColumn5 = core.getColumn(5);
+        NumberGroup testColumn6 = core.getColumn(6);
+        NumberGroup testColumn7 = core.getColumn(7);
+        NumberGroup testColumn8 = core.getColumn(8);
+        NumberGroup testColumn9 = core.getColumn(9);
+        NumberGroup testBlock1  = core.getBlock(1);
+        NumberGroup testBlock2  = core.getBlock(2);
+        NumberGroup testBlock3  = core.getBlock(3);
+        NumberGroup testBlock4  = core.getBlock(4);
+        NumberGroup testBlock5  = core.getBlock(5);
+        NumberGroup testBlock6  = core.getBlock(6);
+        NumberGroup testBlock7  = core.getBlock(7);
+        NumberGroup testBlock8  = core.getBlock(8);
+        NumberGroup testBlock9  = core.getBlock(9);
+
+        core.kickStartEventTrigger();
+        /*System.out.println(
+                Arrays.toString(core.getRow(1).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(2).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(3).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(4).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(5).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(6).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(7).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(8).getGroupAsArray()) + "\n"+
+                        Arrays.toString(core.getRow(9).getGroupAsArray()) + "\n");
+        assertThat(core.isSolvedCompleatly()).isTrue();
+        assertThatCode(core::testCoherence).doesNotThrowAnyException();*/
+        Core finishedCore = null;
+        try {
+            finishedCore = new SpeculativeSolvingSequential().completeSolving(core);
+        } catch (CoreNotCoherentExeption exeption) {
+            exeption.printStackTrace();
+        }
+        System.out.println(
+                Arrays.toString(finishedCore.getRow(1).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(2).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(3).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(4).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(5).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(6).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(7).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(8).getGroupAsArray()) + "\n"+
+                        Arrays.toString(finishedCore.getRow(9).getGroupAsArray()) + "\n");
+        assertThat(finishedCore.isSolvedCompleatly()).isTrue();
+        assertThatCode(finishedCore::testCoherence).doesNotThrowAnyException();
+
+
+
+
+
+
+
+
+
+
+    }
    /* void analyseSudokuTestParallel(){
         int[][] intMatrix= {
                 {2,0,5,3,0,8,4,0,9},

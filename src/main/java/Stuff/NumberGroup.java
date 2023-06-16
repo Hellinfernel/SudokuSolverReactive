@@ -38,9 +38,6 @@ public class NumberGroup {
     }
     public NumberGroup(Collection<Field> collection) throws ArrayIndexOutOfBoundsException {
         _leftNumbers = Collections.synchronizedSet(new HashSet<>(Constants.ALL_NUMBERS));
-
-
-
         if (collection.size() != 9){
             throw new ArrayIndexOutOfBoundsException();
         }
@@ -48,10 +45,6 @@ public class NumberGroup {
         _numberFields.addAll(collection);
         _numberFields.forEach(field -> field._changeInPossibleNumbersEvent.addFunction(this::searchSetableNumber));
         _numberFields.forEach(field -> field._trueNumberFoundEvent.addFunction(this::excludeNumber));
-
-
-
-
     }
     // DO NOT USE
     public NumberGroup(int[] matrix)throws ArrayIndexOutOfBoundsException{
@@ -120,7 +113,6 @@ public class NumberGroup {
      * @param number the number
      */
     public void searchSetableNumber(int number) {
-
             List<Field> fields = new ArrayList<>();
             for (Field field : _numberFields) {
                 if (field.possibleNumbers().contains(number)) {
@@ -129,11 +121,7 @@ public class NumberGroup {
             }
             if (fields.size() == 1){
                 fields.get(0).setNumber(number);
-
             }
-
-
-
     }
 
     /**
@@ -151,8 +139,6 @@ public class NumberGroup {
                 field.exclude(number);
             }
         }
-
-
     }
 
     /**

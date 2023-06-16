@@ -237,7 +237,15 @@ public class Core {
 
     }
     public void kickStartEventTrigger(){
-        _sudokuMatrix.stream().filter(Field::isFixed).forEach(field -> field._trueNumberFoundEvent.trigger(field.toIntOrZero()));
+        _sudokuMatrix.stream()
+                .filter(Field::isFixed)
+                .forEach(field -> field._trueNumberFoundEvent.trigger(field.toIntOrZero()));
+        if (!isSolvedCompleatly()){
+            sudokuRows.forEach(NumberGroup::searchSetableNumber);
+            sudokuColumns.forEach(NumberGroup::searchSetableNumber);
+            sudokuBlocks.forEach(NumberGroup::searchSetableNumber);
+
+        }
         /*for (Field[] array : _sudokuMatrix) {
             for (Field field : array) {
                 if (field.isFixed()) {

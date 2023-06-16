@@ -60,6 +60,7 @@ public class EmptyField extends Field {
             return;
         }
         _possibleNumbers.remove(number);
+        _changeInPossibleNumbersEvent.trigger(number);
 
         if (isFixed()) {
             _trueNumberFoundEvent.trigger(toIntOrZero());
@@ -82,12 +83,10 @@ public class EmptyField extends Field {
 
     @Override
     public void setNumber(int number) {
-
         _possibleNumbers
                 .stream()
                 .filter(pNumber -> pNumber != number)
                 .forEach(this::exclude);
-
     }
 
     @Override
